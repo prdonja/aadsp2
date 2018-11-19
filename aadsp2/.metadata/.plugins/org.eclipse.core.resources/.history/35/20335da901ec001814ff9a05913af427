@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application boardClass="CDB49X" chipTarget="CS48L20" chipFamily="CS48L2X">
+    <SDKVersion>7_1_7</SDKVersion>
+    <CLIDEVersion>7_1_8</CLIDEVersion>
+    <concurrencies>
+        <concurrency snapshot="analog_in.groovy">
+            <name>cc1</name>
+            <memMap core="" config="cfg0" memoryMap="V01"/>
+            <overlays>
+                <entry name="a0">
+                    <area timeStamp="0">
+                        <name>a0</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="a1">
+                    <area timeStamp="0">
+                        <name>a1</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="a2">
+                    <area timeStamp="0">
+                        <name>a2</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="a3">
+                    <area timeStamp="0">
+                        <name>a3</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="a4">
+                    <area timeStamp="0">
+                        <name>a4</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="b0">
+                    <area timeStamp="0">
+                        <name>b0</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="b1">
+                    <area timeStamp="0">
+                        <name>b1</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="b2">
+                    <area timeStamp="0">
+                        <name>b2</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+                <entry name="b3">
+                    <area timeStamp="0">
+                        <name>b3</name>
+                        <uldName></uldName>
+                        <version></version>
+                    </area>
+                </entry>
+            </overlays>
+        </concurrency>
+    </concurrencies>
+</application>

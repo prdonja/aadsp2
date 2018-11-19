@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application boardClass="CDB49X" chipTarget="CS48L20" chipFamily="CS48L2X">
+    <SDKVersion>7_1_7</SDKVersion>
+    <CLIDEVersion>7_1_8</CLIDEVersion>
+    <concurrencies/>
+</application>

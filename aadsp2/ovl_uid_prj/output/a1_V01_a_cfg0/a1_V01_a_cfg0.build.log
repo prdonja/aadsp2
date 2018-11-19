@@ -1,0 +1,66 @@
+============= BUILDING STARTED ============
+  Project: ovl_uid_prj
+  Creating configuration for: V01:cfg0:DSP_A/a1
+===========================================
+Assembling .a and .s files...
+D:/ra207_2015/aadsp2/ovl_uid_prj/gen/src/ovl_uid_prj_odt.a
+C:/CirrusDSP/bin/casm D:/ra207_2015/aadsp2/ovl_uid_prj/gen/src/ovl_uid_prj_odt.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0701
+ -D_OVLY_REVISION_=010000
+ -D_ROM_VERSION_=0
+ -D_VERSION_=01
+ -D_CHIP_REQUIRED_=48L20
+ -D_DSP_=a
+ -DDSPa
+ -D_MEM_MODEL_=cfg0
+ -D_RAM_BUILD_
+ -D_SLOT_=1
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/CS48L2X/common/inc/
+ -D_TARGET_FAMILY_=CS48L2X
+ -D_MUI_VERSION_=010000
+ -IC:/CirrusDSP/include/
+ -lD:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt.lst
+ -oD:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt.O
+ -iC:/CirrusDSP/CS48L2X/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+Linking files...
+C:/CirrusDSP/bin/clink
+ -oD:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.img
+ -fC:/CirrusDSP/CS48L2X/memory_maps/V01_a_cfg0.mem.xml
+ --output_type=RAM
+ --overlay_type=a1
+ -lC:/CirrusDSP/lib
+ -lC:/CirrusDSP/lib/dsplib
+ -lC:/CirrusDSP/lib/dsplib/CS48L2X/dspa
+ -lC:/CirrusDSP/CS48L2X/common/lib/dsp_a
+ -lC:/CirrusDSP/CS48L2X/common/lib/dsp_a/v01
+D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt.O
+D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib
+Creating .uld file...
+C:/CirrusDSP/bin/lnkuld
+ -ja
+ D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.img
+ D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.uld
+     [exec] 
+     [exec] Reading file: D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.img ...
+     [exec] 	Processed 11 line(s).
+     [exec] 
+     [exec] Writing output to file: D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.uld ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.uldb ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/ovl_uid_prj__48L20_01_cfg0_a1_1_0_0.uldc ...
+
+BUILD SUCCESSFUL
+Total time: 1 second

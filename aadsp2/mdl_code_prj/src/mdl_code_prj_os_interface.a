@@ -1,0 +1,53 @@
+/** @file mdl_code_prj_os_interface.a
+ *
+ *  This file defines the data structures necessary for a module that fits into
+ *  the Cirrus Logic OS Framework.
+ */
+	.include .strcat (_COMMON_INC_PATH_, "macros.h")
+	.include "mdl_code_prj_module.h"
+
+#====================================================================
+# Declare the MIF for this module. It needs to be public so that it 
+# can be referenced in the ODT definition in another source file.
+# Also need to declare a public symbol for the module ID for this module
+	.public X_BY_mdl_code_prj_MIF, mdl_code_prj_MODULEID
+
+	.public mdl_code_prj_mif
+
+mdl_code_prj_mif	.ydata_ovly
+#
+# use macros to declare the MIF structure. The macros ensure that the 
+# data structure is properly constructed
+#	
+X_BY_mdl_code_prj_MIF:
+	.extern mdl_code_prj_HOST_MCV
+ MIF_BEGIN
+  EXT_MCV_Y    mdl_code_prj_HOST_MCV
+  EXT_MCT      mct
+ MIF_END
+
+#
+# create the MCT (Module Call Table)
+# The symbols for the entry points are assumed to be external to this
+# source file, hence the .extern directives.
+#
+# To remove any particular entry point, just comment out or remove
+# that line in the MCT structure. Ordering of the entry points is not
+# important -- the macro ensures that the order expected by the OS is
+# followed.
+#
+mdl_code_prj_MCT	.ydata_ovly
+	.extern X_S_mdl_code_prj_PreKickstart,X_S_mdl_code_prj_PostKickstart,X_S_mdl_code_prj_Timer,X_S_mdl_code_prj_Frame
+	.extern X_S_mdl_code_prj_Brick,X_S_mdl_code_prj_PreMalloc,X_S_mdl_code_prj_PostMalloc,X_S_mdl_code_prj_Background
+mct:
+ MCT_BEGIN
+  PREKICK      X_S_mdl_code_prj_PreKickstart
+  POSTKICK     X_S_mdl_code_prj_PostKickstart
+  TIMER        X_S_mdl_code_prj_Timer
+  FRAME        X_S_mdl_code_prj_Frame
+  BLOCK        X_S_mdl_code_prj_Brick
+  PREMALLOC    X_S_mdl_code_prj_PreMalloc
+  POSTMALLOC   X_S_mdl_code_prj_PostMalloc
+  BACKGROUND   X_S_mdl_code_prj_Background 
+ MCT_END
+

@@ -1,0 +1,496 @@
+-----------------Global segment information:
+
+
+Address class CODE	Address:[0000...3FFF], length 4000
+	Address:[0000...17FF], length 1800, <FREE>
+	Address:[1800...1807], length 0008, <RESERVED for mdl_code_prj_main_GEN_0000, class CODE_OVLY>
+	Address:[1808...3FFF], length 27F8, <FREE>
+
+Address class CODE_1	Address:[1800...27FF], length 1000, subclass of CODE_REGULAR
+	Address:[1800...1807], length 0008, <RESERVED for mdl_code_prj_main_GEN_0000, class CODE_OVLY>
+	Address:[1808...27FF], length 0FF8, <FREE>
+
+Address class CODE_REGULAR	Address:[1800...3FFF], length 2800, subclass of CODE
+	Address:[1800...1807], length 0008, <RESERVED for mdl_code_prj_main_GEN_0000, class CODE_OVLY>
+	Address:[1808...3FFF], length 27F8, <FREE>
+
+Address class L	Address:[0000...7FFF], length 8000
+	Address:[0000...03FF], length 0400, <FREE>
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...7FFF], length 7BFE, <FREE>
+
+Address class L_1	Address:[0400...23FF], length 2000, subclass of L_REGULAR
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...23FF], length 1FFE, <FREE>
+
+Address class L_REGULAR	Address:[0400...7FFF], length 7C00, subclass of L
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...7FFF], length 7BFE, <FREE>
+
+Address class X	Address:[0000...7FFF], length 8000
+	Address:[0000...03FF], length 0400, <FREE>
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...0402], length 0001, <RESERVED for mdl_code_prj_X_Segment, class X_OVLY>
+	Address:[0403...7FFF], length 7BFD, <FREE>
+
+Address class X_1	Address:[0400...23FF], length 2000, subclass of X_REGULAR
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...0402], length 0001, <RESERVED for mdl_code_prj_X_Segment, class X_OVLY>
+	Address:[0403...23FF], length 1FFD, <FREE>
+
+Address class X_REGULAR	Address:[0400...7FFF], length 7C00, subclass of X
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...0402], length 0001, <RESERVED for mdl_code_prj_X_Segment, class X_OVLY>
+	Address:[0403...7FFF], length 7BFD, <FREE>
+
+Address class Y	Address:[0000...BFFF], length C000
+	Address:[0000...009F], length 00A0, <FREE>
+	Address:[00A0...00A7], length 0008, <RESERVED for OVLY_ID_SEGMENT, class Y_OVLY_ID>
+	Address:[00A8...00B8], length 0011, <FREE>
+	Address:[00B9...00B9], length 0001, <RESERVED for OVL_UID_PRJ_ODT_PTR, class ODT_PTR_OVLY>
+	Address:[00BA...03FF], length 0346, <FREE>
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...040A], length 0009, <RESERVED for mdl_code_prj_MCT, class Y_OVLY>
+	Address:[040B...0412], length 0008, <RESERVED for mdl_code_prj_mif, class Y_OVLY>
+	Address:[0413...0413], length 0001, <RESERVED for mdl_code_prj_Y_Segment, class Y_OVLY>
+	Address:[0414...BFFF], length BBEC, <FREE>
+
+Address class Y_0	Address:[0040...03FE], length 03BF, subclass of Y
+	Address:[0040...009F], length 0060, <FREE>
+	Address:[00A0...00A7], length 0008, <RESERVED for OVLY_ID_SEGMENT, class Y_OVLY_ID>
+	Address:[00A8...00B8], length 0011, <FREE>
+	Address:[00B9...00B9], length 0001, <RESERVED for OVL_UID_PRJ_ODT_PTR, class ODT_PTR_OVLY>
+	Address:[00BA...03FE], length 0345, <FREE>
+
+Address class Y_1	Address:[0400...23FF], length 2000, subclass of Y_REGULAR
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...040A], length 0009, <RESERVED for mdl_code_prj_MCT, class Y_OVLY>
+	Address:[040B...0412], length 0008, <RESERVED for mdl_code_prj_mif, class Y_OVLY>
+	Address:[0413...0413], length 0001, <RESERVED for mdl_code_prj_Y_Segment, class Y_OVLY>
+	Address:[0414...23FF], length 1FEC, <FREE>
+
+Address class Y_1_ODT	Address:[00B9...00B9], length 0001, subclass of Y_ODT_PTR
+	Address:[00B9...00B9], length 0001, <RESERVED for OVL_UID_PRJ_ODT_PTR, class ODT_PTR_OVLY>
+
+Address class Y_ODT_PTR	Address:[00B8...00BB], length 0004, subclass of Y_0
+	Address:[00B8...00B8], length 0001, <FREE>
+	Address:[00B9...00B9], length 0001, <RESERVED for OVL_UID_PRJ_ODT_PTR, class ODT_PTR_OVLY>
+	Address:[00BA...00BB], length 0002, <FREE>
+
+Address class Y_OVLY_ID	Address:[00A0...00B3], length 0014, subclass of Y_0
+	Address:[00A0...00A7], length 0008, <RESERVED for OVLY_ID_SEGMENT, class Y_OVLY_ID>
+	Address:[00A8...00B3], length 000C, <FREE>
+
+Address class Y_REGULAR	Address:[0400...BFFF], length BC00, subclass of Y
+	Address:[0400...0401], length 0002, <RESERVED for OVL_UID_PRJ_MODULE_TABLE, class L_OVLY>
+	Address:[0402...040A], length 0009, <RESERVED for mdl_code_prj_MCT, class Y_OVLY>
+	Address:[040B...0412], length 0008, <RESERVED for mdl_code_prj_mif, class Y_OVLY>
+	Address:[0413...0413], length 0001, <RESERVED for mdl_code_prj_Y_Segment, class Y_OVLY>
+	Address:[0414...BFFF], length BBEC, <FREE>
+
+-----------------Module:  ovl_uid_prj_odt(Segment name)
+                OVL_UID_PRJ_ODT_PTR, address 00B9 ,length 0001, class ODT_PTR_OVLY
+           OVL_UID_PRJ_MODULE_TABLE, address 0400 ,length 0002, class     L_OVLY
+                    OVLY_ID_SEGMENT, address 00A0 ,length 0008, class  Y_OVLY_ID
+
+-----------------Module:  mdl_code_prj_os_interface(Segment name)
+                   mdl_code_prj_mif, address 040B ,length 0008, class     Y_OVLY
+                   mdl_code_prj_MCT, address 0402 ,length 0009, class     Y_OVLY
+
+-----------------Module:  mdl_code_prj_main(Segment name)
+             mdl_code_prj_Y_Segment, address 0413 ,length 0001, class     Y_OVLY
+             mdl_code_prj_X_Segment, address 0402 ,length 0001, class     X_OVLY
+         mdl_code_prj_main_GEN_0000, address 1800 ,length 0008, class  CODE_OVLY
+
+---------------SYMBOL(global symbols)							FILE						SEGMENT							CLASS		ADDRESS
+
+                    OVLY_ID_SEGMENT	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	               OVLY_ID_SEGMENT		        Y_OVLY_ID		00A0
+           OVL_UID_PRJ_MODULE_TABLE	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	      OVL_UID_PRJ_MODULE_TABLE		           L_OVLY		0400
+                OVL_UID_PRJ_ODT_PTR	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	           OVL_UID_PRJ_ODT_PTR		     ODT_PTR_OVLY		00B9
+              X_BY_mdl_code_prj_MIF	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_mif		           Y_OVLY		040B
+        X_S_mdl_code_prj_Background	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1803
+             X_S_mdl_code_prj_Brick	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1800
+             X_S_mdl_code_prj_Frame	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1801
+     X_S_mdl_code_prj_PostKickstart	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1807
+        X_S_mdl_code_prj_PostMalloc	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1805
+      X_S_mdl_code_prj_PreKickstart	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1806
+         X_S_mdl_code_prj_PreMalloc	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1804
+             X_S_mdl_code_prj_Timer	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1802
+                     __CLASS_E_CODE	                      CLINK RESERVED	                -----------			   -----------			3FFF
+                   __CLASS_E_CODE_0	                      CLINK RESERVED	                -----------			   -----------			17FF
+                   __CLASS_E_CODE_1	                      CLINK RESERVED	                -----------			   -----------			27FF
+                 __CLASS_E_CODE_1_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+            __CLASS_E_CODE_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			3FFF
+                   __CLASS_E_CODE_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+              __CLASS_E_CODE_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			3FFF
+ __CLASS_E_CODE_BIST_CRC_VALUES_ROM	                      CLINK RESERVED	                -----------			   -----------			E7FF
+          __CLASS_E_CODE_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			E0A9
+                  __CLASS_E_CODE_OS	                      CLINK RESERVED	                -----------			   -----------			17FF
+     __CLASS_E_CODE_OS_BOOT_PCM_ROM	                      CLINK RESERVED	                -----------			   -----------			D74F
+              __CLASS_E_CODE_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D5FF
+                __CLASS_E_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			27FF
+             __CLASS_E_CODE_PTE_ROM	                      CLINK RESERVED	                -----------			   -----------			DE0A
+             __CLASS_E_CODE_REGULAR	                      CLINK RESERVED	                -----------			   -----------			3FFF
+                 __CLASS_E_CODE_ROM	                      CLINK RESERVED	                -----------			   -----------			E7FF
+           __CLASS_E_CODE_SPARE_ROM	                      CLINK RESERVED	                -----------			   -----------			E7FD
+                        __CLASS_E_L	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                      __CLASS_E_L_0	                      CLINK RESERVED	                -----------			   -----------			03FE
+                      __CLASS_E_L_1	                      CLINK RESERVED	                -----------			   -----------			23FF
+                    __CLASS_E_L_1_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+               __CLASS_E_L_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                      __CLASS_E_L_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+                 __CLASS_E_L_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			7FFF
+             __CLASS_E_L_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			D32F
+                   __CLASS_E_L_HEAP	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                   __CLASS_E_L_NEAR	                      CLINK RESERVED	                -----------			   -----------			003F
+                __CLASS_E_L_NEAR_OS	                      CLINK RESERVED	                -----------			   -----------			001F
+                 __CLASS_E_L_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D30F
+                   __CLASS_E_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			23FF
+                __CLASS_E_L_REGULAR	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                    __CLASS_E_L_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FF
+             __CLASS_E_ODT_PTR_OVLY	                      CLINK RESERVED	                -----------			   -----------			00B9
+                   __CLASS_E_PERIPH	                      CLINK RESERVED	                -----------			   -----------			44FF
+                        __CLASS_E_X	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                      __CLASS_E_X_0	                      CLINK RESERVED	                -----------			   -----------			03FF
+                      __CLASS_E_X_1	                      CLINK RESERVED	                -----------			   -----------			23FF
+                    __CLASS_E_X_1_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+               __CLASS_E_X_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                      __CLASS_E_X_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+                 __CLASS_E_X_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			7FFF
+             __CLASS_E_X_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			D78B
+                   __CLASS_E_X_HEAP	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                   __CLASS_E_X_NEAR	                      CLINK RESERVED	                -----------			   -----------			003F
+                __CLASS_E_X_NEAR_OS	                      CLINK RESERVED	                -----------			   -----------			001F
+                 __CLASS_E_X_OS_RAM	                      CLINK RESERVED	                -----------			   -----------			03FF
+                 __CLASS_E_X_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D52F
+                   __CLASS_E_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			23FF
+                __CLASS_E_X_PTE_ROM	                      CLINK RESERVED	                -----------			   -----------			D551
+                __CLASS_E_X_REGULAR	                      CLINK RESERVED	                -----------			   -----------			7FFF
+                    __CLASS_E_X_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FF
+              __CLASS_E_X_SPARE_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FF
+                        __CLASS_E_Y	                      CLINK RESERVED	                -----------			   -----------			BFFF
+                      __CLASS_E_Y_0	                      CLINK RESERVED	                -----------			   -----------			03FE
+                      __CLASS_E_Y_1	                      CLINK RESERVED	                -----------			   -----------			23FF
+                    __CLASS_E_Y_1_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+               __CLASS_E_Y_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			BFFF
+                  __CLASS_E_Y_1_ODT	                      CLINK RESERVED	                -----------			   -----------			00B9
+                      __CLASS_E_Y_2	                      CLINK RESERVED	                -----------			   -----------			3FFF
+                 __CLASS_E_Y_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			BFFF
+                  __CLASS_E_Y_2_ODT	                      CLINK RESERVED	                -----------			   -----------			00BA
+                  __CLASS_E_Y_3_ODT	                      CLINK RESERVED	                -----------			   -----------			00BB
+                __CLASS_E_Y_DEC_ODT	                      CLINK RESERVED	                -----------			   -----------			00B8
+             __CLASS_E_Y_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FE
+               __CLASS_E_Y_GN_TABLE	                      CLINK RESERVED	                -----------			   -----------			03FF
+                   __CLASS_E_Y_HEAP	                      CLINK RESERVED	                -----------			   -----------			BFFF
+                   __CLASS_E_Y_NEAR	                      CLINK RESERVED	                -----------			   -----------			003F
+                __CLASS_E_Y_NEAR_OS	                      CLINK RESERVED	                -----------			   -----------			001F
+                __CLASS_E_Y_ODT_PTR	                      CLINK RESERVED	                -----------			   -----------			00BB
+          __CLASS_E_Y_OS_CC_GLOBALS	                      CLINK RESERVED	                -----------			   -----------			00C4
+                 __CLASS_E_Y_OS_RAM	                      CLINK RESERVED	                -----------			   -----------			03FE
+                 __CLASS_E_Y_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D7AC
+                   __CLASS_E_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			23FF
+                __CLASS_E_Y_OVLY_ID	                      CLINK RESERVED	                -----------			   -----------			00B3
+                __CLASS_E_Y_PTE_ROM	                      CLINK RESERVED	                -----------			   -----------			D7BC
+                __CLASS_E_Y_REGULAR	                      CLINK RESERVED	                -----------			   -----------			BFFF
+                    __CLASS_E_Y_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FF
+              __CLASS_E_Y_SPARE_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FF
+                     __CLASS_F_CODE	                      CLINK RESERVED	                -----------			   -----------			1800
+                   __CLASS_F_CODE_1	                      CLINK RESERVED	                -----------			   -----------			1800
+                __CLASS_F_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			1800
+             __CLASS_F_CODE_REGULAR	                      CLINK RESERVED	                -----------			   -----------			1800
+                        __CLASS_F_L	                      CLINK RESERVED	                -----------			   -----------			0400
+                      __CLASS_F_L_1	                      CLINK RESERVED	                -----------			   -----------			0400
+                   __CLASS_F_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			0400
+                __CLASS_F_L_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0400
+             __CLASS_F_ODT_PTR_OVLY	                      CLINK RESERVED	                -----------			   -----------			00B9
+                        __CLASS_F_X	                      CLINK RESERVED	                -----------			   -----------			0400
+                      __CLASS_F_X_1	                      CLINK RESERVED	                -----------			   -----------			0400
+                   __CLASS_F_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0400
+                __CLASS_F_X_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0400
+                        __CLASS_F_Y	                      CLINK RESERVED	                -----------			   -----------			00A0
+                      __CLASS_F_Y_0	                      CLINK RESERVED	                -----------			   -----------			00A0
+                      __CLASS_F_Y_1	                      CLINK RESERVED	                -----------			   -----------			0400
+                  __CLASS_F_Y_1_ODT	                      CLINK RESERVED	                -----------			   -----------			00B9
+                __CLASS_F_Y_ODT_PTR	                      CLINK RESERVED	                -----------			   -----------			00B9
+                 __CLASS_F_Y_OS_RAM	                      CLINK RESERVED	                -----------			   -----------			00A0
+                   __CLASS_F_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			0400
+                __CLASS_F_Y_OVLY_ID	                      CLINK RESERVED	                -----------			   -----------			00A0
+                __CLASS_F_Y_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0400
+                     __CLASS_L_CODE	                      CLINK RESERVED	                -----------			   -----------			1807
+                   __CLASS_L_CODE_1	                      CLINK RESERVED	                -----------			   -----------			1807
+                __CLASS_L_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			1807
+             __CLASS_L_CODE_REGULAR	                      CLINK RESERVED	                -----------			   -----------			1807
+                        __CLASS_L_L	                      CLINK RESERVED	                -----------			   -----------			0401
+                      __CLASS_L_L_1	                      CLINK RESERVED	                -----------			   -----------			0401
+                   __CLASS_L_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			0401
+                __CLASS_L_L_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0401
+             __CLASS_L_ODT_PTR_OVLY	                      CLINK RESERVED	                -----------			   -----------			00B9
+                        __CLASS_L_X	                      CLINK RESERVED	                -----------			   -----------			0402
+                      __CLASS_L_X_1	                      CLINK RESERVED	                -----------			   -----------			0402
+                   __CLASS_L_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0402
+                __CLASS_L_X_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0402
+                        __CLASS_L_Y	                      CLINK RESERVED	                -----------			   -----------			0413
+                      __CLASS_L_Y_0	                      CLINK RESERVED	                -----------			   -----------			00B9
+                      __CLASS_L_Y_1	                      CLINK RESERVED	                -----------			   -----------			0413
+                  __CLASS_L_Y_1_ODT	                      CLINK RESERVED	                -----------			   -----------			00B9
+                __CLASS_L_Y_ODT_PTR	                      CLINK RESERVED	                -----------			   -----------			00B9
+                 __CLASS_L_Y_OS_RAM	                      CLINK RESERVED	                -----------			   -----------			00B9
+                   __CLASS_L_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			0413
+                __CLASS_L_Y_OVLY_ID	                      CLINK RESERVED	                -----------			   -----------			00A7
+                __CLASS_L_Y_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0413
+                     __CLASS_S_CODE	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_S_CODE_0	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_S_CODE_1	                      CLINK RESERVED	                -----------			   -----------			1800
+                 __CLASS_S_CODE_1_2	                      CLINK RESERVED	                -----------			   -----------			1800
+            __CLASS_S_CODE_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			1800
+                   __CLASS_S_CODE_2	                      CLINK RESERVED	                -----------			   -----------			2800
+              __CLASS_S_CODE_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			2800
+ __CLASS_S_CODE_BIST_CRC_VALUES_ROM	                      CLINK RESERVED	                -----------			   -----------			E7FE
+          __CLASS_S_CODE_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			DE0B
+                  __CLASS_S_CODE_OS	                      CLINK RESERVED	                -----------			   -----------			0000
+     __CLASS_S_CODE_OS_BOOT_PCM_ROM	                      CLINK RESERVED	                -----------			   -----------			D600
+              __CLASS_S_CODE_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D000
+                __CLASS_S_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			1800
+             __CLASS_S_CODE_PTE_ROM	                      CLINK RESERVED	                -----------			   -----------			D750
+             __CLASS_S_CODE_REGULAR	                      CLINK RESERVED	                -----------			   -----------			1800
+                 __CLASS_S_CODE_ROM	                      CLINK RESERVED	                -----------			   -----------			D000
+           __CLASS_S_CODE_SPARE_ROM	                      CLINK RESERVED	                -----------			   -----------			E0AA
+                        __CLASS_S_L	                      CLINK RESERVED	                -----------			   -----------			0000
+                      __CLASS_S_L_0	                      CLINK RESERVED	                -----------			   -----------			0040
+                      __CLASS_S_L_1	                      CLINK RESERVED	                -----------			   -----------			0400
+                    __CLASS_S_L_1_2	                      CLINK RESERVED	                -----------			   -----------			0400
+               __CLASS_S_L_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			0400
+                      __CLASS_S_L_2	                      CLINK RESERVED	                -----------			   -----------			2400
+                 __CLASS_S_L_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			2400
+             __CLASS_S_L_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			D310
+                   __CLASS_S_L_HEAP	                      CLINK RESERVED	                -----------			   -----------			4000
+                   __CLASS_S_L_NEAR	                      CLINK RESERVED	                -----------			   -----------			0020
+                __CLASS_S_L_NEAR_OS	                      CLINK RESERVED	                -----------			   -----------			0000
+                 __CLASS_S_L_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D000
+                   __CLASS_S_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			0400
+                __CLASS_S_L_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0400
+                    __CLASS_S_L_ROM	                      CLINK RESERVED	                -----------			   -----------			D000
+             __CLASS_S_ODT_PTR_OVLY	                      CLINK RESERVED	                -----------			   -----------			00B9
+                   __CLASS_S_PERIPH	                      CLINK RESERVED	                -----------			   -----------			4400
+                        __CLASS_S_X	                      CLINK RESERVED	                -----------			   -----------			0000
+                      __CLASS_S_X_0	                      CLINK RESERVED	                -----------			   -----------			0040
+                      __CLASS_S_X_1	                      CLINK RESERVED	                -----------			   -----------			0400
+                    __CLASS_S_X_1_2	                      CLINK RESERVED	                -----------			   -----------			0400
+               __CLASS_S_X_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			0400
+                      __CLASS_S_X_2	                      CLINK RESERVED	                -----------			   -----------			2400
+                 __CLASS_S_X_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			2400
+             __CLASS_S_X_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			D552
+                   __CLASS_S_X_HEAP	                      CLINK RESERVED	                -----------			   -----------			4000
+                   __CLASS_S_X_NEAR	                      CLINK RESERVED	                -----------			   -----------			0020
+                __CLASS_S_X_NEAR_OS	                      CLINK RESERVED	                -----------			   -----------			0000
+                 __CLASS_S_X_OS_RAM	                      CLINK RESERVED	                -----------			   -----------			0040
+                 __CLASS_S_X_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D330
+                   __CLASS_S_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0400
+                __CLASS_S_X_PTE_ROM	                      CLINK RESERVED	                -----------			   -----------			D530
+                __CLASS_S_X_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0400
+                    __CLASS_S_X_ROM	                      CLINK RESERVED	                -----------			   -----------			D000
+              __CLASS_S_X_SPARE_ROM	                      CLINK RESERVED	                -----------			   -----------			D78C
+                        __CLASS_S_Y	                      CLINK RESERVED	                -----------			   -----------			0000
+                      __CLASS_S_Y_0	                      CLINK RESERVED	                -----------			   -----------			0040
+                      __CLASS_S_Y_1	                      CLINK RESERVED	                -----------			   -----------			0400
+                    __CLASS_S_Y_1_2	                      CLINK RESERVED	                -----------			   -----------			0400
+               __CLASS_S_Y_1_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			0400
+                  __CLASS_S_Y_1_ODT	                      CLINK RESERVED	                -----------			   -----------			00B9
+                      __CLASS_S_Y_2	                      CLINK RESERVED	                -----------			   -----------			2400
+                 __CLASS_S_Y_2_HEAP	                      CLINK RESERVED	                -----------			   -----------			2400
+                  __CLASS_S_Y_2_ODT	                      CLINK RESERVED	                -----------			   -----------			00BA
+                  __CLASS_S_Y_3_ODT	                      CLINK RESERVED	                -----------			   -----------			00BB
+                __CLASS_S_Y_DEC_ODT	                      CLINK RESERVED	                -----------			   -----------			00B8
+             __CLASS_S_Y_DSPLIB_ROM	                      CLINK RESERVED	                -----------			   -----------			D7BD
+               __CLASS_S_Y_GN_TABLE	                      CLINK RESERVED	                -----------			   -----------			03FF
+                   __CLASS_S_Y_HEAP	                      CLINK RESERVED	                -----------			   -----------			4000
+                   __CLASS_S_Y_NEAR	                      CLINK RESERVED	                -----------			   -----------			0020
+                __CLASS_S_Y_NEAR_OS	                      CLINK RESERVED	                -----------			   -----------			0000
+                __CLASS_S_Y_ODT_PTR	                      CLINK RESERVED	                -----------			   -----------			00B8
+          __CLASS_S_Y_OS_CC_GLOBALS	                      CLINK RESERVED	                -----------			   -----------			00C0
+                 __CLASS_S_Y_OS_RAM	                      CLINK RESERVED	                -----------			   -----------			0040
+                 __CLASS_S_Y_OS_ROM	                      CLINK RESERVED	                -----------			   -----------			D330
+                   __CLASS_S_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			0400
+                __CLASS_S_Y_OVLY_ID	                      CLINK RESERVED	                -----------			   -----------			00A0
+                __CLASS_S_Y_PTE_ROM	                      CLINK RESERVED	                -----------			   -----------			D7AD
+                __CLASS_S_Y_REGULAR	                      CLINK RESERVED	                -----------			   -----------			0400
+                    __CLASS_S_Y_ROM	                      CLINK RESERVED	                -----------			   -----------			D000
+              __CLASS_S_Y_SPARE_ROM	                      CLINK RESERVED	                -----------			   -----------			D7FF
+                             __INIT	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	                        __INIT		             CODE		0000
+              mdl_code_prj_HOST_MCV	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_Y_Segment		           Y_OVLY		0413
+                   mdl_code_prj_MCT	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_MCT		           Y_OVLY		0402
+              mdl_code_prj_MODULEID	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	                -----------			   -----------			0074
+             mdl_code_prj_X_Segment	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_X_Segment		           X_OVLY		0402
+             mdl_code_prj_Y_Segment	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_Y_Segment		           Y_OVLY		0413
+         mdl_code_prj_main_GEN_0000	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1800
+                   mdl_code_prj_mif	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_mif		           Y_OVLY		040B
+
+---------------SYMBOL(relocation symbols)						FILE						SEGMENT							CLASS		ADDRESS  
+
+                    OVLY_ID_SEGMENT	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	               OVLY_ID_SEGMENT		        Y_OVLY_ID		00A0
+           OVL_UID_PRJ_MODULE_TABLE	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	      OVL_UID_PRJ_MODULE_TABLE		           L_OVLY		0400
+                OVL_UID_PRJ_ODT_PTR	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	           OVL_UID_PRJ_ODT_PTR		     ODT_PTR_OVLY		00B9
+                       X_BL_MODULES	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	      OVL_UID_PRJ_MODULE_TABLE		           L_OVLY		0400
+___SegStart_L_OVLY_OVL_UID_PRJ_MODULE_TABLE	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	      OVL_UID_PRJ_MODULE_TABLE		           L_OVLY		0400
+___SegStart_ODT_PTR_OVLY_OVL_UID_PRJ_ODT_PTR	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	           OVL_UID_PRJ_ODT_PTR		     ODT_PTR_OVLY		00B9
+___SegStart_Y_OVLY_ID_OVLY_ID_SEGMENT	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	               OVLY_ID_SEGMENT		        Y_OVLY_ID		00A0
+                   _ovly_version_h_	D:/ra207_2015/aadsp2/ovl_uid_prj/output/a1_V01_a_cfg0/gen/src/ovl_uid_prj_odt	      OVL_UID_PRJ_MODULE_TABLE		           L_OVLY		0402
+              X_BY_mdl_code_prj_MIF	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_mif		           Y_OVLY		040B
+___SegStart_Y_OVLY_mdl_code_prj_MCT	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_MCT		           Y_OVLY		0402
+___SegStart_Y_OVLY_mdl_code_prj_mif	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_mif		           Y_OVLY		040B
+                                mct	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_MCT		           Y_OVLY		0402
+                   mdl_code_prj_MCT	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_MCT		           Y_OVLY		0402
+                   mdl_code_prj_mif	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_os_interface	              mdl_code_prj_mif		           Y_OVLY		040B
+        X_S_mdl_code_prj_Background	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1803
+   X_S_mdl_code_prj_Background_Done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1803
+             X_S_mdl_code_prj_Brick	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1800
+        X_S_mdl_code_prj_Brick_Done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1800
+             X_S_mdl_code_prj_Frame	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1801
+        X_S_mdl_code_prj_Frame_done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1801
+     X_S_mdl_code_prj_PostKickstart	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1807
+X_S_mdl_code_prj_PostKickstart_done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1807
+        X_S_mdl_code_prj_PostMalloc	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1805
+   X_S_mdl_code_prj_PostMalloc_Done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1805
+      X_S_mdl_code_prj_PreKickstart	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1806
+ X_S_mdl_code_prj_PreKickstart_done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1806
+         X_S_mdl_code_prj_PreMalloc	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1804
+    X_S_mdl_code_prj_PreMalloc_Done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1804
+             X_S_mdl_code_prj_Timer	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1802
+        X_S_mdl_code_prj_Timer_done	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	    mdl_code_prj_main_GEN_0000		        CODE_OVLY		1802
+___SegStart_X_OVLY_mdl_code_prj_X_Segment	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_X_Segment		           X_OVLY		0402
+___SegStart_Y_OVLY_mdl_code_prj_Y_Segment	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_Y_Segment		           Y_OVLY		0413
+        _framework_interface_asm_h_	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	                        __INIT		             CODE		0000
+                          _meter_h_	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	                        __INIT		             CODE		0000
+                       _response_h_	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	                        __INIT		             CODE		0000
+              mdl_code_prj_HOST_MCV	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_Y_Segment		           Y_OVLY		0413
+       mdl_code_prj_HOST_MCV.enable	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_Y_Segment		           Y_OVLY		0413
+                   mdl_code_prj_MCV	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_X_Segment		           X_OVLY		0402
+            mdl_code_prj_MCV.enable	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_X_Segment		           X_OVLY		0402
+               mdl_code_prj_MCV_end	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_X_Segment		           X_OVLY		0403
+             mdl_code_prj_X_Segment	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_X_Segment		           X_OVLY		0402
+             mdl_code_prj_Y_Segment	D:/ra207_2015/aadsp2/mdl_code_prj/output/mdl_code_prj_1_0_0.olib|src\mdl_code_prj_main	        mdl_code_prj_Y_Segment		           Y_OVLY		0413
+
+----------- module ovl_uid_prj_odt -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                         AAC_OVLYID		ABSOLUTE		0000
+                         AC3_OVLYID		ABSOLUTE		0000
+                          AM_OVLYID		ABSOLUTE		0000
+                         APP_OVLYID		ABSOLUTE		0000
+                         CBE_OVLYID		ABSOLUTE		0000
+                          CC_OVLYID		ABSOLUTE		0000
+                CIRCLE_SURR2_OVLYID		ABSOLUTE		0000
+                       COMS2_OVLYID		ABSOLUTE		0000
+                    CROSSBAR_OVLYID		ABSOLUTE		0000
+                  CUSTOM_DEC_OVLYID		ABSOLUTE		0000
+                  CUSTOM_MPM_OVLYID		ABSOLUTE		0000
+                  CUSTOM_PPM_OVLYID		ABSOLUTE		0000
+                  CUSTOM_VPM_OVLYID		ABSOLUTE		0000
+                         CVT_OVLYID		ABSOLUTE		0000
+                 DEFAULT_DEC_OVLYID		ABSOLUTE		0000
+                 DEFAULT_MPM_OVLYID		ABSOLUTE		0000
+                 DEFAULT_PPM_OVLYID		ABSOLUTE		0000
+                 DEFAULT_VPM_OVLYID		ABSOLUTE		0000
+                         DH2_OVLYID		ABSOLUTE		0000
+                          DH_OVLYID		ABSOLUTE		0000
+                         DMA_OVLYID		ABSOLUTE		0000
+                    DTS_NEO6_OVLYID		ABSOLUTE		0000
+                         DTS_OVLYID		ABSOLUTE		0000
+                        DVS2_OVLYID		ABSOLUTE		0000
+                         DVS_OVLYID		ABSOLUTE		0000
+                   FIVETOTWO_OVLYID		ABSOLUTE		0000
+                    FLASHMGR_OVLYID		ABSOLUTE		0000
+                    FLASH_RT_OVLYID		ABSOLUTE		0000
+                        HDCD_OVLYID		ABSOLUTE		0000
+                         IRC_OVLYID		ABSOLUTE		0000
+                      LOGIC7_OVLYID		ABSOLUTE		0000
+                         MPG_OVLYID		ABSOLUTE		0000
+                 NEURAL_SURR_OVLYID		ABSOLUTE		0000
+                          OS_OVLYID		ABSOLUTE		0000
+                    OVLY_BUILD_DATE		ABSOLUTE		18111901
+                        OVLY_ENV_ID		ABSOLUTE		48020000
+                    OVLY_ID_SEGMENT		RELOCATABLE		00A0
+                 OVLY_TOOLS_VERSION		ABSOLUTE		BD020701
+                       OVLY_VERSION		ABSOLUTE		0000
+           OVL_UID_PRJ_MODULE_TABLE		RELOCATABLE		0400
+                OVL_UID_PRJ_ODT_PTR		RELOCATABLE		00B9
+                         PCM_OVLYID		ABSOLUTE		0000
+                        PL2X_OVLYID		ABSOLUTE		0000
+                         PL2_OVLYID		ABSOLUTE		0000
+                   PL2_SHARP_OVLYID		ABSOLUTE		0000
+                         SBC_OVLYID		ABSOLUTE		0000
+                        SGEN_OVLYID		ABSOLUTE		0000
+                         SPP_OVLYID		ABSOLUTE		0000
+                          SP_OVLYID		ABSOLUTE		0000
+                       SRSHL_OVLYID		ABSOLUTE		0000
+                    SRSMAXV2_OVLYID		ABSOLUTE		0000
+                         THX_OVLYID		ABSOLUTE		0000
+                     THX_SPP_OVLYID		ABSOLUTE		0000
+                     TRUBASS_OVLYID		ABSOLUTE		0000
+                        TSXT_OVLYID		ABSOLUTE		0000
+                        VMAX_OVLYID		ABSOLUTE		0000
+                      WMAPRO_OVLYID		ABSOLUTE		0000
+                       X_BL_MODULES		RELOCATABLE		0400
+                     _MEM_MODEL_ID_		ABSOLUTE		0000
+                        _OVLY_SLOT_		ABSOLUTE		0001
+                         _WHICH_OS_		ABSOLUTE		0000
+                   __CASM_VERSION__		ABSOLUTE		0000
+                    __CHIP_REQUIRED		ABSOLUTE		0000
+___SegStart_L_OVLY_OVL_UID_PRJ_MODULE_TABLE		RELOCATABLE		0400
+___SegStart_ODT_PTR_OVLY_OVL_UID_PRJ_ODT_PTR		RELOCATABLE		00B9
+___SegStart_Y_OVLY_ID_OVLY_ID_SEGMENT		RELOCATABLE		00A0
+                   _ovly_version_h_		RELOCATABLE		0402
+
+----------- module mdl_code_prj_os_interface -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                           MCT_SIZE		ABSOLUTE		0009
+                           MIF_SIZE		ABSOLUTE		0008
+              X_BY_mdl_code_prj_MIF		RELOCATABLE		040B
+                   __CASM_VERSION__		ABSOLUTE		0000
+___SegStart_Y_OVLY_mdl_code_prj_MCT		RELOCATABLE		0402
+___SegStart_Y_OVLY_mdl_code_prj_mif		RELOCATABLE		040B
+                                mct		RELOCATABLE		0402
+                   mdl_code_prj_MCT		RELOCATABLE		0402
+              mdl_code_prj_MODULEID		ABSOLUTE		0074
+                   mdl_code_prj_mif		RELOCATABLE		040B
+
+----------- module mdl_code_prj_main -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                         BRICK_SIZE		ABSOLUTE		0010
+MAX_HARDWARE_DSP_CHANNELS_FOR_ANY_CIRRUS_PLATFORM		ABSOLUTE		0010
+     STRUCTURE_INITIALIZATION_STRNG		ABSOLUTE		0000
+        X_S_mdl_code_prj_Background		RELOCATABLE		1803
+   X_S_mdl_code_prj_Background_Done		RELOCATABLE		1803
+             X_S_mdl_code_prj_Brick		RELOCATABLE		1800
+        X_S_mdl_code_prj_Brick_Done		RELOCATABLE		1800
+             X_S_mdl_code_prj_Frame		RELOCATABLE		1801
+        X_S_mdl_code_prj_Frame_done		RELOCATABLE		1801
+     X_S_mdl_code_prj_PostKickstart		RELOCATABLE		1807
+X_S_mdl_code_prj_PostKickstart_done		RELOCATABLE		1807
+        X_S_mdl_code_prj_PostMalloc		RELOCATABLE		1805
+   X_S_mdl_code_prj_PostMalloc_Done		RELOCATABLE		1805
+      X_S_mdl_code_prj_PreKickstart		RELOCATABLE		1806
+ X_S_mdl_code_prj_PreKickstart_done		RELOCATABLE		1806
+         X_S_mdl_code_prj_PreMalloc		RELOCATABLE		1804
+    X_S_mdl_code_prj_PreMalloc_Done		RELOCATABLE		1804
+             X_S_mdl_code_prj_Timer		RELOCATABLE		1802
+        X_S_mdl_code_prj_Timer_done		RELOCATABLE		1802
+                   __CASM_VERSION__		ABSOLUTE		0000
+___SegStart_X_OVLY_mdl_code_prj_X_Segment		RELOCATABLE		0402
+___SegStart_Y_OVLY_mdl_code_prj_Y_Segment		RELOCATABLE		0413
+        _framework_interface_asm_h_		RELOCATABLE		0000
+                          _meter_h_		RELOCATABLE		0000
+                       _response_h_		RELOCATABLE		0000
+                          isDefined		ABSOLUTE		0001
+              mdl_code_prj_HOST_MCV		RELOCATABLE		0413
+       mdl_code_prj_HOST_MCV.enable		RELOCATABLE		0413
+                   mdl_code_prj_MCV		RELOCATABLE		0402
+            mdl_code_prj_MCV.enable		RELOCATABLE		0402
+               mdl_code_prj_MCV_end		RELOCATABLE		0403
+             mdl_code_prj_X_Segment		RELOCATABLE		0402
+             mdl_code_prj_Y_Segment		RELOCATABLE		0413

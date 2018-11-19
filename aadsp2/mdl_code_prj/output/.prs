@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1542632504880">
+	<dependencies>
+		<source_file last_build_time="1542632504461" path="src/mdl_code_prj_main.a">
+			<dependency>C:/CirrusDSP/include/dsplib/os_asm.h</dependency>
+			<dependency>../gen/inc/mdl_code_prj_mcv.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/meter_asm.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/response_asm.h</dependency>
+		</source_file>
+		<source_file last_build_time="1542632503996" path="src/mdl_code_prj_os_interface.a">
+			<dependency>C:/CirrusDSP/CS48L2X/common/inc/macros.h</dependency>
+			<dependency>../gen/inc/mdl_code_prj_module.h</dependency>
+		</source_file>
+	</dependencies>
+</settings>
