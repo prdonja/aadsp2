@@ -1,0 +1,138 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file lesson01Introduction.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description: introduction
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				_lesson01Introduction_a_
+15    						
+16    	 0000					.public X_S_Introduction
+17    							
+18    						lesson01_Introduction_code    .code_ovly
+18     >> start of macro: .code_ovly
+1+    									seg_single lesson01_Introduction_code, "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson01_Introduction_code" != "" ) & defined( ___SegStart_CODE_lesson01_Introduction_code )
+2+    						lesson01_Introduction_code    segment
+3+    						  .else
+4+    						lesson01_Introduction_code    segment "CODE_OVLY"
+5+    							.if "lesson01_Introduction_code" != ""
+6+    	 0000				___SegStart_CODE_lesson01_Introduction_code
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+19    						
+20    						################################################################################
+21    						
+22    						################################################################################
+23    						##*/**
+24    						##** @Author  Acanski Milan
+25    						##** @Date 24. September 2008.
+26    						##**
+27    						##** Function:
+28    						##** X_S_Introduction
+29    						##**
+30    						##** @param - none
+31    						##**
+32    						##** @return - nothing
+33    						##**
+34    						##** Trashes: -
+35    						##** Comment: -
+36    						##**
+37    						##** E-mail: milan.acanski@rt-sp.com
+38    						##**/
+39    						##*void _S_Introduction()
+40    						##*{
+41    						##*
+42    						##*}
+43    						################################################################################
+44    	 0000				X_S_Introduction:
+45    						#-------------------------------------------------------------------------------
+46    						#
+47    						#           1. Coyote 32-bit DSP core is a fixed point, fully programmable digital
+48    						#              signal processor
+49    						#
+50    						#           2. The core consists of a program control unit, parallel Address
+51    						#              Generation Units (AGUs) and parallel Data Paths
+52    						#
+53    						#           3. AGUs contain twelve 16-bit registers for address generation (i0 - i11)
+54    						#              and twelve 16-bit registers (nm0-nm11) that work in conjunction with
+55    						#              the index registers to provide different addressing modes.
+56    						#              (i8, i9, ..., i11 and nm8, nm9, ..., nm11 are used by OS and they can
+57    						#              not be used in application development). Using nm registers one can
+58    						#              configure AHU to update index registers using one of following types of
+59    						#              addressing:
+60    						#                           - Linear
+61    						#                           - Reverse Binary
+62    						#                           - Modulo
+63    						#
+64    						#           4. Each data path has four 32-bit general-purpose registers and four 72-bit
+65    						#              accumulators (eight each, total).
+66    						#
+67    						#              Accumulators:                    a0, a1, a2, a3
+68    						#                                               b0, b1, b2, b3
+69    						#
+70    						#              general-purpose registers:       x0, x1, x2, x3
+71    						#                                               y0, y1, y2, y3
+72    						#              Each 72-bit accumulator is the concatenation of three registers:
+73    						#              7      0  31                              0  31                              0
+74    						#              gggggggg   hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh   llllllllllllllllllllllllllllllll
+75    						#                Guard                High                              Low
+76    						#
+77    						#
+78    						#           5. The data representation used in this processor is the two's complement
+79    						#              fractional notation
+80    						#
+81    						#           6. It supports up to Eight nested hardware loops (some of them are
+82    						#              reserved by OS - the number of reserved depends on OS and it can be
+83    						#              from one to four).
+84    						#
+85    						#           7. The subroutine stack is used to store the return PC for subroutine calls. It is
+86    						#              16-bits wide and implemented as a 16-entry, circular buffer with overflow and
+87    						#              underflow interrupts
+88    						#
+89    						#           8. The LogExp peripheral implements four primitive operations that may be used to
+90    						#              approximate logarithm, divide, power, square root and other mathematical functions.
+91    						#              These functions can be accessed by writing a command using the address range
+92    						#              0xD000-0xDFFF with the EXT instruction, which supplies 64-bit data.
+93    						#-------------------------------------------------------------------------------
+94    	 0000				Introduction_End:
+95    	 0000	 81880000	    ret
+96    						################################################################################
+97    						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+Introduction_End                                                                			  Unused Relocatable        lesson01_Introduction_code:0000H
+X_S_Introduction                                                                			  Public Relocatable       lesson01_Introduction_code:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_lesson01_Introduction_code                                     			  Unused Relocatable        lesson01_Introduction_code:0000H
+_lesson01Introduction_a_                                                        			  Unused Relocatable        __INIT:0000H
+lesson01_Introduction_code                                                      			  Unused Relocatable        lesson01_Introduction_code:0000H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0001H	 lesson01_Introduction_code              			 CODE_OVLY                               

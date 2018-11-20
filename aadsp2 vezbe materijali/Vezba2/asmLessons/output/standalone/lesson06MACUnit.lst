@@ -1,0 +1,119 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file lesson06MACUnit.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description: MAC unit instructions
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				_lesson06MACUnit_a_
+15    						
+16    	 0000					.public X_S_MACInstructions
+17    						
+18    						lesson06MACUnit_code    .code_ovly
+18     >> start of macro: .code_ovly
+1+    									seg_single lesson06MACUnit_code, "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson06MACUnit_code" != "" ) & defined( ___SegStart_CODE_lesson06MACUnit_code )
+2+    						lesson06MACUnit_code    segment
+3+    						  .else
+4+    						lesson06MACUnit_code    segment "CODE_OVLY"
+5+    							.if "lesson06MACUnit_code" != ""
+6+    	 0000				___SegStart_CODE_lesson06MACUnit_code
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+19    						
+20    						################################################################################
+21    						
+22    						################################################################################
+23    						##*/**
+24    						##** @Author  Milan Acanski
+25    						##** @Date 21. December 2008.
+26    						##**
+27    						##** Function:
+28    						##** X_S_MACInstructions
+29    						##**
+30    						##** @param - none
+31    						##**
+32    						##** @return - nothing
+33    						##**
+34    						##** Trashes: a1, b0, b2, b3, x0, x1, x3, y0, y1, y3
+35    						##** Comment: Examples of single MAC instructions
+36    						##**
+37    						##** E-mail: milan.acanski@rt-sp.com
+38    						##**/
+39    						##*void X_S_MACInstructions()
+40    						##*{
+41    						##*
+42    						##*}
+43    						################################################################################
+44    	 0000				X_S_MACInstructions:
+45    						    #---------------------------------------------------------------------------
+46    						    # Real Multiply, Multiply and Accumulate
+47    	 0000	 805A4000	    ufixed16(x0) = (0x4000)             #<--| x0 = 0.5
+48    	 0001	 835A2000	    ufixed16(x3) = (0x2000)             #<--| x3 = 0.25
+49    	 0002	 877AC000	    fixed16(y3)  = (0xc000)             #<--| y3 = -0.5
+50    	 0003	 847AE000	    fixed16(y0)  = (0xe000)             #<--| y0 = -0.25
+51    	 0004	 87194141	    AnyReg(x1, y3), (y1, y0)
+52    						
+53    	 0005	 00002181	    a1 = x0*x3                          #<--| a1 = 0x00.10000000.00000000 = 0.125
+54    						
+55    	 0006	 000023E7	    b3 = x3*(unsigned)y3                #<--| b3 = 0x00.30000000.00000000 = 0.375
+56    						                                        #^  | unsigned value of y3 means that MSB bit will not
+57    						                                        #|  | be treat as sign bit - so 0xc0000000 is 1.5 in fixed point
+58    						                                        #|__| number representation (0xc0000000/2^31 = 3221225472/2^31 = 1.5)
+59    						
+60    	 0007	 0000218F	    b3 += x0*x3                         #<--| b3 = 0.375 + 0.5*0.25 = 0.5 = 0x00.40000000.00000000
+61    						
+62    	 0008	 00002199	    a1 -= x0*x3                         #<--| a1 = 0.125 - 0.5*0.25 = 0 = 0x00.00000000.00000000
+63    						
+64    	 0009	 00002406	    b2 = x0*y0                          #<--| b2 = 0.5 * (-0.25) = -0.125 = 0xff.f0000000.00000000
+65    						
+66    	 000A	 00002AA4	    b0 = (unsigned)x1*(unsigned)y1      #<--| b0 = |-0.5] * |-0.25| = 1.5 * 1.75 = 2.625 = 0x01.50000000.00000000
+67    						    #---------------------------------------------------------------------------
+68    						
+69    						
+70    						    #---------------------------------------------------------------------------
+71    						    # Multiply by One with Optional Accumulate
+72    	 000B	 00002867	    b3 = +x3                            #<--| b3 = 1 * 0.25 = 0.25 = 0x00.20000000.00000000
+73    	 000C	 0000281F	    b3 -= x0                            #<--| b3 = 0.25 - 1*0.5 = -0.25 = 0xff.e0000000.00000000
+74    						    #---------------------------------------------------------------------------
+75    	 000D				MACInstructions_End:
+76    	 000D	 81880000	    ret
+77    						################################################################################
+78    						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+MACInstructions_End                                                             			  Unused Relocatable        lesson06MACUnit_code:000DH
+X_S_MACInstructions                                                             			  Public Relocatable       lesson06MACUnit_code:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_lesson06MACUnit_code                                           			  Unused Relocatable        lesson06MACUnit_code:0000H
+_lesson06MACUnit_a_                                                             			  Unused Relocatable        __INIT:0000H
+lesson06MACUnit_code                                                            			  Unused Relocatable        lesson06MACUnit_code:0000H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+000EH	 lesson06MACUnit_code                    			 CODE_OVLY                               

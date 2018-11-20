@@ -1,0 +1,206 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file lesson02SRSUnit.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description: SRS unit
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				_lesson02SRSUnit_a_
+15    						
+16    	 0000					.public X_S_SRSUnit
+17    						
+18    						lesson02SRSUnit_code    .code_ovly
+18     >> start of macro: .code_ovly
+1+    									seg_single lesson02SRSUnit_code, "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson02SRSUnit_code" != "" ) & defined( ___SegStart_CODE_lesson02SRSUnit_code )
+2+    						lesson02SRSUnit_code    segment
+3+    						  .else
+4+    						lesson02SRSUnit_code    segment "CODE_OVLY"
+5+    							.if "lesson02SRSUnit_code" != ""
+6+    	 0000				___SegStart_CODE_lesson02SRSUnit_code
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+19    						
+20    						################################################################################
+21    						
+22    						################################################################################
+23    						##*/**
+24    						##** @Author  Milan Acanski
+25    						##** @Date 24. November 2008.
+26    						##**
+27    						##** Function:
+28    						##** X_S_SRSUnit
+29    						##**
+30    						##** @param - none
+31    						##**
+32    						##** @return - nothing
+33    						##**
+34    						##** Trashes: a0, x0, x1, x2, x3, y0
+35    						##** Comment: Show examples of operations performed by SRS unit.
+36    						##**
+37    						##** E-mail: milan.acanski@rt-sp.com
+38    						##**/
+39    						##*void X_S_SRSUnit()
+40    						##*{
+41    						##*
+42    						##*}
+43    						################################################################################
+44    	 0000				X_S_SRSUnit:
+45    						    #---------------------------------------------------------------------------
+46    						    # Saturation examples
+47    						
+48    						    # Example 1.
+49    	 0000	 885AC000	    ufixed16(a0) = (0xc000)         #<--| Set a0 t0 0x00.C0000000.00000000 (1.5)
+50    						
+51    	 0001	 48407FFF	    x0 = a0                         #<--| a0 is saturated to 0x7fffffff (0.99999999953) and moved to x0
+52    						
+53    	 0002	 04587FFF	    y0 = a0h                        #<--| if only high or low part of accumulator
+54    						                                    #^  | is moved to the X oy Y data bus
+55    						                                    #^__| saturation will not occur (y0 = -0.5).
+56    						    # Example 2.
+57    	 0003	 A04A0080	    a0g = (0x80)                    #<--|
+58    	 0004	 985AC000	    ufixed16(a0h) = (0xc000)        #^__| Set a0 t0 0x08.C0000000.00000000 (-254.5)
+59    						
+60    	 0005	 48407FFF	    x0 = a0                         #<--| a0 is saturated to 0x80000000 (-1.0)and moved to x0
+61    						
+62    	 0006	 04587FFF	    y0 = a0h                        #<--| if only high or low part of accumulator
+63    						                                    #^  | is moved to the X oy Y data bus
+64    						                                    #^__| saturation will not occur (y0 = -0.5).
+65    						    # Example 3.
+66    	 0007	 886AFFFF	    halfword(a0) = (-1)             #<--| Set a0 t0 0xff.ffffffff.00000000 (-4.65661287307739257813e-10)
+67    						
+68    	 0008	 48407FFF	    x0 = a0                         #<--| x0 is 0xffffffff (-4.7e-10) (a0 not saturated)
+69    						
+70    	 0009	 04587FFF	    y0 = a0h                        #<--| if only high or low part of accumulator
+71    						                                    #^  | is moved to the X oy Y data bus
+72    						                                    #^__| saturation will not occur (y0 = -4.7e-10).
+73    						    #---------------------------------------------------------------------------
+74    						
+75    						
+76    						
+77    						    #---------------------------------------------------------------------------
+78    						    # Rounding examples
+79    						
+80    						    # Example 1.
+81    	 000A	 884A0001	    uhalfword(a0) = (1)             #<--|
+82    	 000B	 905A8000	    ufixed16(a0l) = (0x8000)        #^__| Set a0 to 0x00.00000001.80000000
+83    						
+84    	 000C	 83AA0000	    mr_sr = (0x0)                   #<--| Set roudning mode to "truncate"
+85    	 000D	 48407FFF	    x0 = a0                         #<--| x0 is 0x00000001
+86    						
+87    	 000E	 83AA0004	    mr_sr = (0x4)                   #<--| Set roudning mode to "add 0.5 and truncate"
+88    	 000F	 48417FFF	    x1 = a0                         #<--| x0 is 0x00000002
+89    						
+90    	 0010	 83AA0008	    mr_sr = (0x8)                   #<--| Set roudning mode to "round to zero"
+91    	 0011	 48427FFF	    x2 = a0                         #<--| x0 is 0x00000001
+92    						
+93    	 0012	 83AA000C	    mr_sr = (0xC)                   #<--| Set roudning mode to "Dither"
+94    	 0013	 48437FFF	    x3 = a0                         #<--| x0 is 0x00000001 or 0x00000002
+95    						
+96    						    # Example 2.
+97    	 0014	 887A8000	    fixed16(a0) = (0x8000)          #<--|
+98    	 0015	 904A0001	    uhalfword(a0l) = (1)            #^__| Set a0 to 0xff.80000000.00000001
+99    						
+100   	 0016	 83AA0000	    mr_sr = (0x0)                   #<--| Set roudning mode to "truncate"
+101   	 0017	 48407FFF	    x0 = a0                         #<--| x0 is 0x80000000
+102   						
+103   	 0018	 83AA0004	    mr_sr = (0x4)                   #<--| Set roudning mode to "add 0.5 and truncate"
+104   	 0019	 48417FFF	    x1 = a0                         #<--| x0 is 0x80000000
+105   						
+106   	 001A	 83AA0008	    mr_sr = (0x8)                   #<--| Set roudning mode to "round to zero"
+107   	 001B	 48427FFF	    x2 = a0                         #<--| x0 is 0x80000001
+108   						
+109   	 001C	 83AA000C	    mr_sr = (0xC)                   #<--| Set roudning mode to "Dither"
+110   	 001D	 48437FFF	    x3 = a0                         #<--| x0 is 0x80000000  or 0x80000001
+111   						    #---------------------------------------------------------------------------
+112   						
+113   						
+114   						    #---------------------------------------------------------------------------
+115   						    # SRS shift examples
+116   						
+117   						    # Example 1. - shift with rounding mode set to "truncate"
+118   	 001E	 A04A0000	    a0g = (0x00)                    #<--|
+119   	 001F	 985A8000	    ufixed16(a0h) = (0x8000)        #   | Set a0 to 0x00.80000001.40000000
+120   	 0020	 980A0001	    lo16(a0h) = (0x0001)            #   |
+121   	 0021	 905A4000	    ufixed16(a0l) = (0x4000)        #<--|
+122   						
+123   	 0022	 83AA0000	    mr_sr = (0x0)                   #<--| Set shift mode to "no shift"
+124   	 0023	 48407FFF	    x0 = a0                         #<--| x0 is 0x7fffffff
+125   						
+126   	 0024	 83AA0001	    mr_sr = (0x1)                   #<--| Set shift mode to ">>1"
+127   	 0025	 48417FFF	    x1 = a0                         #<--| x0 is 0x40000000
+128   						
+129   	 0026	 83AA0002	    mr_sr = (0x2)                   #<--| Set shift mode to ">>2"
+130   	 0027	 48427FFF	    x2 = a0                         #<--| x0 is 0x20000000
+131   						    
+132   	 0028	 985A0000	    ufixed16(a0h) = (0x0000)        #   | Set a0 to 0x00.00000001.40000000
+133   	 0029	 980A0001	    lo16(a0h) = (0x0001)   
+134   						    
+135   	 002A	 83AA0003	    mr_sr = (0x3)                   #<--| Set shift mode to "<<1"
+136   	 002B	 48437FFF	    x3 = a0                         #<--| x0 is 0x00000002
+137   						
+138   						    # Example 2. - shift with rounding mode set to "add 0.5 and truncate"
+139   	 002C	 A04A0000	    a0g = (0x00)                    #<--|
+140   	 002D	 985A8000	    ufixed16(a0h) = (0x8000)        #   | Set a0 to 0x00.80000001.00000000
+141   	 002E	 980A0001	    lo16(a0h) = (0x0001)            #   |
+142   	 002F	 905A4000	    ufixed16(a0l) = (0x4000)        #<--|
+143   						
+144   	 0030	 83AA0004	    mr_sr = (0x4)                   #<--| Set shift mode to "no shift"
+145   	 0031	 48407FFF	    x0 = a0                         #<--| x0 is 0x7fffffff
+146   						
+147   	 0032	 83AA0005	    mr_sr = (0x5)                   #<--| Set shift mode to ">>1"
+148   	 0033	 48417FFF	    x1 = a0                         #<--| x0 is 0x40000001
+149   						
+150   	 0034	 83AA0006	    mr_sr = (0x6)                   #<--| Set shift mode to ">>2"
+151   	 0035	 48427FFF	    x2 = a0                         #<--| x0 is 0x20000000
+152   						
+153   	 0036	 985A0000	    ufixed16(a0h) = (0x0000)        #   | Set a0 to 0x00.00000001.40000000
+154   	 0037	 980A0001	    lo16(a0h) = (0x0001)   
+155   						
+156   	 0038	 83AA0007	    mr_sr = (0x7)                   #<--| Set shift mode to "<<1"
+157   	 0039	 48437FFF	    x3 = a0                         #<--| x0 is 0x00000003
+158   						
+159   						    #---------------------------------------------------------------------------
+160   						
+161   	 003A	 83AA0000	    mr_sr = (0x0)                   #<--| Reset mode register to it's initial value
+162   	 003B				SRSUnit_End:
+163   	 003B	 81880000	    ret
+164   						################################################################################
+165   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+SRSUnit_End                                                                     			  Unused Relocatable        lesson02SRSUnit_code:003BH
+X_S_SRSUnit                                                                     			  Public Relocatable       lesson02SRSUnit_code:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_lesson02SRSUnit_code                                           			  Unused Relocatable        lesson02SRSUnit_code:0000H
+_lesson02SRSUnit_a_                                                             			  Unused Relocatable        __INIT:0000H
+lesson02SRSUnit_code                                                            			  Unused Relocatable        lesson02SRSUnit_code:0000H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+003CH	 lesson02SRSUnit_code                    			 CODE_OVLY                               

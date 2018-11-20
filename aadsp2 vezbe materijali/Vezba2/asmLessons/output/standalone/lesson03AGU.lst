@@ -1,0 +1,220 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file lesson03AGU.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description: Adress Generation Unit
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				_lesson03AGU_a_
+15    						
+16    	 0000					.public X_S_AddressGenerationUnit
+17    						
+18    						lesson03AGU_y_data  .ydata_ovly at (0x800)
+18     >> start of macro: .ydata_ovly at
+1+    									seg_at lesson03AGU_y_data, "Y_OVLY", Y, (0x800)
+1+     >> start of macro: seg_at
+1+    						lesson03AGU_y_data    segment "Y_OVLY" at (0x800)
+2+    						  .if "lesson03AGU_y_data" != ""
+3+    	 0800				___SegStart_Y_lesson03AGU_y_data
+4+    						  .endif
+5+    							#RememberSegmentType
+6+     >> end of macro: seg_at
+2+     >> end of macro: .ydata_ovly at
+19    						
+20    	 0800				X_BY_Modulo32Buffer     .bss (0x20)  #<--| modulo 32 buffer
+21    	 0820				X_BY_BitReversedBuffer  .bss (0x20)
+22    						
+23    						
+24    						
+25    						lesson03AGU_code    .code_ovly
+25     >> start of macro: .code_ovly
+1+    									seg_single lesson03AGU_code, "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson03AGU_code" != "" ) & defined( ___SegStart_CODE_lesson03AGU_code )
+2+    						lesson03AGU_code    segment
+3+    						  .else
+4+    						lesson03AGU_code    segment "CODE_OVLY"
+5+    							.if "lesson03AGU_code" != ""
+6+    	 0000				___SegStart_CODE_lesson03AGU_code
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+26    						
+27    						################################################################################
+28    						
+29    						################################################################################
+30    						##*/**
+31    						##** @Author  Milan Acanski
+32    						##** @Date 24. November 2008.
+33    						##**
+34    						##** Function:
+35    						##** X_S_AddressGenerationUnit
+36    						##**
+37    						##** @param - none
+38    						##**
+39    						##** @return - nothing
+40    						##**
+41    						##** Trashes: a0, b0, x0, y0, i0, i1, nm0
+42    						##** Comment: Show addressing examples
+43    						##**
+44    						##** E-mail: milan.acanski@rt-sp.com
+45    						##**/
+46    						##*void X_S_AddressGenerationUnit()
+47    						##*{
+48    						##*
+49    						##*}
+50    						################################################################################
+51    	 0000				X_S_AddressGenerationUnit:
+52    						    #---------------------------------------------------------------------------
+53    						    # Modulo addressing
+54    						
+55    						    # Fill X_BY_Modulo32Buffer with
+56    	 0000	 B04A0800	    i0 = (X_BY_Modulo32Buffer)          #<--| i0 points to the beginning of buffer
+57    	 0001	 00004DC0	    a0 = 0
+58    	 0002	 8C4A0001	    uhalfword(b0) = (1)
+59    	 0003	 82000004	    do(0x20),>Loop
+60    	 0004	 68484420	%Loop: ymem[i0] = a0; i0+=1; a0 = a0 + b0
+61    						
+62    						    # Example 1. Modulo with increment step 1
+63    	 0005	 B04A0800	    i0 = (X_BY_Modulo32Buffer)          #<--| i0 points to the beginning of buffer
+64    	 0006	 B44A4000	    nm0 = (0x4000)                      #<--| Set modulo to 32
+65    	 0007	 83000008	    do(0x30),>Loop
+66    	 0008	 88940010	%Loop:  a0 = ymem[i0]; i0+=1            #<--| 33 th iteration will read value from
+67    						                                        #^__| beginning of buffer - it will wrap arround
+68    						
+69    						
+70    						    # Example 1. Modulo with increment step 3
+71    	 0009	 B04A0800	    i0 = (X_BY_Modulo32Buffer)          #<--| i0 points to the beginning of buffer
+72    	 000A	 B44A4003	    nm0 = (0x4003)                      #<--| Set modulo to 32 with increment step 3
+73    	 000B	 8300000C	    do(0x30),>Loop
+74    	 000C	 88940030	%Loop:  a0 = ymem[i0]; i0+=n            #<--| After each iteration index register i0
+75    						                                        #^  | will be incremented for step size 3.
+76    						                                        #|  | After 10 iteration i0 will be set to
+77    						                                        #|  | 0x81e and in next iteration i0 will be
+78    						                                        #|  | incremented by 3, wrapped arround and set
+79    						                                        #|__| to 0x801.
+80    						    #---------------------------------------------------------------------------
+81    						
+82    						
+83    						    #---------------------------------------------------------------------------
+84    						    # Reverse binary addressing
+85    	 000D	 B04A0800	    i0 = (X_BY_Modulo32Buffer)          #<--| Size is 32
+86    	 000E	 B44AF010	    nm0 = (0xf010)                      #<--| Set N part to 0xf and m part to 16
+87    	 000F	 B14A0820	    i1 = (X_BY_BitReversedBuffer)
+88    	 0010	 82000012	    do(0x20),>Loop
+89    	 0011	 88940030	        a0 = ymem[i0]; i0+=n            #<--| We are reading from X_BY_Modulo32Buffer in BitReverse
+90    	 0012	 88D40011	%Loop:  ymem[i1] = a0; i1+=1            #<--| mode and writing it in X_BY_BitReversedBuffer.
+91    						    #---------------------------------------------------------------------------
+92    						
+93    						
+94    						    #---------------------------------------------------------------------------
+95    						    # Immediate addressing
+96    						
+97    						    # Long word instruction
+98    	 0013	 88840811	    a0 = ymem[0x811]                    #<--| a0 is 0x00.00000011.00000000
+99    	 0014	 88840820	    a0 = ymem[X_BY_BitReversedBuffer]   #<--| a0 is 0x00.00000000.00000000 (example with symbol as address)
+100   						
+101   						    # Short word instruction
+102   	 0015	 1C034E00	    b0 = xmem[3]; a0 = a0 << 1          #<--| b0 = 0x2000; a0 will be shifted let by one bit
+103   						    #---------------------------------------------------------------------------
+104   						
+105   						
+106   						    #---------------------------------------------------------------------------
+107   						    # Immediate addressing
+108   	 0016	 B04A0820	    i0 = (X_BY_BitReversedBuffer)       #<--| i0 points to the first element of
+109   						                                        #^__| X_BY_BitReversedBuffer
+110   	 0017	 00007FFF	    nop
+111   	 0018	 88940010	    a0 = ymem[i0]; i0+=1                #<--| Read first element and increment pointer
+112   						                                        #<--| to points to the second element
+113   						    #---------------------------------------------------------------------------
+114   						
+115   						
+116   						    #---------------------------------------------------------------------------
+117   						    # Index Register Updates
+118   						
+119   						    # Example 1.
+120   	 0019	 B04A0820	    i0 = (X_BY_BitReversedBuffer)       #<--| i0 points to the first element of
+121   						                                        #^__| X_BY_BitReversedBuffer
+122   	 001A	 B44A0003	    nm0 = (3)
+123   	 001B	 00007FFF	    nop
+124   	 001C	 88940010	    a0 = ymem[i0]; i0+=1                #<--| Read first element and increment pointer
+125   						                                        #^__| to points to the second element
+126   						
+127   	 001D	 80940050	    x0 = ymem[i0]; i0+=2                #<--| Read second element and increment pointer
+128   						                                        #<--| to points to the fourth element
+129   						
+130   	 001E	 84940070	    y0 = ymem[i0]; i0-=n                #<--| Read fourth element and decrement pointer
+131   						                                        #<--| to points to the beginning of buffer
+132   						
+133   	 001F	 02182400	    a0 = x0 * y0;  i0+=n                #<--| Perform multiplication and update i0
+134   						
+135   						    # Example 2.
+136   	 0020	 81050200	    i1 = i0 + (0x200)                   #<--| i1 will be i0 incremented by 0x200
+137   						    #---------------------------------------------------------------------------
+138   						
+139   						
+140   						    #---------------------------------------------------------------------------
+141   						    # Index Register Loading
+142   						
+143   						    # Example 1. With nop
+144   	 0021	 B04A0820	    i0 = (X_BY_BitReversedBuffer)       #<--| i0 points to the first element of
+145   						                                        #^__| X_BY_BitReversedBuffer
+146   						
+147   	 0022	 00007FFF	    nop                                 #<--| this is necessary
+148   						
+149   	 0023	 88940010	    a0 = ymem[i0]; i0+=1                #<--| Read first element and increment pointer
+150   						                                        #^__| to points to the second element
+151   						
+152   						    # Example 1. Without nop
+153   	 0024	 A0050820	    i0 = (0) +  (X_BY_BitReversedBuffer)#<--| i0 points to the first element of
+154   						                                        #^__| X_BY_BitReversedBuffer
+155   						
+156   						
+157   	 0025	 88940010	    a0 = ymem[i0]; i0+=1                #<--| Read first element and increment pointer
+158   						                                        #^__| to points to the second element
+159   						    #---------------------------------------------------------------------------
+160   						
+161   	 0026				AddressGenerationUnit_End:
+162   	 0026	 81880000	    ret
+163   						################################################################################
+164   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+AddressGenerationUnit_End                                                       			  Unused Relocatable        lesson03AGU_code:0026H
+X_BY_BitReversedBuffer                                                          			         Absolute            lesson03AGU_y_data:0820H
+X_BY_Modulo32Buffer                                                             			         Absolute            lesson03AGU_y_data:0800H
+X_S_AddressGenerationUnit                                                       			  Public Relocatable       lesson03AGU_code:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_lesson03AGU_code                                               			  Unused Relocatable        lesson03AGU_code:0000H
+___SegStart_Y_lesson03AGU_y_data                                                			  Unused Absolute           lesson03AGU_y_data:0800H
+_lesson03AGU_a_                                                                 			  Unused Relocatable        __INIT:0000H
+lesson03AGU_code                                                                			  Unused Relocatable        lesson03AGU_code:0000H
+lesson03AGU_y_data                                                              			  Unused Absolute           lesson03AGU_y_data:0800H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0040H	 lesson03AGU_y_data                      			 Y_OVLY                                  
+0027H	 lesson03AGU_code                        			 CODE_OVLY                               

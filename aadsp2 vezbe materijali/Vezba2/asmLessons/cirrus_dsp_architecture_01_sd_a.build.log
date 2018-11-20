@@ -1,0 +1,167 @@
+============= BUILDING STARTED ============
+Compiling/assembling version: 01_01
+===========================================
+Buildfile: D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture_01_sd_a.build.xml
+
+Assembling .a and .s files...
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.a
+C:\CirrusDSP6\bin\casm D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.a
+ --debug
+ -e
+ --cdl
+ -D_TOOLS_VERSION_=0x0609
+ -D_OVLY_=STANDALONE
+ -D_SLOT_=
+ -D_OVLY_REVISION_=0101FF
+ -D_VERSION_=01
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.O
+ -iC:\CirrusDSP6\crystal32\common\inc\base.h
+ -D_LOCAL_SRC_PATH_=src\
+ -D_LOCAL_INC_PATH_=inc\
+ -D_ROUTER_INC_PATH_=rom_inc\
+
+Linking files...
+C:\CirrusDSP6\bin\clink
+ -oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture.img
+ -fC:\CirrusDSP6\crystal32\crystal32.mem.xml
+ --output_type=ram
+ --overlay_type=STANDALONE
+ -lC:\CirrusDSP6\lib\dsplib
+ -lC:\CirrusDSP6\lib\dsplib\crystal32
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.O
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.O
+     [exec] Error #506: Unresolved external symbol: X_S_SIMPLETASK
+     [exec]                         used in module: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba2/postavka/asmLessons/main
+     [exec] 1 error(s) encountered during symbol relocation!
+
+BUILD FAILED
+D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture_01_sd_a.build.xml:181: exec returned: 1
+
+Total time: 1 second

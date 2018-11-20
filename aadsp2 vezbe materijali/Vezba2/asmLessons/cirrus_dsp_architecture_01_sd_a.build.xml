@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project name="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture.clproj">
+	<target description="Assembling .a and .s files..." name="casm">
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult0">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult1">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult2">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult3">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult4">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult5">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult6">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<exec executable="C:\CirrusDSP6\bin\casm" failonerror="true" resultProperty="casmResult7">
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.a"/>
+			<arg value="--debug"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0609"/>
+			<arg value="-D_OVLY_=STANDALONE"/>
+			<arg value="-D_SLOT_="/>
+			<arg value="-D_OVLY_REVISION_=0101FF"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:\CirrusDSP6\crystal32\common\inc\"/>
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.O"/>
+			<arg value="-iC:\CirrusDSP6\crystal32\common\inc\base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src\"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc\"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc\"/>
+		</exec>
+		<condition property="assemblyError">
+			<or>
+				<not>
+					<equals arg1="${casmResult0}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult1}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult2}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult3}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult4}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult5}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult6}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult7}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="assemblyError" name="checkAssemblyErrors">
+		<fail message="Please check assembler errors."/>
+	</target>
+	<target description="Linking files..." name="clink">
+		<exec executable="C:\CirrusDSP6\bin\clink" failonerror="true">
+			<arg value="-oD:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture.img"/>
+			<arg value="-fC:\CirrusDSP6\crystal32\crystal32.mem.xml"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson02SRSUnit.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\main.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson01Introduction.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson03AGU.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson04ProgramFlow.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson05MemoryMoves.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson06MACUnit.O"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\lesson07ALUUnit.O"/>
+			<arg value="--output_type=ram"/>
+			<arg value="--overlay_type=STANDALONE"/>
+			<arg value="-lC:\CirrusDSP6\lib\dsplib"/>
+			<arg value="-lC:\CirrusDSP6\lib\dsplib\crystal32"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:\CirrusDSP6\bin\lnkuld" failonerror="true">
+			<arg value="-d"/>
+			<arg value="-ca"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture.img"/>
+			<arg value="D:\nastava\aadsp2\2016-2017\Vezbe\Vezba2\postavka\asmLessons\cirrus_dsp_architecture.uld"/>
+		</exec>
+	</target>
+</project>

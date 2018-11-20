@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1542724778012">
+	<dependencies>
+		<source_file last_build_time="1542724776632" path="simpleTasks.a"/>
+		<source_file last_build_time="1542718221869" path="lesson07ALUUnit.a"/>
+		<source_file last_build_time="1542718222710" path="lesson05MemoryMoves.a"/>
+		<source_file last_build_time="1542718224065" path="lesson02SRSUnit.a"/>
+		<source_file last_build_time="1542718222289" path="lesson06MACUnit.a"/>
+		<source_file last_build_time="1542718223629" path="lesson03AGU.a"/>
+		<source_file last_build_time="1542718224517" path="lesson01Introduction.a"/>
+		<source_file last_build_time="1542718221448" path="main.a"/>
+		<source_file last_build_time="1542718223162" path="lesson04ProgramFlow.a"/>
+	</dependencies>
+</settings>

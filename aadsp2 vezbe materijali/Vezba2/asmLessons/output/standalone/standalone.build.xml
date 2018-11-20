@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons" name="asmLessons">
+	<target description="Linking files..." name="clink">
+		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
+			<arg value="-oD:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/asmLessons.img"/>
+			<arg value="-fC:/CirrusDSP/crystal32/memory_maps/v00.mem.xml"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/main.O"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks.O"/>
+			<arg value="--output_type=RAM"/>
+			<arg value="--overlay_type=standalone"/>
+			<arg value="-lC:/CirrusDSP/lib/"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib/crystal32/"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
+			<arg value="-ja"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/asmLessons.img"/>
+			<arg value="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/asmLessons.uld"/>
+		</exec>
+	</target>
+</project>

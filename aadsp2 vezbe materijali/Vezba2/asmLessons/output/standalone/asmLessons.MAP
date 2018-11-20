@@ -1,0 +1,331 @@
+-----------------Global segment information:
+
+
+Address class CODE	Address:[0000...FFFF], length 10000
+	Address:[0000...0008], length 0009, <RESERVED for main, class CODE_OVLY>
+	Address:[0009...0044], length 003C, <RESERVED for lesson02SRSUnit_code, class CODE_OVLY>
+	Address:[0045...0072], length 002E, <RESERVED for lesson04ProgramFlow_code, class CODE_OVLY>
+	Address:[0073...00A0], length 002E, <RESERVED for lesson05MemoryMoves_code, class CODE_OVLY>
+	Address:[00A1...00C7], length 0027, <RESERVED for lesson03AGU_code, class CODE_OVLY>
+	Address:[00C8...00E9], length 0022, <RESERVED for lesson07ALUUnit_code, class CODE_OVLY>
+	Address:[00EA...0109], length 0020, <RESERVED for simpleTasks_code, class CODE_OVLY>
+	Address:[010A...0117], length 000E, <RESERVED for lesson06MACUnit_code, class CODE_OVLY>
+	Address:[0118...0118], length 0001, <RESERVED for lesson01_Introduction_code, class CODE_OVLY>
+	Address:[0119...FFFF], length FEE7, <FREE>
+
+Address class L	Address:[0000...FFFF], length 10000
+	Address:[0000...0001], length 0002, <RESERVED for lesson05MemoryMoves_data, class L_OVLY>
+	Address:[0002...07FF], length 07FE, <FREE>
+	Address:[0840...FFFF], length F7C0, <FREE>
+
+Address class X	Address:[0000...FFFF], length 10000
+	Address:[0000...0001], length 0002, <RESERVED for lesson05MemoryMoves_data, class L_OVLY>
+	Address:[0002...0003], length 0002, <RESERVED for lesson05MemoryMoves_xdata, class X_OVLY>
+	Address:[0004...007F], length 007C, <FREE>
+	Address:[0080...00FF], length 0080, <RESERVED for simpleTask_x_data, class X_OVLY>
+	Address:[0100...FFFF], length FF00, <FREE>
+
+Address class X_AVAIL	Address:[0000...FBFF], length FC00, subclass of X
+	Address:[0002...0003], length 0002, <RESERVED for lesson05MemoryMoves_xdata, class X_OVLY>
+	Address:[0004...007F], length 007C, <FREE>
+	Address:[0080...00FF], length 0080, <RESERVED for simpleTask_x_data, class X_OVLY>
+	Address:[0100...FBFF], length FB00, <FREE>
+
+Address class Y	Address:[0000...FFFF], length 10000
+	Address:[0000...0001], length 0002, <RESERVED for lesson05MemoryMoves_data, class L_OVLY>
+	Address:[0002...0003], length 0002, <RESERVED for lesson05MemoryMoves_ydata, class Y_OVLY>
+	Address:[0004...007F], length 007C, <FREE>
+	Address:[0080...00FF], length 0080, <RESERVED for simpleTask_y_data, class Y_OVLY>
+	Address:[0100...07FF], length 0700, <FREE>
+	Address:[0800...083F], length 0040, <RESERVED for lesson03AGU_y_data, class Y_OVLY>
+	Address:[0840...FFFF], length F7C0, <FREE>
+
+-----------------Module:  lesson01Introduction(Segment name)
+         lesson01_Introduction_code, address 0118 ,length 0001, class  CODE_OVLY
+
+-----------------Module:  lesson02SRSUnit(Segment name)
+               lesson02SRSUnit_code, address 0009 ,length 003C, class  CODE_OVLY
+
+-----------------Module:  lesson03AGU(Segment name)
+                 lesson03AGU_y_data, address 0800 ,length 0040, class     Y_OVLY, at 0800
+                   lesson03AGU_code, address 00A1 ,length 0027, class  CODE_OVLY
+
+-----------------Module:  lesson04ProgramFlow(Segment name)
+           lesson04ProgramFlow_code, address 0045 ,length 002E, class  CODE_OVLY
+
+-----------------Module:  lesson05MemoryMoves(Segment name)
+           lesson05MemoryMoves_data, address 0000 ,length 0002, class     L_OVLY
+          lesson05MemoryMoves_xdata, address 0002 ,length 0002, class     X_OVLY
+          lesson05MemoryMoves_ydata, address 0002 ,length 0002, class     Y_OVLY
+           lesson05MemoryMoves_code, address 0073 ,length 002E, class  CODE_OVLY
+
+-----------------Module:  lesson06MACUnit(Segment name)
+               lesson06MACUnit_code, address 010A ,length 000E, class  CODE_OVLY
+
+-----------------Module:  lesson07ALUUnit(Segment name)
+               lesson07ALUUnit_code, address 00C8 ,length 0022, class  CODE_OVLY
+
+-----------------Module:  main(Segment name)
+                               main, address 0000 ,length 0009, class  CODE_OVLY, at 0000
+
+-----------------Module:  simpleTasks(Segment name)
+                  simpleTask_x_data, address 0080 ,length 0080, class     X_OVLY, aligned 0080
+                  simpleTask_y_data, address 0080 ,length 0080, class     Y_OVLY, aligned 0080
+                   simpleTasks_code, address 00EA ,length 0020, class  CODE_OVLY
+
+---------------SYMBOL(global symbols)							FILE						SEGMENT							CLASS		ADDRESS
+
+            X_S_ALUUnitInstructions	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	          lesson07ALUUnit_code		        CODE_OVLY		00C8
+          X_S_AddressGenerationUnit	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	              lesson03AGU_code		        CODE_OVLY		00A1
+                   X_S_Introduction	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	    lesson01_Introduction_code		        CODE_OVLY		0118
+                X_S_MACInstructions	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	          lesson06MACUnit_code		        CODE_OVLY		010A
+                    X_S_MemoryMoves	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_code		        CODE_OVLY		0073
+                    X_S_ProgramFlow	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0045
+                        X_S_SRSUnit	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	          lesson02SRSUnit_code		        CODE_OVLY		0009
+                     X_S_simpleTask	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		0104
+                     __CLASS_E_ARGV	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                     __CLASS_E_CODE	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                __CLASS_E_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                        __CLASS_E_L	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                   __CLASS_E_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                        __CLASS_E_X	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                  __CLASS_E_X_AVAIL	                      CLINK RESERVED	                -----------			   -----------			FBFF
+                   __CLASS_E_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			FBFF
+                        __CLASS_E_Y	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                   __CLASS_E_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			FFFF
+                     __CLASS_F_CODE	                      CLINK RESERVED	                -----------			   -----------			0000
+                __CLASS_F_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                        __CLASS_F_L	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_F_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                        __CLASS_F_X	                      CLINK RESERVED	                -----------			   -----------			0000
+                  __CLASS_F_X_AVAIL	                      CLINK RESERVED	                -----------			   -----------			0002
+                   __CLASS_F_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0002
+                        __CLASS_F_Y	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_F_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                     __CLASS_L_CODE	                      CLINK RESERVED	                -----------			   -----------			0118
+                __CLASS_L_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			0118
+                        __CLASS_L_L	                      CLINK RESERVED	                -----------			   -----------			0001
+                   __CLASS_L_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			0001
+                        __CLASS_L_X	                      CLINK RESERVED	                -----------			   -----------			00FF
+                  __CLASS_L_X_AVAIL	                      CLINK RESERVED	                -----------			   -----------			00FF
+                   __CLASS_L_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			00FF
+                        __CLASS_L_Y	                      CLINK RESERVED	                -----------			   -----------			083F
+                   __CLASS_L_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			083F
+                     __CLASS_S_ARGV	                      CLINK RESERVED	                -----------			   -----------			FC00
+                     __CLASS_S_CODE	                      CLINK RESERVED	                -----------			   -----------			0000
+                __CLASS_S_CODE_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                        __CLASS_S_L	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_S_L_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                        __CLASS_S_X	                      CLINK RESERVED	                -----------			   -----------			0000
+                  __CLASS_S_X_AVAIL	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_S_X_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                        __CLASS_S_Y	                      CLINK RESERVED	                -----------			   -----------			0000
+                   __CLASS_S_Y_OVLY	                      CLINK RESERVED	                -----------			   -----------			0000
+                             __INIT	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	                        __INIT		             CODE		0119
+         lesson01_Introduction_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	    lesson01_Introduction_code		        CODE_OVLY		0118
+               lesson02SRSUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	          lesson02SRSUnit_code		        CODE_OVLY		0009
+                   lesson03AGU_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	              lesson03AGU_code		        CODE_OVLY		00A1
+                 lesson03AGU_y_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	            lesson03AGU_y_data		           Y_OVLY		0800
+           lesson04ProgramFlow_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0045
+           lesson05MemoryMoves_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_code		        CODE_OVLY		0073
+           lesson05MemoryMoves_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_data		           L_OVLY		0000
+          lesson05MemoryMoves_xdata	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_xdata		           X_OVLY		0002
+          lesson05MemoryMoves_ydata	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_ydata		           Y_OVLY		0002
+               lesson06MACUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	          lesson06MACUnit_code		        CODE_OVLY		010A
+               lesson07ALUUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	          lesson07ALUUnit_code		        CODE_OVLY		00C8
+                               main	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/main	                          main		        CODE_OVLY		0000
+                  simpleTask_x_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_x_data		           X_OVLY		0080
+                  simpleTask_y_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_y_data		           Y_OVLY		0080
+                   simpleTasks_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		00EA
+
+---------------SYMBOL(relocation symbols)						FILE						SEGMENT							CLASS		ADDRESS  
+
+                   Introduction_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	    lesson01_Introduction_code		        CODE_OVLY		0118
+                   X_S_Introduction	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	    lesson01_Introduction_code		        CODE_OVLY		0118
+___SegStart_CODE_lesson01_Introduction_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	    lesson01_Introduction_code		        CODE_OVLY		0118
+           _lesson01Introduction_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	                        __INIT		             CODE		0119
+         lesson01_Introduction_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson01Introduction	    lesson01_Introduction_code		        CODE_OVLY		0118
+                        SRSUnit_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	          lesson02SRSUnit_code		        CODE_OVLY		0044
+                        X_S_SRSUnit	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	          lesson02SRSUnit_code		        CODE_OVLY		0009
+___SegStart_CODE_lesson02SRSUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	          lesson02SRSUnit_code		        CODE_OVLY		0009
+                _lesson02SRSUnit_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	                        __INIT		             CODE		0119
+               lesson02SRSUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson02SRSUnit	          lesson02SRSUnit_code		        CODE_OVLY		0009
+          AddressGenerationUnit_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	              lesson03AGU_code		        CODE_OVLY		00C7
+          X_S_AddressGenerationUnit	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	              lesson03AGU_code		        CODE_OVLY		00A1
+  ___SegStart_CODE_lesson03AGU_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	              lesson03AGU_code		        CODE_OVLY		00A1
+                    _lesson03AGU_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	                        __INIT		             CODE		0119
+                   lesson03AGU_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson03AGU	              lesson03AGU_code		        CODE_OVLY		00A1
+                    ProgramFlow_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		006C
+ SampleFunctionInterruptControl_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0072
+                 SampleFunction_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		006F
+                    X_S_ProgramFlow	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0045
+                 X_S_SampleFunction	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		006D
+X_S_SampleFunctionInterruptControll	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0070
+___SegStart_CODE_lesson04ProgramFlow_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0045
+            _lesson04ProgramFlow_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	                        __INIT		             CODE		0119
+           lesson04ProgramFlow_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		0045
+                unconditionalLabel1	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson04ProgramFlow	      lesson04ProgramFlow_code		        CODE_OVLY		005E
+                    MemoryMoves_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_code		        CODE_OVLY		00A0
+                    X_S_MemoryMoves	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_code		        CODE_OVLY		0073
+              X_VL_DestLMemVariable	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_data		           L_OVLY		0001
+            X_VL_SourceLMemVariable	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_data		           L_OVLY		0000
+       X_VX_DestinationXMemVariable	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_xdata		           X_OVLY		0003
+            X_VX_SourceXMemVariable	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_xdata		           X_OVLY		0002
+       X_VY_DestinationYMemVariable	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_ydata		           Y_OVLY		0003
+            X_VY_SourceYMemVariable	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_ydata		           Y_OVLY		0002
+___SegStart_CODE_lesson05MemoryMoves_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_code		        CODE_OVLY		0073
+___SegStart_L_lesson05MemoryMoves_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_data		           L_OVLY		0000
+___SegStart_X_lesson05MemoryMoves_xdata	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_xdata		           X_OVLY		0002
+___SegStart_Y_lesson05MemoryMoves_ydata	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_ydata		           Y_OVLY		0002
+            _lesson05MemoryMoves_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	                        __INIT		             CODE		0119
+           lesson05MemoryMoves_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_code		        CODE_OVLY		0073
+           lesson05MemoryMoves_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	      lesson05MemoryMoves_data		           L_OVLY		0000
+          lesson05MemoryMoves_xdata	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_xdata		           X_OVLY		0002
+          lesson05MemoryMoves_ydata	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson05MemoryMoves	     lesson05MemoryMoves_ydata		           Y_OVLY		0002
+                MACInstructions_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	          lesson06MACUnit_code		        CODE_OVLY		0117
+                X_S_MACInstructions	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	          lesson06MACUnit_code		        CODE_OVLY		010A
+___SegStart_CODE_lesson06MACUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	          lesson06MACUnit_code		        CODE_OVLY		010A
+                _lesson06MACUnit_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	                        __INIT		             CODE		0119
+               lesson06MACUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson06MACUnit	          lesson06MACUnit_code		        CODE_OVLY		010A
+            ALUUnitInstructions_End	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	          lesson07ALUUnit_code		        CODE_OVLY		00E9
+            X_S_ALUUnitInstructions	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	          lesson07ALUUnit_code		        CODE_OVLY		00C8
+___SegStart_CODE_lesson07ALUUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	          lesson07ALUUnit_code		        CODE_OVLY		00C8
+                _lesson07ALUUnit_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	                        __INIT		             CODE		0119
+               lesson07ALUUnit_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/lesson07ALUUnit	          lesson07ALUUnit_code		        CODE_OVLY		00C8
+                       X_BX_Buffer1	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_x_data		           X_OVLY		0080
+                       X_BY_Buffer2	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_y_data		           Y_OVLY		0080
+                           X_S_init	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		00EA
+                       X_S_init_end	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		00F7
+                           X_S_mean	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		00F8
+                       X_S_mean_end	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		0102
+                         X_S_median	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		0103
+                     X_S_median_end	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		0103
+                     X_S_simpleTask	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		0104
+                 X_S_simpleTask_end	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		0109
+  ___SegStart_CODE_simpleTasks_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		00EA
+    ___SegStart_X_simpleTask_x_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_x_data		           X_OVLY		0080
+    ___SegStart_Y_simpleTask_y_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_y_data		           Y_OVLY		0080
+                    _simpleTasks_a_	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	                        __INIT		             CODE		0119
+                  simpleTask_x_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_x_data		           X_OVLY		0080
+                  simpleTask_y_data	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	             simpleTask_y_data		           Y_OVLY		0080
+                   simpleTasks_code	D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/output/standalone/simpleTasks	              simpleTasks_code		        CODE_OVLY		00EA
+
+----------- module lesson01Introduction -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                   Introduction_End		RELOCATABLE		0118
+                   X_S_Introduction		RELOCATABLE		0118
+___SegStart_CODE_lesson01_Introduction_code		RELOCATABLE		0118
+           _lesson01Introduction_a_		RELOCATABLE		0119
+         lesson01_Introduction_code		RELOCATABLE		0118
+
+----------- module lesson02SRSUnit -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                        SRSUnit_End		RELOCATABLE		0044
+                        X_S_SRSUnit		RELOCATABLE		0009
+___SegStart_CODE_lesson02SRSUnit_code		RELOCATABLE		0009
+                _lesson02SRSUnit_a_		RELOCATABLE		0119
+               lesson02SRSUnit_code		RELOCATABLE		0009
+
+----------- module lesson03AGU -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+          AddressGenerationUnit_End		RELOCATABLE		00C7
+             X_BY_BitReversedBuffer		ABSOLUTE		0820
+                X_BY_Modulo32Buffer		ABSOLUTE		0800
+          X_S_AddressGenerationUnit		RELOCATABLE		00A1
+  ___SegStart_CODE_lesson03AGU_code		RELOCATABLE		00A1
+   ___SegStart_Y_lesson03AGU_y_data		ABSOLUTE		0800
+                    _lesson03AGU_a_		RELOCATABLE		0119
+                   lesson03AGU_code		RELOCATABLE		00A1
+                 lesson03AGU_y_data		ABSOLUTE		0800
+
+----------- module lesson04ProgramFlow -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                    ProgramFlow_End		RELOCATABLE		006C
+ SampleFunctionInterruptControl_End		RELOCATABLE		0072
+                 SampleFunction_End		RELOCATABLE		006F
+                    X_S_ProgramFlow		RELOCATABLE		0045
+                 X_S_SampleFunction		RELOCATABLE		006D
+X_S_SampleFunctionInterruptControll		RELOCATABLE		0070
+___SegStart_CODE_lesson04ProgramFlow_code		RELOCATABLE		0045
+            _lesson04ProgramFlow_a_		RELOCATABLE		0119
+           lesson04ProgramFlow_code		RELOCATABLE		0045
+                unconditionalLabel1		RELOCATABLE		005E
+
+----------- module lesson05MemoryMoves -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                    MemoryMoves_End		RELOCATABLE		00A0
+                    X_S_MemoryMoves		RELOCATABLE		0073
+              X_VL_DestLMemVariable		RELOCATABLE		0001
+            X_VL_SourceLMemVariable		RELOCATABLE		0000
+       X_VX_DestinationXMemVariable		RELOCATABLE		0003
+            X_VX_SourceXMemVariable		RELOCATABLE		0002
+       X_VY_DestinationYMemVariable		RELOCATABLE		0003
+            X_VY_SourceYMemVariable		RELOCATABLE		0002
+___SegStart_CODE_lesson05MemoryMoves_code		RELOCATABLE		0073
+___SegStart_L_lesson05MemoryMoves_data		RELOCATABLE		0000
+___SegStart_X_lesson05MemoryMoves_xdata		RELOCATABLE		0002
+___SegStart_Y_lesson05MemoryMoves_ydata		RELOCATABLE		0002
+            _lesson05MemoryMoves_a_		RELOCATABLE		0119
+           lesson05MemoryMoves_code		RELOCATABLE		0073
+           lesson05MemoryMoves_data		RELOCATABLE		0000
+          lesson05MemoryMoves_xdata		RELOCATABLE		0002
+          lesson05MemoryMoves_ydata		RELOCATABLE		0002
+
+----------- module lesson06MACUnit -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                MACInstructions_End		RELOCATABLE		0117
+                X_S_MACInstructions		RELOCATABLE		010A
+___SegStart_CODE_lesson06MACUnit_code		RELOCATABLE		010A
+                _lesson06MACUnit_a_		RELOCATABLE		0119
+               lesson06MACUnit_code		RELOCATABLE		010A
+
+----------- module lesson07ALUUnit -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+            ALUUnitInstructions_End		RELOCATABLE		00E9
+            X_S_ALUUnitInstructions		RELOCATABLE		00C8
+___SegStart_CODE_lesson07ALUUnit_code		RELOCATABLE		00C8
+                _lesson07ALUUnit_a_		RELOCATABLE		0119
+               lesson07ALUUnit_code		RELOCATABLE		00C8
+
+----------- module main -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+              ___SegStart_CODE_main		ABSOLUTE		0000
+                               main		ABSOLUTE		0000
+
+----------- module simpleTasks -----------
+
+LOCAL SYMBOL								TYPE		VALUE
+
+                       X_BX_Buffer1		RELOCATABLE		0080
+                       X_BY_Buffer2		RELOCATABLE		0080
+                           X_S_init		RELOCATABLE		00EA
+                       X_S_init_end		RELOCATABLE		00F7
+                           X_S_mean		RELOCATABLE		00F8
+                       X_S_mean_end		RELOCATABLE		0102
+                         X_S_median		RELOCATABLE		0103
+                     X_S_median_end		RELOCATABLE		0103
+                     X_S_simpleTask		RELOCATABLE		0104
+                 X_S_simpleTask_end		RELOCATABLE		0109
+  ___SegStart_CODE_simpleTasks_code		RELOCATABLE		00EA
+    ___SegStart_X_simpleTask_x_data		RELOCATABLE		0080
+    ___SegStart_Y_simpleTask_y_data		RELOCATABLE		0080
+                    _simpleTasks_a_		RELOCATABLE		0119
+                  simpleTask_x_data		RELOCATABLE		0080
+                  simpleTask_y_data		RELOCATABLE		0080
+                   simpleTasks_code		RELOCATABLE		00EA

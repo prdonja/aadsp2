@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+<clideViews>
+<clideView viewId="clide.debug.ui.memoryView">
+<memoryTab columnCount="8" core="DSP_A" memoryZone="X" tabAddress="128"/>
+</clideView>
+<clideView viewId="clide.debug.ui.registersView">
+<registerView regViewCoreName="DSP_A">
+<regViewMementoCore scrollPercent="NaN" selectedItem="/DSP_A">
+<layoutType horizontal="0" register_details="1"/>
+<expandedPath item_0="DSP_A"/>
+<expandedPath item_0="DSP_A" item_1="Data registers"/>
+<expandedPath item_0="DSP_A" item_1="Accum registers"/>
+<expandedPath item_0="DSP_A" item_1="Index registers"/>
+</regViewMementoCore>
+</registerView>
+</clideView>
+</clideViews>
+<perspective id="CLIDE.DebugPerspective"/>
+<workbench_editors>
+<editor file_path="/asmLessons/.suldproj"/>
+<editor file_path="/asmLessons/main.a"/>
+<editor file_path="/asmLessons/lesson03AGU.a"/>
+<editor file_path="/asmLessons/lesson05MemoryMoves.a"/>
+<editor file_path="/asmLessons/lesson02SRSUnit.a"/>
+<editor file_path="/asmLessons/simpleTasks.a"/>
+</workbench_editors>
+<views/>
+<watchExpressions/>
+<launcherConfiguration/>
+<projectSettings/>
+</settings>

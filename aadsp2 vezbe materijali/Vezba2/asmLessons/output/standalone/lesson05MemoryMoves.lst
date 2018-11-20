@@ -1,0 +1,291 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file lesson05MemoryMoves.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description: Memory move instructions
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				_lesson05MemoryMoves_a_
+15    						
+16    	 0000					.public X_S_MemoryMoves
+17    						
+18    						
+19    						lesson05MemoryMoves_data    .data_ovly
+19     >> start of macro: .data_ovly
+1+    									seg_single lesson05MemoryMoves_data, "L_OVLY", L
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson05MemoryMoves_data" != "" ) & defined( ___SegStart_L_lesson05MemoryMoves_data )
+2+    						lesson05MemoryMoves_data    segment
+3+    						  .else
+4+    						lesson05MemoryMoves_data    segment "L_OVLY"
+5+    							.if "lesson05MemoryMoves_data" != ""
+6+    	 0000				___SegStart_L_lesson05MemoryMoves_data
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .data_ovly
+20    						
+21    	 0000				X_VL_SourceLMemVariable         .dw (0xbaba), (0xdeda)
+	 0000	 0000BABA0000DEDA	 
+22    	 0001				X_VL_DestLMemVariable           .dw (0), (0)
+	 0001	 0000000000000000	 
+23    						
+24    						lesson05MemoryMoves_xdata   .xdata_ovly
+24     >> start of macro: .xdata_ovly
+1+    									seg_single lesson05MemoryMoves_xdata, "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson05MemoryMoves_xdata" != "" ) & defined( ___SegStart_X_lesson05MemoryMoves_xdata )
+2+    						lesson05MemoryMoves_xdata    segment
+3+    						  .else
+4+    						lesson05MemoryMoves_xdata    segment "X_OVLY"
+5+    							.if "lesson05MemoryMoves_xdata" != ""
+6+    	 0000				___SegStart_X_lesson05MemoryMoves_xdata
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+25    						
+26    	 0000				X_VX_SourceXMemVariable         .dw 0x12345678
+	 0000	 12345678	 
+27    	 0001				X_VX_DestinationXMemVariable    .dw 0
+	 0001	 00000000	 
+28    						
+29    						lesson05MemoryMoves_ydata   .ydata_ovly
+29     >> start of macro: .ydata_ovly
+1+    									seg_single lesson05MemoryMoves_ydata, "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson05MemoryMoves_ydata" != "" ) & defined( ___SegStart_Y_lesson05MemoryMoves_ydata )
+2+    						lesson05MemoryMoves_ydata    segment
+3+    						  .else
+4+    						lesson05MemoryMoves_ydata    segment "Y_OVLY"
+5+    							.if "lesson05MemoryMoves_ydata" != ""
+6+    	 0000				___SegStart_Y_lesson05MemoryMoves_ydata
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+30    						
+31    	 0000				X_VY_SourceYMemVariable         .dw 0x87654321
+	 0000	 87654321	 
+32    	 0001				X_VY_DestinationYMemVariable    .dw 0
+	 0001	 00000000	 
+33    						
+34    						lesson05MemoryMoves_code    .code_ovly
+34     >> start of macro: .code_ovly
+1+    									seg_single lesson05MemoryMoves_code, "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson05MemoryMoves_code" != "" ) & defined( ___SegStart_CODE_lesson05MemoryMoves_code )
+2+    						lesson05MemoryMoves_code    segment
+3+    						  .else
+4+    						lesson05MemoryMoves_code    segment "CODE_OVLY"
+5+    							.if "lesson05MemoryMoves_code" != ""
+6+    	 0000				___SegStart_CODE_lesson05MemoryMoves_code
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+35    						
+36    						################################################################################
+37    						
+38    						################################################################################
+39    						##*/**
+40    						##** @Author  Milan Acanski
+41    						##** @Date 07. December 2008.
+42    						##**
+43    						##** Function:
+44    						##** X_S_MemoryMoves
+45    						##**
+46    						##** @param - none
+47    						##**
+48    						##** @return - nothing
+49    						##**
+50    						##** Trashes: a0, a1, a2, a3, b0, b1, b3, x0, x1, y0, i0, i1
+51    						##** Comment: Examples of memory moves and paths of data in DSP
+52    						##**
+53    						##** E-mail: milan.acanski@rt-sp.com
+54    						##**/
+55    						##*void X_S_MemoryMoves()
+56    						##*{
+57    						##*
+58    						##*}
+59    						################################################################################
+60    	 0000				X_S_MemoryMoves:
+61    						
+62    						    #---------------------------------------------------------------------------
+63    						    # X data memory to register
+64    						
+65    						    # Example 1. Using direct addressing
+66    	 0000	 88040800	    a0 = xmem[0x800]                            #<--| a0 will have value present
+67    						                                                #^__| on address 0x800 in X memory
+68    						
+69    						    # Example 2. Using symbol as address
+70    	 0001	 88040000	    a0 = xmem[X_VX_SourceXMemVariable]          #<--| a0 will be 0x12345678
+71    						
+72    						    # Example3. Using index register
+73    	 0002	 B04A0000	    i0 = (X_VX_SourceXMemVariable)
+74    	 0003	 00007FFF	    nop
+75    	 0004	 80140000	    x0 = xmem[i0]                               #<--| x0 will be 0x12345678
+76    						    #---------------------------------------------------------------------------
+77    						
+78    						
+79    						    #---------------------------------------------------------------------------
+80    						    # register to X data memory
+81    	 0005	 884ABABA	    uhalfword(a0) = (0xbaba)
+82    						
+83    						    # Example 1. Using direct addressing
+84    	 0006	 88440800	    xmem[0x800] = a0                            #<--| address 0x800 in X memory
+85    						                                                #^__| will have value present in a0
+86    						
+87    						    # Example 2. Using symnol as address
+88    	 0007	 88440001	    xmem[X_VX_DestinationXMemVariable] = a0     #<--| X_VX_SourceXMemVariable will be 0xbaba
+89    						
+90    						    # Example3. Using indes register
+91    	 0008	 B04A0001	    i0 = (X_VX_DestinationXMemVariable)
+92    	 0009	 00007FFF	    nop
+93    	 000A	 88540000	    xmem[i0] = a0                               #<--| X_VX_SourceXMemVariable will be 0xbaba
+94    						    #---------------------------------------------------------------------------
+95    						
+96    						
+97    						    #---------------------------------------------------------------------------
+98    						    # Y data memory to register
+99    						
+100   						    # Example 1. Using direct addressing
+101   	 000B	 89840800	    a1 = ymem[0x800]                            #<--| a1 will have value present
+102   						                                                #^__| on address 0x800 in Y memory
+103   						
+104   						    # Example 2. Using symbol as address
+105   	 000C	 8D840000	    b1 = ymem[X_VY_SourceYMemVariable]          #<--| b10 will be 0x87654321
+106   						
+107   						    # Example3. Using index register
+108   	 000D	 B04A0000	    i0 = (X_VY_SourceYMemVariable)
+109   	 000E	 00007FFF	    nop
+110   	 000F	 81940000	    x1 = ymem[i0]                               #<--| x1 will be 0x12345678
+111   						    #---------------------------------------------------------------------------
+112   						
+113   						
+114   						    #---------------------------------------------------------------------------
+115   						    # register to Y data memory
+116   	 0010	 884ADEDA	    uhalfword(a0) = (0xdeda)
+117   						
+118   						    # Example 1. Using direct addressing
+119   	 0011	 88C40800	    ymem[0x800] = a0                            #<--| address 0x800 in Y memory
+120   						                                                #^__| will have value present in a0
+121   						
+122   						    # Example 2. Using symnol as address
+123   	 0012	 88C40001	    ymem[X_VY_DestinationYMemVariable] = a0     #<--| X_VX_SourceXMemVariable will be 0xdeda
+124   						
+125   						    # Example3. Using indes register
+126   	 0013	 B04A0001	    i0 = (X_VY_DestinationYMemVariable)
+127   	 0014	 00007FFF	    nop
+128   	 0015	 88D40000	    ymem[i0] = a0                               #<--| X_VX_SourceXMemVariable will be 0xdeda
+129   						    #---------------------------------------------------------------------------
+130   						
+131   						
+132   						    #---------------------------------------------------------------------------
+133   						    # Immediate register loads
+134   	 0016	 900A0008	    lo16(a0l) = (8)                             #<--| a0 = 0x00.00000000.00000008
+135   	 0017	 987AFF00	    fixed16(a0h) = (0xff00)                     #<--| a0 = 0x00.ff000000.00000008
+136   	 0018	 8C7A8000	    fixed16(b0) = (0x8000)                      #<--| b0 = 0xff.80000000.80000000
+137   	 0019	 844A00FF	    uhalfword(y0) = (255)                       #<--| y0 = 0x000000ff
+138   	 001A	 806AFF01	    halfword(x0) = (-255)                       #<--| x0 = 0xffffff01
+139   						    #---------------------------------------------------------------------------
+140   						
+141   						
+142   						    #---------------------------------------------------------------------------
+143   						    # AnyReg instruction
+144   	 001B	 8409000A	    AnyReg(a2, y0)                              #<--| a2 = 0x00.000000ff.00000000
+145   	 001C	 8A1902CF	    AnyReg(b3, a2), (a3, x0)                    #<--| b3 = 0x00.000000ff.00000000, a3 = 0xff.ffffff01.00000000
+146   						    #---------------------------------------------------------------------------
+147   						
+148   						
+149   						    #---------------------------------------------------------------------------
+150   						    # Bit manipulation instructions
+151   	 001D	 843B0001	    BitTst lo(y0), (0x1)                        #<--| y0 = 0x000000ff
+152   	 001E	 85C80020	    if (z==0) jmp >                             #<--| is bit 0 of y0 set to one?
+153   	 001F	 00007FFF	        nop                                     #<--| yes, so this instruction will be executed
+154   	 0020				%
+155   	 0020	 847B0001	    BitTst hi(y0), (0x1)                        #<--| y0 = 0x000000ff
+156   	 0021	 85C80023	    if (z==0) jmp >                             #<--| is bit 16 of y0 set to one?
+157   	 0022	 00007FFF	        nop                                     #<--| no, so this instruction will not be executed
+158   	 0023				%
+159   						
+160   	 0023	 845B0001	    BitSet hi(y0), (0x1)                        #<--| y0 will be 0x000100ff
+161   						
+162   	 0024	 846B0001	    BitClr hi(y0), (0x1)                        #<--| y0 will be 0x000000ff
+163   						
+164   	 0025	 840B1003	    BitChg lo(y0), (0x1003)                     #<--| y0 will be 0x000010fc
+165   						    #---------------------------------------------------------------------------
+166   						
+167   						
+168   						    #---------------------------------------------------------------------------
+169   						    # XY memory moves
+170   	 0026	 B04A0000	    i0 = (X_VL_SourceLMemVariable)
+171   	 0027	 B14A0001	    i1 = (X_VL_DestLMemVariable)
+172   						
+173   	 0028	 30407FFF	    x0, y0 = xymem[i0]                          #<--| x0 = 0x0000baba y0 = 0x0000deda
+174   						
+175   	 0029	 70417FFF	    xymem[i1] = x0, y0                          #<--| X_VL_DestLMemVariable has value 0x0000baba.0000deda
+176   						
+177   	 002A	 38407FFF	    a0 = xymem[i0]                              #<--| a0 = 0x00.0000baba.0000deda
+178   						
+179   	 002B	 8C6AFFFF	    halfword(b0) = (-1)
+180   	 002C	 7C417FFF	    xymem[i1] = b0                              #<--| X_VL_DestLMemVariable has value 0xffffffff.00000000
+181   						    #---------------------------------------------------------------------------
+182   						
+183   						
+184   	 002D				MemoryMoves_End:
+185   	 002D	 81880000	    ret
+186   						################################################################################
+187   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+MemoryMoves_End                                                                 			  Unused Relocatable        lesson05MemoryMoves_code:002DH
+X_S_MemoryMoves                                                                 			  Public Relocatable       lesson05MemoryMoves_code:0000H
+X_VL_DestLMemVariable                                                           			         Relocatable         lesson05MemoryMoves_data:0001H
+X_VL_SourceLMemVariable                                                         			         Relocatable         lesson05MemoryMoves_data:0000H
+X_VX_DestinationXMemVariable                                                    			         Relocatable         lesson05MemoryMoves_xdata:0001H
+X_VX_SourceXMemVariable                                                         			         Relocatable         lesson05MemoryMoves_xdata:0000H
+X_VY_DestinationYMemVariable                                                    			         Relocatable         lesson05MemoryMoves_ydata:0001H
+X_VY_SourceYMemVariable                                                         			         Relocatable         lesson05MemoryMoves_ydata:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_lesson05MemoryMoves_code                                       			  Unused Relocatable        lesson05MemoryMoves_code:0000H
+___SegStart_L_lesson05MemoryMoves_data                                          			  Unused Relocatable        lesson05MemoryMoves_data:0000H
+___SegStart_X_lesson05MemoryMoves_xdata                                         			  Unused Relocatable        lesson05MemoryMoves_xdata:0000H
+___SegStart_Y_lesson05MemoryMoves_ydata                                         			  Unused Relocatable        lesson05MemoryMoves_ydata:0000H
+_lesson05MemoryMoves_a_                                                         			  Unused Relocatable        __INIT:0000H
+lesson05MemoryMoves_code                                                        			  Unused Relocatable        lesson05MemoryMoves_code:0000H
+lesson05MemoryMoves_data                                                        			  Unused Relocatable        lesson05MemoryMoves_data:0000H
+lesson05MemoryMoves_xdata                                                       			  Unused Relocatable        lesson05MemoryMoves_xdata:0000H
+lesson05MemoryMoves_ydata                                                       			  Unused Relocatable        lesson05MemoryMoves_ydata:0000H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0002H	 lesson05MemoryMoves_data                			 L_OVLY                                  
+0002H	 lesson05MemoryMoves_xdata               			 X_OVLY                                  
+0002H	 lesson05MemoryMoves_ydata               			 Y_OVLY                                  
+002EH	 lesson05MemoryMoves_code                			 CODE_OVLY                               

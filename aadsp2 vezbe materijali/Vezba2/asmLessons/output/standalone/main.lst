@@ -1,0 +1,112 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file main.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description: Main function
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				    .extern X_S_Introduction
+15    	 0000				    .extern X_S_SRSUnit
+16    	 0000				    .extern X_S_AddressGenerationUnit
+17    	 0000				    .extern X_S_ProgramFlow
+18    	 0000				    .extern X_S_MemoryMoves
+19    	 0000				    .extern X_S_MACInstructions
+20    	 0000				    .extern X_S_ALUUnitInstructions
+21    	 0000				    .extern X_S_simpleTask
+22    						                    
+23    						main .code_ovly at 0x0000
+23     >> start of macro: .code_ovly at
+1+    									seg_at main, "CODE_OVLY", CODE, 0x0000
+1+     >> start of macro: seg_at
+1+    						main    segment "CODE_OVLY" at 0x0000
+2+    						  .if "main" != ""
+3+    	 0000				___SegStart_CODE_main
+4+    						  .endif
+5+    							#RememberSegmentType
+6+     >> end of macro: seg_at
+2+     >> end of macro: .code_ovly at
+24    						
+25    						
+26    						    #---------------------------------------------------------------------------
+27    						    # Lesson 1 - Introduction
+28    	 0000	 80880000		 call X_S_Introduction
+29    						    #---------------------------------------------------------------------------
+30    						
+31    						    #---------------------------------------------------------------------------
+32    						    # Lesson 2 - SRS unit
+33    	 0001	 80880000	    call X_S_SRSUnit
+34    						    #---------------------------------------------------------------------------
+35    						
+36    						    #---------------------------------------------------------------------------
+37    						    # Lesson 3 - Address Generation Unit
+38    	 0002	 80880000	    call X_S_AddressGenerationUnit
+39    						    #---------------------------------------------------------------------------
+40    						
+41    						    #---------------------------------------------------------------------------
+42    						    # Lesson 4 - Program Flow
+43    	 0003	 80880000	    call X_S_ProgramFlow
+44    						    #---------------------------------------------------------------------------
+45    						
+46    						    #---------------------------------------------------------------------------
+47    						    # Lesson 5 - Memory moves
+48    	 0004	 80880000	    call X_S_MemoryMoves
+49    						    #---------------------------------------------------------------------------
+50    						
+51    						    #---------------------------------------------------------------------------
+52    						    # Lesson 6 - MAC instructions
+53    	 0005	 80880000	    call X_S_MACInstructions
+54    						    #---------------------------------------------------------------------------
+55    						
+56    						    #---------------------------------------------------------------------------
+57    						    # Lesson 7 - ALU instructions
+58    	 0006	 80880000	    call X_S_ALUUnitInstructions
+59    						    #---------------------------------------------------------------------------
+60    						
+61    						    #---------------------------------------------------------------------------
+62    						    # Lesson 8 - Simple Task
+63    	 0007	 80880000		call X_S_simpleTask
+64    							#---------------------------------------------------------------------------
+65    								
+66    	 0008	 81C80000	    halt
+67    						################################################################################
+68    						#                                  End                                         #
+69    						################################################################################
+70    						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+X_S_ALUUnitInstructions                                                         					 External   
+X_S_AddressGenerationUnit                                                       					 External   
+X_S_Introduction                                                                					 External   
+X_S_MACInstructions                                                             					 External   
+X_S_MemoryMoves                                                                 					 External   
+X_S_ProgramFlow                                                                 					 External   
+X_S_SRSUnit                                                                     					 External   
+X_S_simpleTask                                                                  					 External   
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_main                                                           			  Unused Absolute           main:0000H
+main                                                                            			  Unused Absolute           main:0000H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0009H	 main                                    			 CODE_OVLY                               

@@ -1,0 +1,172 @@
+1     						################################################################################
+2     						##*/**
+3     						##** @file lesson07ALUUnit.a
+4     						##**
+5     						##** Module: lessons
+6     						##** Description:  ALU unit instructions
+7     						##** $Source: $
+8     						##** $Revision: $
+9     						##** $Date: $
+10    						##** $Author: $
+11    						##**
+12    						##**/
+13    						################################################################################
+14    	 0000				_lesson07ALUUnit_a_
+15    						
+16    	 0000					.public X_S_ALUUnitInstructions
+17    						
+18    						lesson07ALUUnit_code    .code_ovly
+18     >> start of macro: .code_ovly
+1+    									seg_single lesson07ALUUnit_code, "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "lesson07ALUUnit_code" != "" ) & defined( ___SegStart_CODE_lesson07ALUUnit_code )
+2+    						lesson07ALUUnit_code    segment
+3+    						  .else
+4+    						lesson07ALUUnit_code    segment "CODE_OVLY"
+5+    							.if "lesson07ALUUnit_code" != ""
+6+    	 0000				___SegStart_CODE_lesson07ALUUnit_code
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+19    						
+20    						################################################################################
+21    						
+22    						################################################################################
+23    						##*/**
+24    						##** @Author  Milan Acanski
+25    						##** @Date 30. December 2008.
+26    						##**
+27    						##** Function:
+28    						##** X_S_ALUUnitInstructions
+29    						##**
+30    						##** @param - none
+31    						##**
+32    						##** @return - nothing
+33    						##**
+34    						##** Trashes: a0, a1, a2, a3, b0, b1, b2, b3
+35    						##** Comment: Examples of single ALU instructions
+36    						##**
+37    						##** E-mail: milan.acanski@rt-sp.com
+38    						##**/
+39    						##*void X_S_ALUUnitInstructions()
+40    						##*{
+41    						##*
+42    						##*}
+43    						################################################################################
+44    	 0000				X_S_ALUUnitInstructions:
+45    						    #---------------------------------------------------------------------------
+46    						    # Add with Optional Shift Left by one position
+47    	 0000	 8A4A0005	    uhalfword(a2) = (0x5)               #<--| a2 = 0x00.00000005.00000000
+48    	 0001	 894A0002	    uhalfword(a1) = (0x2)               #<--| a1 = 0x00.00000002.00000000
+49    						
+50    	 0002	 0000454B	    a3 = a2-a1                          #<--| a3 = 0x00.00000003.00000000
+51    	 0003	 00004748	    a0 = (a2*2)-a1                      #<--| a0 = 0x00.00000008.00000000
+52    						
+53    						    #---------------------------------------------------------------------------
+54    						
+55    						    #---------------------------------------------------------------------------
+56    						    # Conditional Operation - Maximum
+57    	 0004	 8E4A0003	    uhalfword(b2) = (0x3)               #<--| b2 = 0x00.00000003.00000000
+58    	 0005	 8D4A0004	    uhalfword(b1) = (0x4)               #<--| b1 = 0x00.00000004.00000000
+59    						
+60    	 0006	 00004815	    if (a1>a2) b1=b2                    #<--| b1 remains unchanged
+61    						
+62    	 0007	 00004811	    if (b1>b2) a1=a2                    #<--| a1 will become 0x00.00000005.00000000
+63    						    #---------------------------------------------------------------------------
+64    						
+65    						    #---------------------------------------------------------------------------
+66    						    # Conditional Operation - Minimum
+67    	 0008	 8A4A0005	    uhalfword(a2) = (0x5)               #<--| a2 = 0x00.00000005.00000000
+68    	 0009	 8D4A0004	    uhalfword(b1) = (0x4)               #<--| b1 = 0x00.00000004.00000000
+69    	 000A	 894A0002	    uhalfword(a1) = (0x2)               #<--| a1 = 0x00.00000002.00000000
+70    						
+71    	 000B	 00004851	    if (b1<b2) a1=a2                    #<--| a1 remains unchanged
+72    	 000C	 00004855	    if (a1<a2) b1=b2                    #<--| b1 will become 0x00.00000003.00000000
+73    						    #---------------------------------------------------------------------------
+74    						
+75    						    #---------------------------------------------------------------------------
+76    						    # Bitwise Accumulator Move
+77    	 000D	 8F6AFFFB	    halfword(b3) = (-5)                 #<--|
+78    	 000E	 975A8000	    ufixed16(b3l) = (0x8000)            #^__| b3 = 0xff.fffffffb.80000000
+79    						
+80    	 000F	 00004C38	    a0 =+ b3                            #<--| a0 = 0xff.fffffffb.80000000
+81    	 0010	 4F497FFF	    a1 = b3                             #<--| a1 = 0xff.fffffffb.00000000
+82    						    #---------------------------------------------------------------------------
+83    						
+84    						    #---------------------------------------------------------------------------
+85    						    # Bitwise Complement
+86    	 0011	 00004C7A	    a2 =~ b3                            #<--| a2 = 0x00.00000004.7fffffff
+87    						    #---------------------------------------------------------------------------
+88    						
+89    						    #---------------------------------------------------------------------------
+90    						    # Accum Negative Accumulator Move
+91    	 0012	 00004CB8	    a0 =- b3                            #<--| a0 = 0x00.00000004.80000000
+92    						    #---------------------------------------------------------------------------
+93    						
+94    						    #---------------------------------------------------------------------------
+95    						    # Absolute Value Accumulator Move
+96    	 0013	 00004CDC	    b0 = |b3|                           #<--| b0 = 0x00.00000004.80000000
+97    						    #---------------------------------------------------------------------------
+98    						
+99    						    #---------------------------------------------------------------------------
+100   						    # Bitwise OR, XOR, AND, ZERO
+101   	 0014	 894A1200	    uhalfword(a1) = (0x1200)
+102   	 0015	 8D4A0034	    uhalfword(b1) = (0x34)
+103   	 0016	 00004DC0	    a0 = 0                              #<--| Zero out a0 (0x00.00000000.00000000)
+104   	 0017	 00004D29	    a1 = a1 | b1                        #<--| a0 = 0x00.00001234.00000000
+105   						
+106   	 0018	 884A1035	    uhalfword(a0) = (0x1035)
+107   	 0019	 00004D48	    a0 = a0 ^ a1                        #<--| a0 = 0x00.00000201.00000000
+108   						
+109   	 001A	 894A0001	    uhalfword(a1) = (0x1)
+110   	 001B	 00004D88	    a0 = a0 & a1                        #<--| a0 = 0x00.00000001.00000000
+111   						    #---------------------------------------------------------------------------
+112   						
+113   						    #---------------------------------------------------------------------------
+114   						    # Shift Examples
+115   	 001C	 895A0009	    ufixed16(a1) = (0x0009)             #<--| a0 = 0x00.00090000.00000000
+116   						
+117   	 001D	 00004E41	    a1 = a1 >> 1                        #<--| a0 = 0x00.00048000.00000000
+118   						
+119   	 001E	 00004E01	    a1 = a1 << 1                        #<--| a0 = 0x00.00090000.00000000
+120   						
+121   	 001F	 00004EC1	    a1 = a1 << 4                        #<--| a0 = 0x00.00900000.00000000
+122   						
+123   	 0020	 00004F81	    a1 = a1 << 8                        #<--| a0 = 0x00.90000000.00000000
+124   						                                        #   | Note that when MSB bit of high acc part gets
+125   						                                        #   | set to one as a result of right shift sign of number will
+126   						                                        #^__| not be changed (as it is case in for example C language)
+127   						    #---------------------------------------------------------------------------
+128   	 0021				ALUUnitInstructions_End:
+129   	 0021	 81880000	    ret
+130   						################################################################################
+131   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+ALUUnitInstructions_End                                                         			  Unused Relocatable        lesson07ALUUnit_code:0021H
+X_S_ALUUnitInstructions                                                         			  Public Relocatable       lesson07ALUUnit_code:0000H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+___SegStart_CODE_lesson07ALUUnit_code                                           			  Unused Relocatable        lesson07ALUUnit_code:0000H
+_lesson07ALUUnit_a_                                                             			  Unused Relocatable        __INIT:0000H
+lesson07ALUUnit_code                                                            			  Unused Relocatable        lesson07ALUUnit_code:0000H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0022H	 lesson07ALUUnit_code                    			 CODE_OVLY                               

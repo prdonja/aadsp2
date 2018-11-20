@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="15" version="2.0">
+<workbenchAdvisor/>
+<window height="1040" maximized="true" width="960" x="0" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="clide.ui.toolbar.RebuildRelaunchDebug" itemType="typeToolBarContribution" x="175" y="22"/>
+<coolItem id="clide.ui.toolbar.ConnectDisconnectDebugger" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="clide.ui.toolbar.LoadSaveSnapshot" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="91" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="pda.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="dsp.uld.ui.editors.StandaloneMultiPageEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1542716978082" focus="true" label="Workspace - Debug">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="dsp.uld.ui.editors.StandaloneMultiPageEditor" name=".suldproj" partName="/asmLessons/.suldproj" path="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/.suldproj" title="/asmLessons/.suldproj" tooltip="asmLessons/.suldproj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/asmLessons/.suldproj"/>
+</editor>
+<editor id="pda.editor" name="main.a" partName="/asmLessons/main.a" path="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/main.a" title="/asmLessons/main.a" tooltip="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/main.a&#x0A;asmLessons/main.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/asmLessons/main.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2279" selectionTopPixel="455"/>
+</editor>
+<editor id="pda.editor" name="lesson03AGU.a" partName="/asmLessons/lesson03AGU.a" path="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/lesson03AGU.a" title="/asmLessons/lesson03AGU.a" tooltip="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/lesson03AGU.a&#x0A;asmLessons/lesson03AGU.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/asmLessons/lesson03AGU.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="2027" selectionTopPixel="750"/>
+</editor>
+<editor id="pda.editor" name="lesson05MemoryMoves.a" partName="/asmLessons/lesson05MemoryMoves.a" path="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/lesson05MemoryMoves.a" title="/asmLessons/lesson05MemoryMoves.a" tooltip="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/lesson05MemoryMoves.a&#x0A;asmLessons/lesson05MemoryMoves.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/asmLessons/lesson05MemoryMoves.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1060" selectionTopPixel="1220"/>
+</editor>
+<editor id="pda.editor" name="lesson02SRSUnit.a" partName="/asmLessons/lesson02SRSUnit.a" path="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/lesson02SRSUnit.a" title="/asmLessons/lesson02SRSUnit.a" tooltip="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/lesson02SRSUnit.a&#x0A;asmLessons/lesson02SRSUnit.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/asmLessons/lesson02SRSUnit.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4158" selectionTopPixel="1260"/>
+</editor>
+<editor activePart="true" focus="true" id="pda.editor" name="simpleTasks.a" partName="/asmLessons/simpleTasks.a" path="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/simpleTasks.a" title="/asmLessons/simpleTasks.a" tooltip="D:/ra207_2015/aadsp2 vezbe materijali/Vezba2/asmLessons/simpleTasks.a&#x0A;asmLessons/simpleTasks.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/asmLessons/simpleTasks.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2881" selectionTopPixel="1530"/>
+</editor>
+</editors>
+<views>
+<view id="clide.debug.ui.registersView" partName="DSP Core Registers">
+<viewState/>
+</view>
+<view id="clide.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables"/>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="clide.ui.visualization.views.VisualizationView" partName="Visualization View"/>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="clide.debug.ui.memoryView" partName="Memory View">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" partName="Properties View">
+<viewState/>
+</view>
+<view id="clide.ui.visualization.views.OscilloscopeView" partName="Oscilloscope View"/>
+</views>
+<perspectives activePart="pda.editor" activePerspective="CLIDE.DebugPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="clide.ui.perspectives.Perspective" id="CLIDE.perspective" label="Development"/>
+<alwaysOnActionSet id="clide.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<show_view_action id="clide.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="clide.debug.ui.registersView"/>
+<show_view_action id="clide.debug.ui.memoryView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<new_wizard_action id="CLIDE.newFileWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.pde.runtime.LogView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="dsp.composer.xmlwizard.ui.CLIDEPropertiesView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.22" ratioLeft="220" ratioRight="780" relationship="2" relative="left"/>
+<info folder="true" part="console" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.75" ratioLeft="585" ratioRight="195" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" appearance="2" expanded="2">
+<page content="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" label="Properties View"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="clide.ui.perspectives.DebugPerspective" id="CLIDE.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="clide.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="clide.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="clide.debug.ui.registersView"/>
+<show_view_action id="clide.debug.ui.memoryView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<new_wizard_action id="CLIDE.newFileWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="clide.debug.ui.registersView"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="clide.debug.ui.memoryView"/>
+<view id="clide.ui.visualization.views.VisualizationView"/>
+<view id="clide.ui.visualization.views.OscilloscopeView"/>
+<view id="clide.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="clide.debug.ui.registersView" label="DSP Core Registers"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="clide.wiewFolder.debug" ratio="0.15086433" ratioLeft="288" ratioRight="1621" relationship="2" relative="left">
+<folder activePageID="clide.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="clide.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="clide.wiewFolder.console" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="clide.wiewFolder.debug">
+<folder activePageID="clide.debug.ui.memoryView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="clide.debug.ui.memoryView" label="Memory View"/>
+<page content="clide.ui.visualization.views.VisualizationView" label="Visualization View"/>
+<page content="clide.ui.visualization.views.OscilloscopeView" label="Oscilloscope View"/>
+<page content="clide.ui.visualization.views.ResponseGraphView" label="Response"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25979382" ratioLeft="126" ratioRight="359" relationship="4" relative="clide.wiewFolder.debug"/>
+<info folder="true" part="clide.wiewFolder.watch" ratio="0.45" ratioLeft="351" ratioRight="429" relationship="2" relative="clide.wiewFolder.debug">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/asmLessons/lesson02SRSUnit.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/asmLessons/main.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/asmLessons/lesson03AGU.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/asmLessons/lesson05MemoryMoves.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/asmLessons/simpleTasks.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" path="/asmLessons/.suldproj"/>
+</editors>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="633" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="388" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson05MemoryMoves.a" index="3">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="620" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="409" y="11"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson05MemoryMoves.a" index="3">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson02SRSUnit.a" index="0">
+<position info="not_deleted" x="4158" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1744" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="1422" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1786" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1208" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="1422" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1727" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="1642" y="58"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2066" y="0"/>
+</item>
+<item historyLabel="/asmLessons/.suldproj" index="5"/>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="131" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="1642" y="14"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2298" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson02SRSUnit.a" index="0">
+<position info="not_deleted" x="4158" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="131" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2069" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson05MemoryMoves.a" index="3">
+<position info="not_deleted" x="1060" y="0"/>
+</item>
+<item historyLabel="/asmLessons/lesson03AGU.a" index="2">
+<position info="not_deleted" x="2027" y="14"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="5365" y="0"/>
+</item>
+<item historyLabel="/asmLessons/.suldproj" index="5"/>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="722" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="2279" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="935" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1160" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1388" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1606" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="1828" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="2054" y="0"/>
+</item>
+<item historyLabel="/asmLessons/main.a" index="1">
+<position info="not_deleted" x="2279" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="4887" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1737" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1766" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1819" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1912" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="1929" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2002" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2051" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2099" y="0"/>
+</item>
+<item historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2236" y="0"/>
+</item>
+<item active="true" historyLabel="/asmLessons/simpleTasks.a" index="4">
+<position info="not_deleted" x="2250" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="simpleTasks.a" tooltip="asmLessons/simpleTasks.a">
+<persistable path="/asmLessons/simpleTasks.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="lesson02SRSUnit.a" tooltip="asmLessons/lesson02SRSUnit.a">
+<persistable path="/asmLessons/lesson02SRSUnit.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="lesson05MemoryMoves.a" tooltip="asmLessons/lesson05MemoryMoves.a">
+<persistable path="/asmLessons/lesson05MemoryMoves.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="lesson01Introduction.a" tooltip="asmLessons/lesson01Introduction.a">
+<persistable path="/asmLessons/lesson01Introduction.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="main.a" tooltip="asmLessons/main.a">
+<persistable path="/asmLessons/main.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.StandaloneMultiPageEditor" name=".suldproj" tooltip="asmLessons/.suldproj">
+<persistable path="/asmLessons/.suldproj"/>
+</file>
+</mruList>
+</workbench>
