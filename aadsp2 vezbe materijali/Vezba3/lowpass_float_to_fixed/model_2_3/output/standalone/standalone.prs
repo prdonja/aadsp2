@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1486996808278">
+	<dependencies>
+		<source_file last_build_time="1486996806796" path="filter/main.c">
+			<dependency>C:/CirrusDSP/include/stdio.h</dependency>
+			<dependency>./common.h</dependency>
+			<dependency>./stdfix_emu.h</dependency>
+			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
+			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
+		</source_file>
+	</dependencies>
+</settings>
