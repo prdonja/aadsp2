@@ -1,0 +1,89 @@
+1     	 0000					.extern _cccLesson01Introduction
+2     	 0000					.extern _cccLesson02FixedPointTypes
+3     	 0000					.extern _cccLesson03VariablesAndMemory
+4     	 0000					.extern _cccLesson06BasicFileIO
+5     	 0000					.public _main
+6     							.code_ovly
+6      >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+7     						
+8     						
+9     						
+10    							# This construction should ensure linking of crt0 in case when target is a standalone program without the OS
+11    							.if defined(_OVLY_)
+12    								.if .strcmp('standalone',_OVLY_)=0
+13    								.if .strcmp('crystal32',_TARGET_FAMILY_)=0
+14    	 0000							.extern __start         # dummy use of __start to force linkage of crt0
+15    	 0000				dummy		.equ(__start)
+16    								.else
+17    									.extern __intvec         # dummy use of __intvec to force linkage of intvec
+18    						dummy		.equ(__intvec)
+19    								.endif
+20    								.endif
+21    							.endif
+22    						
+23    	 0000				_main:			/* LN: 23 | CYCLE: 0 | RULES: () */ 
+24    	 0000	 BB540007		xmem[i7] = i7			# LN: 23 | 
+25    	 0001	 020F7FFF		i7 += 1			# LN: 23 | 
+26    	 0002				cline_23_0:			/* LN: 36 | CYCLE: 0 | RULES: () */ 
+27    	 0002	 80880000		call (_cccLesson01Introduction)			# LN: 36 | 
+28    	 0003				cline_36_0:			/* LN: 41 | CYCLE: 0 | RULES: () */ 
+29    	 0003	 80880000		call (_cccLesson02FixedPointTypes)			# LN: 41 | 
+30    	 0004				cline_41_0:			/* LN: 46 | CYCLE: 0 | RULES: () */ 
+31    	 0004	 80880000		call (_cccLesson03VariablesAndMemory)			# LN: 46 | 
+32    	 0005				cline_46_0:			/* LN: 51 | CYCLE: 0 | RULES: () */ 
+33    	 0005	 80880000		call (_cccLesson06BasicFileIO)			# LN: 51 | 
+34    	 0006				cline_51_0:			/* LN: 54 | CYCLE: 0 | RULES: () */ 
+35    	 0006	 80080007		jmp (__epilogue_168)			# LN: 54 | 
+36    	 0007				__epilogue_168:			/* LN: 54 | CYCLE: 0 | RULES: () */ 
+37    	 0007	 02177FFF		i7 -= 1			# LN: 54 | 
+38    	 0008	 81880000		ret			# LN: 54 | 
+39    						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_MUI_VERSION_                                                                   					 Define                 "020000"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+__epilogue_168                                                                  			         Relocatable         ccc2Lessons_GEN_0000:0007H
+__start                                                                         					 External   
+_cccLesson01Introduction                                                        					 External   
+_cccLesson02FixedPointTypes                                                     					 External   
+_cccLesson03VariablesAndMemory                                                  					 External   
+_cccLesson06BasicFileIO                                                         					 External   
+_main                                                                           			  Public Relocatable       ccc2Lessons_GEN_0000:0000H
+cline_23_0                                                                      			  Unused Relocatable        ccc2Lessons_GEN_0000:0002H
+cline_36_0                                                                      			  Unused Relocatable        ccc2Lessons_GEN_0000:0003H
+cline_41_0                                                                      			  Unused Relocatable        ccc2Lessons_GEN_0000:0004H
+cline_46_0                                                                      			  Unused Relocatable        ccc2Lessons_GEN_0000:0005H
+cline_51_0                                                                      			  Unused Relocatable        ccc2Lessons_GEN_0000:0006H
+dummy                                                                           			  Unused Number				     0 (0H)
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0009H	 ccc2Lessons_GEN_0000                    			 CODE_OVLY                               

@@ -1,0 +1,408 @@
+1     	 0000					.public _buffer
+2     	 0000					.public _file_name_in
+3     	 0000					.public _file_name_out
+4     	 0000					.public _cccLesson06BasicFileIO
+5     	 0000					.extern _fclose
+6     	 0000					.extern _fopen
+7     	 0000					.extern _getc
+8     	 0000					.extern _putc
+9     							.xdata_ovly
+9      >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+10    	 0000				_buffer
+11    	 0000					.bss (0x80)
+12    							.xdata_ovly
+12     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+13    	 0000				_file_name_in
+14    	 0000					.dw  (0x66)
+	 0000	 00000066	 
+15    	 0001					.dw  (0x69)
+	 0001	 00000069	 
+16    	 0002					.dw  (0x6c)
+	 0002	 0000006C	 
+17    	 0003					.dw  (0x65)
+	 0003	 00000065	 
+18    	 0004					.dw  (0x49)
+	 0004	 00000049	 
+19    	 0005					.dw  (0x0)
+	 0005	 00000000	 
+20    	 0006					.bsc (0x1a), 0x00000000
+	 0006	 00000000	 
+	 0007	 00000000	 
+	 0008	 00000000	 
+	 0009	 00000000	 
+	 000A	 00000000	 
+	 000B	 00000000	 
+	 000C	 00000000	 
+	 000D	 00000000	 
+	 000E	 00000000	 
+	 000F	 00000000	 
+	 0010	 00000000	 
+	 0011	 00000000	 
+	 0012	 00000000	 
+	 0013	 00000000	 
+	 0014	 00000000	 
+	 0015	 00000000	 
+	 0016	 00000000	 
+	 0017	 00000000	 
+	 0018	 00000000	 
+	 0019	 00000000	 
+	 001A	 00000000	 
+	 001B	 00000000	 
+	 001C	 00000000	 
+	 001D	 00000000	 
+	 001E	 00000000	 
+	 001F	 00000000	 
+21    							.xdata_ovly
+21     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+22    	 0000				_file_name_out
+23    	 0000					.dw  (0x66)
+	 0000	 00000066	 
+24    	 0001					.dw  (0x69)
+	 0001	 00000069	 
+25    	 0002					.dw  (0x6c)
+	 0002	 0000006C	 
+26    	 0003					.dw  (0x65)
+	 0003	 00000065	 
+27    	 0004					.dw  (0x4f)
+	 0004	 0000004F	 
+28    	 0005					.dw  (0x0)
+	 0005	 00000000	 
+29    	 0006					.bsc (0x1a), 0x00000000
+	 0006	 00000000	 
+	 0007	 00000000	 
+	 0008	 00000000	 
+	 0009	 00000000	 
+	 000A	 00000000	 
+	 000B	 00000000	 
+	 000C	 00000000	 
+	 000D	 00000000	 
+	 000E	 00000000	 
+	 000F	 00000000	 
+	 0010	 00000000	 
+	 0011	 00000000	 
+	 0012	 00000000	 
+	 0013	 00000000	 
+	 0014	 00000000	 
+	 0015	 00000000	 
+	 0016	 00000000	 
+	 0017	 00000000	 
+	 0018	 00000000	 
+	 0019	 00000000	 
+	 001A	 00000000	 
+	 001B	 00000000	 
+	 001C	 00000000	 
+	 001D	 00000000	 
+	 001E	 00000000	 
+	 001F	 00000000	 
+30    							.xdata_ovly
+30     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+31    	 0000				_string_const_0
+32    	 0000					.dw  (0x72)
+	 0000	 00000072	 
+33    	 0001					.dw  (0x62)
+	 0001	 00000062	 
+34    	 0002					.dw  (0x0)
+	 0002	 00000000	 
+35    							.xdata_ovly
+35     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+36    	 0000				_string_const_1
+37    	 0000					.dw  (0x77)
+	 0000	 00000077	 
+38    	 0001					.dw  (0x62)
+	 0001	 00000062	 
+39    	 0002					.dw  (0x0)
+	 0002	 00000000	 
+40    							.code_ovly
+40     >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+41    						
+42    						
+43    						
+44    	 0000				_cccLesson06BasicFileIO:			/* LN: 20 | CYCLE: 0 | RULES: () */ 
+45    	 0000	 BB540007		xmem[i7] = i7			# LN: 20 | 
+46    	 0001	 020F7FFF		i7 += 1			# LN: 20 | 
+47    	 0002	 87750004		i7 = i7 + (0x4)			# LN: 20 | 
+48    	 0003				cline_20_0:			/* LN: 23 | CYCLE: 0 | RULES: () */ 
+49    	 0003	 90750001		i0 = i7 - (0x1)			# LN: 23 | 
+50    	 0004	 884A0000		uhalfword(a0) = (_buffer + 0)			# LN: 23 | 
+51    	 0005	 88540000		xmem[i0] = a0			# LN: 23 | 
+52    	 0006				cline_23_0:			/* LN: 28 | CYCLE: 0 | RULES: () */ 
+53    	 0006	 A0050000		i0 = (0) + (_file_name_in + 0)			# LN: 28 | 
+54    	 0007	 A1050000		i1 = (0) + (_string_const_0)			# LN: 28 | 
+55    	 0008	 80880000		call (_fopen)			# LN: 28 | 
+56    	 0009	 98090030		AnyReg(i0, a0h)			# LN: 28 | 
+57    	 000A	 91750002		i1 = i7 - (0x2)			# LN: 28 | 
+58    	 000B	 B0540001		xmem[i1] = i0			# LN: 28 | 
+59    	 000C				cline_28_0:			/* LN: 31 | CYCLE: 0 | RULES: () */ 
+60    	 000C	 90750002		i0 = i7 - (0x2)			# LN: 31 | 
+61    	 000D	 88140000		a0 = xmem[i0]			# LN: 31 | 
+62    	 000E	 00004E80		a0 & a0			# LN: 31 | 
+63    	 000F	 84480011		if (a != 0) jmp (else_0)			# LN: 31 | 
+64    	 0010				cline_31_0:			/* LN: 33 | CYCLE: 0 | RULES: () */ 
+65    	 0010	 80080058		jmp (__epilogue_54)			# LN: 33 | 
+66    	 0011				cline_33_0:			/* LN: 37 | CYCLE: 0 | RULES: () */ 
+67    	 0011				while_0:			/* LN: 37 | CYCLE: 0 | RULES: () */ 
+68    	 0011				endif_0:			/* LN: 31 | CYCLE: 0 | RULES: () */ 
+69    	 0011				else_0:			/* LN: 31 | CYCLE: 0 | RULES: () */ 
+70    	 0011	 884A0001		uhalfword(a0) = (0x1)			# LN: 37 | 
+71    	 0012	 00004E80		a0 & a0			# LN: 37 | 
+72    	 0013	 8408002A		if (a == 0) jmp (while_end_0)			# LN: 37 | 
+73    	 0014				cline_37_0:			/* LN: 39 | CYCLE: 0 | RULES: () */ 
+74    	 0014	 90750002		i0 = i7 - (0x2)			# LN: 39 | 
+75    	 0015	 B0140000		i0 = xmem[i0]			# LN: 39 | 
+76    	 0016	 80880000		call (_getc)			# LN: 39 | 
+77    	 0017	 90750003		i0 = i7 - (0x3)			# LN: 39 | 
+78    	 0018	 98540000		xmem[i0] = a0h			# LN: 39 | 
+79    	 0019				cline_39_0:			/* LN: 41 | CYCLE: 0 | RULES: () */ 
+80    	 0019	 90750003		i0 = i7 - (0x3)			# LN: 41 | 
+81    	 001A	 91750001		i1 = i7 - (0x1)			# LN: 41 | 
+82    	 001B	 B1140001		i1 = xmem[i1]			# LN: 41 | 
+83    	 001C	 88140000		a0 = xmem[i0]			# LN: 41 | 
+84    	 001D	 98540001		xmem[i1] = a0h			# LN: 41 | 
+85    	 001E				cline_41_0:			/* LN: 42 | CYCLE: 0 | RULES: () */ 
+86    	 001E	 90750001		i0 = i7 - (0x1)			# LN: 42 | 
+87    	 001F	 B0140000		i0 = xmem[i0]			# LN: 42 | 
+88    	 0020	 91750001		i1 = i7 - (0x1)			# LN: 42 | 
+89    	 0021	 02087FFF		i0 += 1			# LN: 42 | 
+90    	 0022	 B0540001		xmem[i1] = i0			# LN: 42 | 
+91    	 0023				cline_42_0:			/* LN: 44 | CYCLE: 0 | RULES: () */ 
+92    	 0023	 90750003		i0 = i7 - (0x3)			# LN: 44 | 
+93    	 0024	 88140000		a0 = xmem[i0]			# LN: 44 | 
+94    	 0025	 896AFFFF		halfword(a1) = (0xffff)			# LN: 44 | 
+95    	 0026	 00004F08		a0 - a1			# LN: 44 | 
+96    	 0027	 84480029		if (a != 0) jmp (else_1)			# LN: 44 | 
+97    	 0028				cline_44_0:			/* LN: 46 | CYCLE: 0 | RULES: () */ 
+98    	 0028	 8008002A		jmp (_6D66D0)			# LN: 46 | 
+99    	 0029				cline_46_0:			/* LN: 37 | CYCLE: 0 | RULES: () */ 
+100   	 0029				endif_1:			/* LN: 44 | CYCLE: 0 | RULES: () */ 
+101   	 0029				else_1:			/* LN: 44 | CYCLE: 0 | RULES: () */ 
+102   	 0029	 80080011		jmp (while_0)			# LN: 37 | 
+103   	 002A				cline_37_1:			/* LN: 51 | CYCLE: 0 | RULES: () */ 
+104   	 002A				_6D66D0:			/* LN: 51 | CYCLE: 0 | RULES: () */ 
+105   	 002A				while_end_0:			/* LN: 37 | CYCLE: 0 | RULES: () */ 
+106   	 002A	 90750002		i0 = i7 - (0x2)			# LN: 51 | 
+107   	 002B	 B0140000		i0 = xmem[i0]			# LN: 51 | 
+108   	 002C	 80880000		call (_fclose)			# LN: 51 | 
+109   	 002D				cline_51_0:			/* LN: 54 | CYCLE: 0 | RULES: () */ 
+110   	 002D	 A0050000		i0 = (0) + (_file_name_out + 0)			# LN: 54 | 
+111   	 002E	 A1050000		i1 = (0) + (_string_const_1)			# LN: 54 | 
+112   	 002F	 80880000		call (_fopen)			# LN: 54 | 
+113   	 0030	 98090030		AnyReg(i0, a0h)			# LN: 54 | 
+114   	 0031	 91750004		i1 = i7 - (0x4)			# LN: 54 | 
+115   	 0032	 B0540001		xmem[i1] = i0			# LN: 54 | 
+116   	 0033				cline_54_0:			/* LN: 57 | CYCLE: 0 | RULES: () */ 
+117   	 0033	 90750004		i0 = i7 - (0x4)			# LN: 57 | 
+118   	 0034	 88140000		a0 = xmem[i0]			# LN: 57 | 
+119   	 0035	 00004E80		a0 & a0			# LN: 57 | 
+120   	 0036	 84480038		if (a != 0) jmp (else_2)			# LN: 57 | 
+121   	 0037				cline_57_0:			/* LN: 59 | CYCLE: 0 | RULES: () */ 
+122   	 0037	 80080058		jmp (__epilogue_54)			# LN: 59 | 
+123   	 0038				cline_59_0:			/* LN: 63 | CYCLE: 0 | RULES: () */ 
+124   	 0038				endif_2:			/* LN: 57 | CYCLE: 0 | RULES: () */ 
+125   	 0038				else_2:			/* LN: 57 | CYCLE: 0 | RULES: () */ 
+126   	 0038	 90750001		i0 = i7 - (0x1)			# LN: 63 | 
+127   	 0039	 884A0000		uhalfword(a0) = (_buffer + 0)			# LN: 63 | 
+128   	 003A	 88540000		xmem[i0] = a0			# LN: 63 | 
+129   	 003B				cline_63_0:			/* LN: 65 | CYCLE: 0 | RULES: () */ 
+130   	 003B				while_1:			/* LN: 65 | CYCLE: 0 | RULES: () */ 
+131   	 003B	 884A0001		uhalfword(a0) = (0x1)			# LN: 65 | 
+132   	 003C	 00004E80		a0 & a0			# LN: 65 | 
+133   	 003D	 84080054		if (a == 0) jmp (while_end_1)			# LN: 65 | 
+134   	 003E				cline_65_0:			/* LN: 67 | CYCLE: 0 | RULES: () */ 
+135   	 003E	 90750001		i0 = i7 - (0x1)			# LN: 67 | 
+136   	 003F	 B0140000		i0 = xmem[i0]			# LN: 67 | 
+137   	 0040	 91750003		i1 = i7 - (0x3)			# LN: 67 | 
+138   	 0041	 88140000		a0 = xmem[i0]			# LN: 67 | 
+139   	 0042	 98540001		xmem[i1] = a0h			# LN: 67 | 
+140   	 0043				cline_67_0:			/* LN: 68 | CYCLE: 0 | RULES: () */ 
+141   	 0043	 90750001		i0 = i7 - (0x1)			# LN: 68 | 
+142   	 0044	 B0140000		i0 = xmem[i0]			# LN: 68 | 
+143   	 0045	 91750001		i1 = i7 - (0x1)			# LN: 68 | 
+144   	 0046	 02087FFF		i0 += 1			# LN: 68 | 
+145   	 0047	 B0540001		xmem[i1] = i0			# LN: 68 | 
+146   	 0048				cline_68_0:			/* LN: 70 | CYCLE: 0 | RULES: () */ 
+147   	 0048	 90750003		i0 = i7 - (0x3)			# LN: 70 | 
+148   	 0049	 88140000		a0 = xmem[i0]			# LN: 70 | 
+149   	 004A	 896AFFFF		halfword(a1) = (0xffff)			# LN: 70 | 
+150   	 004B	 00004F08		a0 - a1			# LN: 70 | 
+151   	 004C	 8448004E		if (a != 0) jmp (else_3)			# LN: 70 | 
+152   	 004D				cline_70_0:			/* LN: 72 | CYCLE: 0 | RULES: () */ 
+153   	 004D	 80080054		jmp (_6D72A8)			# LN: 72 | 
+154   	 004E				cline_72_0:			/* LN: 75 | CYCLE: 0 | RULES: () */ 
+155   	 004E				endif_3:			/* LN: 70 | CYCLE: 0 | RULES: () */ 
+156   	 004E				else_3:			/* LN: 70 | CYCLE: 0 | RULES: () */ 
+157   	 004E	 90750003		i0 = i7 - (0x3)			# LN: 75 | 
+158   	 004F	 88140000		a0 = xmem[i0]			# LN: 75 | 
+159   	 0050	 90750004		i0 = i7 - (0x4)			# LN: 75 | 
+160   	 0051	 B0140000		i0 = xmem[i0]			# LN: 75 | 
+161   	 0052	 80880000		call (_putc)			# LN: 75 | 
+162   	 0053				cline_75_0:			/* LN: 65 | CYCLE: 0 | RULES: () */ 
+163   	 0053	 8008003B		jmp (while_1)			# LN: 65 | 
+164   	 0054				cline_65_1:			/* LN: 79 | CYCLE: 0 | RULES: () */ 
+165   	 0054				_6D72A8:			/* LN: 79 | CYCLE: 0 | RULES: () */ 
+166   	 0054				while_end_1:			/* LN: 65 | CYCLE: 0 | RULES: () */ 
+167   	 0054	 90750004		i0 = i7 - (0x4)			# LN: 79 | 
+168   	 0055	 B0140000		i0 = xmem[i0]			# LN: 79 | 
+169   	 0056	 80880000		call (_fclose)			# LN: 79 | 
+170   	 0057				cline_79_0:			/* LN: 80 | CYCLE: 0 | RULES: () */ 
+171   	 0057	 80080058		jmp (__epilogue_54)			# LN: 80 | 
+172   	 0058				__epilogue_54:			/* LN: 80 | CYCLE: 0 | RULES: () */ 
+173   	 0058	 97750004		i7 = i7 - (0x4)			# LN: 80 | 
+174   	 0059	 02177FFF		i7 -= 1			# LN: 80 | 
+175   	 005A	 81880000		ret			# LN: 80 | 
+176   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+_6D66D0                                                                         			         Relocatable         lesson06BasicFileIO_GEN_0005:002AH
+_6D72A8                                                                         			         Relocatable         lesson06BasicFileIO_GEN_0005:0054H
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_MUI_VERSION_                                                                   					 Define                 "020000"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+__epilogue_54                                                                   			         Relocatable         lesson06BasicFileIO_GEN_0005:0058H
+_buffer                                                                         			  Public Relocatable       lesson06BasicFileIO_GEN_0000:0000H
+_cccLesson06BasicFileIO                                                         			  Public Relocatable       lesson06BasicFileIO_GEN_0005:0000H
+_fclose                                                                         					 External   
+_file_name_in                                                                   			  Public Relocatable       lesson06BasicFileIO_GEN_0001:0000H
+_file_name_out                                                                  			  Public Relocatable       lesson06BasicFileIO_GEN_0002:0000H
+_fopen                                                                          					 External   
+_getc                                                                           					 External   
+_putc                                                                           					 External   
+_string_const_0                                                                 			         Relocatable         lesson06BasicFileIO_GEN_0003:0000H
+_string_const_1                                                                 			         Relocatable         lesson06BasicFileIO_GEN_0004:0000H
+cline_20_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0003H
+cline_23_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0006H
+cline_28_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:000CH
+cline_31_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0010H
+cline_33_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0011H
+cline_37_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0014H
+cline_37_1                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:002AH
+cline_39_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0019H
+cline_41_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:001EH
+cline_42_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0023H
+cline_44_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0028H
+cline_46_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0029H
+cline_51_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:002DH
+cline_54_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0033H
+cline_57_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0037H
+cline_59_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0038H
+cline_63_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:003BH
+cline_65_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:003EH
+cline_65_1                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0054H
+cline_67_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0043H
+cline_68_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0048H
+cline_70_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:004DH
+cline_72_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:004EH
+cline_75_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0053H
+cline_79_0                                                                      			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0057H
+else_0                                                                          			         Relocatable         lesson06BasicFileIO_GEN_0005:0011H
+else_1                                                                          			         Relocatable         lesson06BasicFileIO_GEN_0005:0029H
+else_2                                                                          			         Relocatable         lesson06BasicFileIO_GEN_0005:0038H
+else_3                                                                          			         Relocatable         lesson06BasicFileIO_GEN_0005:004EH
+endif_0                                                                         			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0011H
+endif_1                                                                         			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0029H
+endif_2                                                                         			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:0038H
+endif_3                                                                         			  Unused Relocatable        lesson06BasicFileIO_GEN_0005:004EH
+while_0                                                                         			         Relocatable         lesson06BasicFileIO_GEN_0005:0011H
+while_1                                                                         			         Relocatable         lesson06BasicFileIO_GEN_0005:003BH
+while_end_0                                                                     			         Relocatable         lesson06BasicFileIO_GEN_0005:002AH
+while_end_1                                                                     			         Relocatable         lesson06BasicFileIO_GEN_0005:0054H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0080H	 lesson06BasicFileIO_GEN_0000            			 X_OVLY                                  
+0020H	 lesson06BasicFileIO_GEN_0001            			 X_OVLY                                  
+0020H	 lesson06BasicFileIO_GEN_0002            			 X_OVLY                                  
+0003H	 lesson06BasicFileIO_GEN_0003            			 X_OVLY                                  
+0003H	 lesson06BasicFileIO_GEN_0004            			 X_OVLY                                  
+005BH	 lesson06BasicFileIO_GEN_0005            			 CODE_OVLY                               

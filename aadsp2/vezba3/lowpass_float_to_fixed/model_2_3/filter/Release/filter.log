@@ -1,0 +1,39 @@
+﻿Build started 4/28/2016 5:30:34 PM.
+     1>Project "D:\nastava\aadsp2\praktikum stampa\vezbe\Dan6\lowpass_float_to_fixed\model_2_3\filter\filter.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\filter Model2.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt fixed_point_math.cpp stdfix_emu.cpp
+         fixed_point_math.cpp
+     1>fixed_point_math.cpp(455): warning C4309: '=' : truncation of constant value
+     1>fixed_point_math.cpp(517): warning C4244: '=' : conversion from 'unsigned long' to 'coyote_math::accumulator::guard_t', possible loss of data
+     1>fixed_point_math.cpp(527): warning C4309: '=' : truncation of constant value
+     1>fixed_point_math.cpp(557): warning C4309: '=' : truncation of constant value
+         stdfix_emu.cpp
+     1>stdfix_emu.cpp(56): warning C4309: 'argument' : truncation of constant value
+     1>stdfix_emu.cpp(310): warning C4309: 'argument' : truncation of constant value
+     1>stdfix_emu.cpp(518): warning C4244: '=' : conversion from 'unsigned long' to 'char', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\main1.obj" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstddef(18): error C2054: expected '(' to follow 'using'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstddef(18): error C2061: syntax error : identifier 'using'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(78): error C2143: syntax error : missing '{' before '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(78): error C2059: syntax error : '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(87): error C2143: syntax error : missing '{' before '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(87): error C2059: syntax error : '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(98): error C2061: syntax error : identifier 'tr1'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(98): error C2059: syntax error : ';'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(98): error C2449: found '{' at file scope (missing function header?)
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(101): error C2059: syntax error : '}'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(125): error C2143: syntax error : missing '{' before ':'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(125): error C2059: syntax error : ':'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(132): error C2143: syntax error : missing '{' before '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(132): error C2059: syntax error : '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(141): error C2143: syntax error : missing '{' before '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xstddef(141): error C2059: syntax error : '<'
+     1>C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\eh.h(27): fatal error C1189: #error :  "eh.h is only for C++!"
+     1>Done Building Project "D:\nastava\aadsp2\praktikum stampa\vezbe\Dan6\lowpass_float_to_fixed\model_2_3\filter\filter.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.64

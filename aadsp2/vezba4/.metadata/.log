@@ -1,0 +1,350 @@
+!SESSION 2018-11-22 13:14:57.646 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sr
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data @noDefault
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-22 13:18:25.825
+!MESSAGE Could not write file: D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\CCC2Lessons\.cproject.
+** Error occured because of file status <hidden>.
+** This status is disabled now, to allow writing.
+
+!ENTRY org.eclipse.jface 2 0 2018-11-22 13:20:10.368
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-11-22 13:20:10.368
+!MESSAGE A conflict occurred for CTRL+F10:
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction),
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showViewMenu,Show View Menu,
+		Show the view menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowViewMenuHandler@1a7d653,
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.showRulerContextMenu,Show Ruler Context Menu,
+		Show the context menu for the ruler,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$ShowRulerContextMenuAction@1e8184f)),
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-22 13:26:32.470
+!MESSAGE Could not write file: D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\.cproject.
+** Error occured because of file status <hidden>.
+** This status is disabled now, to allow writing.
+
+!ENTRY clbuild 2 0 2018-11-22 15:10:50.571
+!MESSAGE Unable to delete directory D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\output.
+
+!ENTRY dsp.uld.ui 4 0 2018-11-22 15:21:20.568
+!MESSAGE Bad board config file specified:D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy. Check for syntax errors, fix and try again.: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: Bad board config file specified:D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy. Check for syntax errors, fix and try again.: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+	at clide.lib.xml.AppJAXBContext.toCoreException(AppJAXBContext.java:49)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.compileScript(AbstractBootLoader.java:63)
+	at dsp.boardconfig.groovy.bootloader.StandaloneBootLoader.load(StandaloneBootLoader.java:53)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.loadPaths(AbstractBootLoader.java:93)
+	at dsp.uld.standalone.slaveboot.StandaloneSlaveBoot.load(StandaloneSlaveBoot.java:222)
+	at dsp.uld.ui.editors.StandaloneUldPage$9.run(StandaloneUldPage.java:600)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:137)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:279)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:258)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:613)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:625)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:634)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.compileScript(AbstractBootLoader.java:59)
+	... 5 more
+!SUBENTRY 1 dsp.boardconfig.groovy 4 0 2018-11-22 15:21:20.568
+!MESSAGE Bad board config file specified:D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy. Check for syntax errors, fix and try again.: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+!STACK 0
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:137)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:279)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:258)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:613)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:625)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:634)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.compileScript(AbstractBootLoader.java:59)
+	at dsp.boardconfig.groovy.bootloader.StandaloneBootLoader.load(StandaloneBootLoader.java:53)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.loadPaths(AbstractBootLoader.java:93)
+	at dsp.uld.standalone.slaveboot.StandaloneSlaveBoot.load(StandaloneSlaveBoot.java:222)
+	at dsp.uld.ui.editors.StandaloneUldPage$9.run(StandaloneUldPage.java:600)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY dsp.uld.ui 4 0 2018-11-22 15:22:21.115
+!MESSAGE Bad board config file specified:D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy. Check for syntax errors, fix and try again.: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+!STACK 1
+org.eclipse.core.runtime.CoreException: Bad board config file specified:D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy. Check for syntax errors, fix and try again.: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+	at clide.lib.xml.AppJAXBContext.toCoreException(AppJAXBContext.java:49)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.compileScript(AbstractBootLoader.java:63)
+	at dsp.boardconfig.groovy.bootloader.StandaloneBootLoader.load(StandaloneBootLoader.java:53)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.loadPaths(AbstractBootLoader.java:93)
+	at dsp.uld.standalone.slaveboot.StandaloneSlaveBoot.load(StandaloneSlaveBoot.java:222)
+	at dsp.uld.ui.editors.StandaloneUldPage$9.run(StandaloneUldPage.java:600)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:137)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:279)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:258)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:613)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:625)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:634)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.compileScript(AbstractBootLoader.java:59)
+	... 5 more
+!SUBENTRY 1 dsp.boardconfig.groovy 4 0 2018-11-22 15:22:21.115
+!MESSAGE Bad board config file specified:D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy. Check for syntax errors, fix and try again.: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+!STACK 0
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+D:\ra207_2015\aadsp2 vezbe materijali\Vezba4\multitapEcho_model3\crystal32.groovy: 86: unexpected char: '\' @ line 86, column 48.
+                   "D:\ra207_2015\aadsp2 ve
+                                 ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:137)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:162)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:912)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:574)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:550)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:527)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:279)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:258)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:613)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:625)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:634)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.compileScript(AbstractBootLoader.java:59)
+	at dsp.boardconfig.groovy.bootloader.StandaloneBootLoader.load(StandaloneBootLoader.java:53)
+	at dsp.boardconfig.groovy.bootloader.AbstractBootLoader.loadPaths(AbstractBootLoader.java:93)
+	at dsp.uld.standalone.slaveboot.StandaloneSlaveBoot.load(StandaloneSlaveBoot.java:222)
+	at dsp.uld.ui.editors.StandaloneUldPage$9.run(StandaloneUldPage.java:600)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.cirrus.cdm 4 0 2018-11-22 15:24:18.731
+!MESSAGE No devices found
+!STACK 0
+com.cirrus.cdm.comm.ProxyServerException: No devices found
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.sendCommand(CpsDeviceCommunicator.java:180)
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.commandChannelConnect(CpsDeviceCommunicator.java:143)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CPSDevice.connectToCPS(CPSDevice.java:88)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:74)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:83)
+	at com.cirrus.cdm.device.internal.CPSDeviceCache.getDebugDevice(CPSDeviceCache.java:66)
+	at clide.debug.core.model.PDADebugTarget.getCpsDevice(PDADebugTarget.java:198)
+	at clide.debug.ui.console.SimulatorConsoleListener$UpdateThread.run(SimulatorConsoleListener.java:155)
+
+!ENTRY com.cirrus.cdm 4 0 2018-11-22 15:25:54.442
+!MESSAGE No devices found
+!STACK 0
+com.cirrus.cdm.comm.ProxyServerException: No devices found
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.sendCommand(CpsDeviceCommunicator.java:180)
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.commandChannelConnect(CpsDeviceCommunicator.java:143)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CPSDevice.connectToCPS(CPSDevice.java:88)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:74)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:83)
+	at com.cirrus.cdm.device.internal.CPSDeviceCache.getDebugDevice(CPSDeviceCache.java:66)
+	at clide.debug.core.model.PDADebugTarget.getCpsDevice(PDADebugTarget.java:198)
+	at clide.debug.ui.console.SimulatorConsoleListener$UpdateThread.run(SimulatorConsoleListener.java:155)
+
+!ENTRY com.cirrus.cdm 4 0 2018-11-22 15:29:16.350
+!MESSAGE No devices found
+!STACK 0
+com.cirrus.cdm.comm.ProxyServerException: No devices found
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.sendCommand(CpsDeviceCommunicator.java:180)
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.commandChannelConnect(CpsDeviceCommunicator.java:143)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CPSDevice.connectToCPS(CPSDevice.java:88)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:74)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:83)
+	at com.cirrus.cdm.device.internal.CPSDeviceCache.getDebugDevice(CPSDeviceCache.java:66)
+	at clide.debug.core.model.PDADebugTarget.getCpsDevice(PDADebugTarget.java:198)
+	at clide.debug.ui.console.SimulatorConsoleListener$UpdateThread.run(SimulatorConsoleListener.java:155)
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-11-22 15:34:14.042
+!MESSAGE An internal error occurred during: "PDA Event Dispatch. ".
+!STACK 0
+java.lang.NullPointerException
+	at clide.debug.core.model.PDADebugTarget.removeEventListener(PDADebugTarget.java:123)
+	at clide.debug.core.model.PDADebugTarget.terminated(PDADebugTarget.java:458)
+	at clide.debug.core.model.TCPProcess.terminated(TCPProcess.java:97)
+	at clide.debug.core.model.TCPProcess$EventDispatchJob.run(TCPProcess.java:221)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 0 2018-11-22 15:34:14.104
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.debug.core.DebugPlugin.stop() of bundle org.eclipse.debug.core.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:791)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1161)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:691)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:598)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+Caused by: java.lang.NullPointerException
+	at clide.debug.core.model.TCPProcess.terminated(TCPProcess.java:101)
+	at clide.debug.core.model.PDADebugTarget.terminate(PDADebugTarget.java:253)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:2335)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:630)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	... 18 more
+Root exception:
+java.lang.NullPointerException
+	at clide.debug.core.model.TCPProcess.terminated(TCPProcess.java:101)
+	at clide.debug.core.model.PDADebugTarget.terminate(PDADebugTarget.java:253)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:2335)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:630)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1161)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:691)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:598)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-11-22 15:34:14.463
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.cirrus.cdm.comm.internal.CpsEventDispatchJob

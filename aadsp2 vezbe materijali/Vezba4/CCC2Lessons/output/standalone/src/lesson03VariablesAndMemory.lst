@@ -1,0 +1,441 @@
+1     	 0000					.public _a
+2     	 0000					.public _b
+3     	 0000					.public _data1
+4     	 0000					.public _data2
+5     	 0000					.public _global
+6     	 0000					.public _global_y
+7     	 0000					.public _high
+8     	 0000					.public _low
+9     	 0000					.public _pglobal
+10    	 0000					.public _whole
+11    	 0000					.public _cccLesson03CircularBuffer
+12    	 0000					.public _cccLesson03DefiningLocalvariables
+13    	 0000					.public _cccLesson03MemoryZoneChange
+14    	 0000					.public _cccLesson03VariablesAndMemory
+15    							.xdata_ovly align 16
+15     >> start of macro: .xdata_ovly align
+1+    									seg_align , "X_OVLY", X, 16
+1+     >> start of macro: seg_align
+1+    						    SEGMENT "X_OVLY" ALIGN( 16 )
+2+    						  .if "" != ""
+3+    						___SegStart_X_
+4+    						  .endif
+5+    							#RememberSegmentType
+6+     >> end of macro: seg_align
+2+     >> end of macro: .xdata_ovly align
+16    	 0000				_a
+17    	 0000					.bss (0x10)
+18    							.ydata_ovly align 32
+18     >> start of macro: .ydata_ovly align
+1+    									seg_align , "Y_OVLY", Y, 32
+1+     >> start of macro: seg_align
+1+    						    SEGMENT "Y_OVLY" ALIGN( 32 )
+2+    						  .if "" != ""
+3+    						___SegStart_Y_
+4+    						  .endif
+5+    							#RememberSegmentType
+6+     >> end of macro: seg_align
+2+     >> end of macro: .ydata_ovly align
+19    	 0000				_b
+20    	 0000					.dw  (0x0)
+	 0000	 00000000	 
+21    	 0001					.dw  (0xccccccd)
+	 0001	 0CCCCCCD	 
+22    	 0002					.dw  (0x1999999a)
+	 0002	 1999999A	 
+23    	 0003					.dw  (0x26666666)
+	 0003	 26666666	 
+24    	 0004					.dw  (0x33333333)
+	 0004	 33333333	 
+25    	 0005					.dw  (0x40000000)
+	 0005	 40000000	 
+26    	 0006					.dw  (0x4ccccccd)
+	 0006	 4CCCCCCD	 
+27    	 0007					.dw  (0x5999999a)
+	 0007	 5999999A	 
+28    	 0008					.dw  (0x66666666)
+	 0008	 66666666	 
+29    	 0009					.dw  (0x73333333)
+	 0009	 73333333	 
+30    	 000A					.dw  (0x0)
+	 000A	 00000000	 
+31    	 000B					.dw  (0x0)
+	 000B	 00000000	 
+32    	 000C					.dw  (0x0)
+	 000C	 00000000	 
+33    	 000D					.dw  (0x0)
+	 000D	 00000000	 
+34    	 000E					.dw  (0x0)
+	 000E	 00000000	 
+35    	 000F					.dw  (0x0)
+	 000F	 00000000	 
+36    							.ydata_ovly
+36     >> start of macro: .ydata_ovly
+1+    									seg_single , "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_Y_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "Y_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_Y_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+37    	 0000				_data1
+38    	 0000					.dw  (0x1)
+	 0000	 00000001	 
+39    							.ydata_ovly
+39     >> start of macro: .ydata_ovly
+1+    									seg_single , "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_Y_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "Y_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_Y_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+40    	 0000				_data2
+41    	 0000					.dw  (0x2)
+	 0000	 00000002	 
+42    							.xdata_ovly
+42     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+43    	 0000				_global
+44    	 0000					.bss (0x1)
+45    							.ydata_ovly
+45     >> start of macro: .ydata_ovly
+1+    									seg_single , "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_Y_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "Y_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_Y_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+46    	 0000				_global_y
+47    	 0000					.bss (0x1)
+48    							.xdata_ovly
+48     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+49    	 0000				_high
+50    	 0000					.bss (0x1)
+51    							.ydata_ovly
+51     >> start of macro: .ydata_ovly
+1+    									seg_single , "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_Y_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "Y_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_Y_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+52    	 0000				_low
+53    	 0000					.bss (0x1)
+54    							.ydata_ovly
+54     >> start of macro: .ydata_ovly
+1+    									seg_single , "Y_OVLY", Y
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_Y_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "Y_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_Y_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .ydata_ovly
+55    	 0000				_pglobal
+56    	 0000					.dw _global
+	 0000	 00000000	 
+57    							.data_ovly
+57     >> start of macro: .data_ovly
+1+    									seg_single , "L_OVLY", L
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_L_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "L_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_L_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .data_ovly
+58    	 0000				_whole
+59    	 0000					.dw  (0x22ce46ca),(0x69c61751)
+	 0000	 22CE46CA69C61751	 
+60    							.code_ovly
+60     >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+61    						
+62    						
+63    						
+64    	 0000				_cccLesson03CircularBuffer:			/* LN: 58 | CYCLE: 0 | RULES: () */ 
+65    	 0000	 BB540007		xmem[i7] = i7			# LN: 58 | 
+66    	 0001	 020F7FFF		i7 += 1			# LN: 58 | 
+67    	 0002	 87750004		i7 = i7 + (0x4)			# LN: 58 | 
+68    	 0003	 94750001		i4 = i7 - (0x1)			# LN: 58 | 
+69    	 0004	 B0540004		xmem[i4] = i0			# LN: 58 | 
+70    	 0005	 90750002		i0 = i7 - (0x2)			# LN: 58 | 
+71    	 0006	 B1540000		xmem[i0] = i1			# LN: 58 | 
+72    	 0007				cline_58_0:			/* LN: 62 | CYCLE: 0 | RULES: () */ 
+73    	 0007	 90750003		i0 = i7 - (0x3)			# LN: 62 | 
+74    	 0008	 00004DC0		a0 = 0			# LN: 62 | 
+75    	 0009	 98540000		xmem[i0] = a0h			# LN: 62 | 
+76    	 000A	 81000027		do (0x10), label_end_92			# LN: 62 | 
+77    	 000B				cline_62_0:			/* LN: 63 | CYCLE: 0 | RULES: () */ 
+78    	 000B				label_begin_92:			/* LN: 62 | CYCLE: 0 | RULES: () */ 
+79    	 000B	 90750002		i0 = i7 - (0x2)			# LN: 63 | 
+80    	 000C	 B0140000		i0 = xmem[i0]			# LN: 63 | 
+81    	 000D	 91750004		i1 = i7 - (0x4)			# LN: 63 | 
+82    	 000E	 88940000		a0 = ymem[i0]			# LN: 63 | 
+83    	 000F	 98540001		xmem[i1] = a0h			# LN: 63 | 
+84    	 0010	 90750002		i0 = i7 - (0x2)			# LN: 63 | 
+85    	 0011	 88140000		a0 = xmem[i0]			# LN: 63 | 
+86    	 0012	 98090030		AnyReg(i0, a0h)			# LN: 63 | 
+87    	 0013	 B44A3004		nm0 = (0x3004)			# LN: -1 | 
+88    	 0014	 91750002		i1 = i7 - (0x2)			# LN: 63 | 
+89    	 0015	 02187FFF		i0 += n			# LN: 63 | 
+90    	 0016	 B44A0000		nm0 = (0x0)			# LN: -1 | 
+91    	 0017	 B0540001		xmem[i1] = i0			# LN: 63 | 
+92    	 0018				cline_63_0:			/* LN: 64 | CYCLE: 0 | RULES: () */ 
+93    	 0018	 90750001		i0 = i7 - (0x1)			# LN: 64 | 
+94    	 0019	 B0140000		i0 = xmem[i0]			# LN: 64 | 
+95    	 001A	 91750004		i1 = i7 - (0x4)			# LN: 64 | 
+96    	 001B	 88140001		a0 = xmem[i1]			# LN: 64 | 
+97    	 001C	 98540000		xmem[i0] = a0h			# LN: 64 | 
+98    	 001D	 90750001		i0 = i7 - (0x1)			# LN: 64 | 
+99    	 001E	 B0140000		i0 = xmem[i0]			# LN: 64 | 
+100   	 001F	 91750001		i1 = i7 - (0x1)			# LN: 64 | 
+101   	 0020	 02087FFF		i0 += 1			# LN: 64 | 
+102   	 0021	 B0540001		xmem[i1] = i0			# LN: 64 | 
+103   	 0022				cline_64_0:			/* LN: 62 | CYCLE: 0 | RULES: () */ 
+104   	 0022				init_latch_label_0:			/* LN: 65 | CYCLE: 0 | RULES: () */ 
+105   	 0022	 90750003		i0 = i7 - (0x3)			# LN: 62 | 
+106   	 0023	 88140000		a0 = xmem[i0]			# LN: 62 | 
+107   	 0024	 894A0001		uhalfword(a1) = (0x1)			# LN: 62 | 
+108   	 0025	 00004408		a0 = a0 + a1			# LN: 62 | 
+109   	 0026	 90750003		i0 = i7 - (0x3)			# LN: 62 | 
+110   	 0027				label_end_92:			# LN: 62 | CYCLE: 5 | RULES: ()
+111   	 0027	 98540000		xmem[i0] = a0h			# LN: 62 | 
+112   	 0028				cline_62_1:			/* LN: 67 | CYCLE: 0 | RULES: () */ 
+113   	 0028				for_end_0:			/* LN: 62 | CYCLE: 0 | RULES: () */ 
+114   	 0028	 80080029		jmp (__epilogue_110)			# LN: 67 | 
+115   	 0029				__epilogue_110:			/* LN: 67 | CYCLE: 0 | RULES: () */ 
+116   	 0029	 97750004		i7 = i7 - (0x4)			# LN: 67 | 
+117   	 002A	 02177FFF		i7 -= 1			# LN: 67 | 
+118   	 002B	 81880000		ret			# LN: 67 | 
+119   						
+120   						
+121   						
+122   	 002C				_cccLesson03DefiningLocalvariables:			/* LN: 29 | CYCLE: 0 | RULES: () */ 
+123   	 002C	 BB540007		xmem[i7] = i7			# LN: 29 | 
+124   	 002D	 020F7FFF		i7 += 1			# LN: 29 | 
+125   	 002E	 87750002		i7 = i7 + (0x2)			# LN: 29 | 
+126   	 002F				cline_29_0:			/* LN: 34 | CYCLE: 0 | RULES: () */ 
+127   	 002F	 90750001		i0 = i7 - (0x1)			# LN: 34 | 
+128   	 0030	 884A0000		uhalfword(a0) = (_data1 + 0)			# LN: 34 | 
+129   	 0031	 88540000		xmem[i0] = a0			# LN: 34 | 
+130   	 0032				cline_34_0:			/* LN: 41 | CYCLE: 0 | RULES: () */ 
+131   	 0032	 88840000		a0 = ymem[_data1 + 0]			# LN: 41 | 
+132   	 0033	 89840000		a1 = ymem[_data2 + 0]			# LN: 41 | 
+133   	 0034	 00004408		a0 = a0 + a1			# LN: 41 | 
+134   	 0035	 90750002		i0 = i7 - (0x2)			# LN: 41 | 
+135   	 0036	 98540000		xmem[i0] = a0h			# LN: 41 | 
+136   	 0037				cline_41_0:			/* LN: 42 | CYCLE: 0 | RULES: () */ 
+137   	 0037	 90750002		i0 = i7 - (0x2)			# LN: 42 | 
+138   	 0038	 88140000		a0 = xmem[i0]			# LN: 42 | 
+139   	 0039	 98C40000		ymem[_data2 + 0] = a0h			# LN: 42 | 
+140   	 003A				cline_42_0:			/* LN: 43 | CYCLE: 0 | RULES: () */ 
+141   	 003A	 8008003B		jmp (__epilogue_106)			# LN: 43 | 
+142   	 003B				__epilogue_106:			/* LN: 43 | CYCLE: 0 | RULES: () */ 
+143   	 003B	 97750002		i7 = i7 - (0x2)			# LN: 43 | 
+144   	 003C	 02177FFF		i7 -= 1			# LN: 43 | 
+145   	 003D	 81880000		ret			# LN: 43 | 
+146   						
+147   						
+148   						
+149   	 003E				_cccLesson03MemoryZoneChange:			/* LN: 45 | CYCLE: 0 | RULES: () */ 
+150   	 003E	 BB540007		xmem[i7] = i7			# LN: 45 | 
+151   	 003F	 020F7FFF		i7 += 1			# LN: 45 | 
+152   	 0040	 87750004		i7 = i7 + (0x4)			# LN: 45 | 
+153   	 0041				cline_45_0:			/* LN: 50 | CYCLE: 0 | RULES: () */ 
+154   	 0041	 90750001		i0 = i7 - (0x1)			# LN: 50 | 
+155   	 0042	 884A0000		uhalfword(a0) = (_whole + 0)			# LN: 50 | 
+156   	 0043	 88540000		xmem[i0] = a0			# LN: 50 | 
+157   	 0044				cline_50_0:			/* LN: 51 | CYCLE: 0 | RULES: () */ 
+158   	 0044	 38007FFF		a0 = xymem[_whole + 0]			# LN: 51 | 
+159   	 0045	 90750004		i0 = i7 - (0x4)			# LN: 51 | 
+160   	 0046	 A0540010		xmem[i0] = a0g; i0 += 1			# LN: 51, 51 | 
+161   	 0047	 98540010		xmem[i0] = a0h; i0 += 1			# LN: 51, 51 | 
+162   	 0048	 90540000		xmem[i0] = a0l			# LN: 51 | 
+163   	 0049				cline_51_0:			/* LN: 52 | CYCLE: 0 | RULES: () */ 
+164   	 0049	 90750004		i0 = i7 - (0x4)			# LN: 52 | 
+165   	 004A	 A0140010		a0g = xmem[i0]; i0 += 1			# LN: 52, 52 | 
+166   	 004B	 98140010		a0h = xmem[i0]; i0 += 1			# LN: 52, 52 | 
+167   	 004C	 90140000		a0l = xmem[i0]			# LN: 52 | 
+168   	 004D	 88590408		a0 = long(a0)			# LN: 52 | 
+169   	 004E	 78007FFF		xymem[_whole + 0] = a0			# LN: 52 | 
+170   	 004F				cline_52_0:			/* LN: 53 | CYCLE: 0 | RULES: () */ 
+171   	 004F	 88040000		a0 = xmem[_whole + 0]			# LN: 53 | 
+172   	 0050	 98440000		xmem[_high + 0] = a0h			# LN: 53 | 
+173   	 0051				cline_53_0:			/* LN: 54 | CYCLE: 0 | RULES: () */ 
+174   	 0051	 88840000		a0 = ymem[_whole + 0]			# LN: 54 | 
+175   	 0052	 98C40000		ymem[_low + 0] = a0h			# LN: 54 | 
+176   	 0053				cline_54_0:			/* LN: 55 | CYCLE: 0 | RULES: () */ 
+177   	 0053	 80080054		jmp (__epilogue_108)			# LN: 55 | 
+178   	 0054				__epilogue_108:			/* LN: 55 | CYCLE: 0 | RULES: () */ 
+179   	 0054	 97750004		i7 = i7 - (0x4)			# LN: 55 | 
+180   	 0055	 02177FFF		i7 -= 1			# LN: 55 | 
+181   	 0056	 81880000		ret			# LN: 55 | 
+182   						
+183   						
+184   						
+185   	 0057				_cccLesson03VariablesAndMemory:			/* LN: 69 | CYCLE: 0 | RULES: () */ 
+186   	 0057	 BB540007		xmem[i7] = i7			# LN: 69 | 
+187   	 0058	 020F7FFF		i7 += 1			# LN: 69 | 
+188   	 0059				cline_69_0:			/* LN: 72 | CYCLE: 0 | RULES: () */ 
+189   	 0059	 8088002C		call (_cccLesson03DefiningLocalvariables)			# LN: 72 | 
+190   	 005A				cline_72_0:			/* LN: 75 | CYCLE: 0 | RULES: () */ 
+191   	 005A	 8088003E		call (_cccLesson03MemoryZoneChange)			# LN: 75 | 
+192   	 005B				cline_75_0:			/* LN: 78 | CYCLE: 0 | RULES: () */ 
+193   	 005B	 A0050000		i0 = (0) + (_a)			# LN: 78 | 
+194   	 005C	 A1050000		i1 = (0) + (_b)			# LN: 78 | 
+195   	 005D	 80880000		call (_cccLesson03CircularBuffer)			# LN: 78 | 
+196   	 005E				cline_78_0:			/* LN: 80 | CYCLE: 0 | RULES: () */ 
+197   	 005E	 8008005F		jmp (__epilogue_112)			# LN: 80 | 
+198   	 005F				__epilogue_112:			/* LN: 80 | CYCLE: 0 | RULES: () */ 
+199   	 005F	 02177FFF		i7 -= 1			# LN: 80 | 
+200   	 0060	 81880000		ret			# LN: 80 | 
+201   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_MUI_VERSION_                                                                   					 Define                 "020000"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+__epilogue_106                                                                  			         Relocatable         lesson03VariablesAndMemory_GEN_0010:003BH
+__epilogue_108                                                                  			         Relocatable         lesson03VariablesAndMemory_GEN_0010:0054H
+__epilogue_110                                                                  			         Relocatable         lesson03VariablesAndMemory_GEN_0010:0029H
+__epilogue_112                                                                  			         Relocatable         lesson03VariablesAndMemory_GEN_0010:005FH
+_a                                                                              			  Public Relocatable       lesson03VariablesAndMemory_GEN_0000:0000H
+_b                                                                              			  Public Relocatable       lesson03VariablesAndMemory_GEN_0001:0000H
+_cccLesson03CircularBuffer                                                      			  Public Relocatable       lesson03VariablesAndMemory_GEN_0010:0000H
+_cccLesson03DefiningLocalvariables                                              			  Public Relocatable       lesson03VariablesAndMemory_GEN_0010:002CH
+_cccLesson03MemoryZoneChange                                                    			  Public Relocatable       lesson03VariablesAndMemory_GEN_0010:003EH
+_cccLesson03VariablesAndMemory                                                  			  Public Relocatable       lesson03VariablesAndMemory_GEN_0010:0057H
+_data1                                                                          			  Public Relocatable       lesson03VariablesAndMemory_GEN_0002:0000H
+_data2                                                                          			  Public Relocatable       lesson03VariablesAndMemory_GEN_0003:0000H
+_global                                                                         			  Public Relocatable       lesson03VariablesAndMemory_GEN_0004:0000H
+_global_y                                                                       			  Public Relocatable       lesson03VariablesAndMemory_GEN_0005:0000H
+_high                                                                           			  Public Relocatable       lesson03VariablesAndMemory_GEN_0006:0000H
+_low                                                                            			  Public Relocatable       lesson03VariablesAndMemory_GEN_0007:0000H
+_pglobal                                                                        			  Public Relocatable       lesson03VariablesAndMemory_GEN_0008:0000H
+_whole                                                                          			  Public Relocatable       lesson03VariablesAndMemory_GEN_0009:0000H
+cline_29_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:002FH
+cline_34_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0032H
+cline_41_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0037H
+cline_42_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:003AH
+cline_45_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0041H
+cline_50_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0044H
+cline_51_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0049H
+cline_52_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:004FH
+cline_53_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0051H
+cline_54_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0053H
+cline_58_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0007H
+cline_62_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:000BH
+cline_62_1                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0028H
+cline_63_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0018H
+cline_64_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0022H
+cline_69_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0059H
+cline_72_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:005AH
+cline_75_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:005BH
+cline_78_0                                                                      			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:005EH
+for_end_0                                                                       			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0028H
+init_latch_label_0                                                              			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:0022H
+label_begin_92                                                                  			  Unused Relocatable        lesson03VariablesAndMemory_GEN_0010:000BH
+label_end_92                                                                    			         Relocatable         lesson03VariablesAndMemory_GEN_0010:0027H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0010H	 lesson03VariablesAndMemory_GEN_0000     			 X_OVLY                                  
+0010H	 lesson03VariablesAndMemory_GEN_0001     			 Y_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0002     			 Y_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0003     			 Y_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0004     			 X_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0005     			 Y_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0006     			 X_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0007     			 Y_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0008     			 Y_OVLY                                  
+0001H	 lesson03VariablesAndMemory_GEN_0009     			 L_OVLY                                  
+0061H	 lesson03VariablesAndMemory_GEN_0010     			 CODE_OVLY                               

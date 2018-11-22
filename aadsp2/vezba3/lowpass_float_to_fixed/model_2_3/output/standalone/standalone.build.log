@@ -1,0 +1,134 @@
+============= BUILDING STARTED ============
+  Project: lowpass_float_to_fixed_model_2_3
+===========================================
+Compiling .c files...
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c
+C:/CirrusDSP/bin/ccc2 D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c
+ -S
+ -ruf
+ -fcse
+ -fprc
+ -fcompact
+ -funsafe-loop-optimizations
+ -g
+ -cdl
+ -D_TOOLS_VERSION_=0x0701
+ -D_SLOT_=0
+ -D_OVLY_=standalone
+ -D_OVLY_REVISION_=020000
+ -D_VERSION_=00
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -D_TARGET_FAMILY_=crystal32
+ -D_MUI_VERSION_=020000
+ -D__CCC=
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/fixed_point_math/
+ -oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/filter/main.s
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+     [exec] "C:/CirrusDSP/include/stdio.h", line 8: warning #1108: #warning directive: Functionality of stdio.h header file is not fully supWARNING: '-unsafe-loop-optimization' is ignored when '-g' option is used!
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/loported
+     [exec]   #warning Functionality of stdio.h header file is not fully supported
+     [exec]    ^
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezbawpass_float_to_fixed/model_2_3/filter/main.c", line 53: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 53: warning #4007: Pointer to unspecified3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 197: warning #31: fixed point constant is out of range
+     [exec]   	samp memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 53: waleBuffer[0][0] = 0.5;
+     [exec]   	                     ^
+     [exec] 
+     [exec] rning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 53: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 58: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 58: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 58: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 58: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 67: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 152: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] "D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/filter/main.c", line 153: warning #4007: Pointer to unspecified memory zone.
+     [exec] 
+     [exec] FRONT END TIME: 0 seconds
+     [exec] BACK  END TIME: 1 seconds
+     [exec] 
+Assembling .a and .s files...
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/filter/main.s
+C:/CirrusDSP/bin/casm D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/filter/main.s
+ --debug
+ -c
+ -s
+ -e
+ -D_TOOLS_VERSION_=0x0701
+ -D_SLOT_=0
+ -D_OVLY_=standalone
+ -D_OVLY_REVISION_=020000
+ -D_VERSION_=00
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -D_TARGET_FAMILY_=crystal32
+ -D_MUI_VERSION_=020000
+ -D__CCC=
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/fixed_point_math/
+ -lD:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/filter/main.lst
+ -oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/filter/main.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+Linking files...
+C:/CirrusDSP/bin/clink
+ -oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.img
+ -fC:/CirrusDSP/crystal32/memory_maps/v00.mem.xml
+ --output_type=RAM
+ --overlay_type=standalone
+ -lC:/CirrusDSP/lib/
+ -lC:/CirrusDSP/lib/dsplib
+ -lC:/CirrusDSP/lib/dsplib/crystal32/
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/filter/main.O
+     [exec] Warning #507: Unknown class: Y_OS_CC_GLOBALS
+     [exec]             for the segment: CC_HEAPSTEAL_VALUES
+     [exec]             from the module: C:\CirrusDSP\lib\dsplib\crystal32\cl_heapsteal.O
+     [exec] 
+     [exec] List of linked library's modules:
+     [exec] C:\CirrusDSP\lib\crt0.o
+     [exec] C:\CirrusDSP\lib\exit.o
+     [exec] C:\CirrusDSP\lib\simulator_stack.o
+     [exec] C:\CirrusDSP\lib\dsplib\crystal32\fclose.o
+     [exec] C:\CirrusDSP\lib\dsplib\crystal32\fconfig.o
+     [exec] C:\CirrusDSP\lib\dsplib\crystal32\fopen.o
+     [exec] C:\CirrusDSP\lib\dsplib\crystal32\fread_x.o
+     [exec] C:\CirrusDSP\lib\dsplib\crystal32\fwrite_x.o
+Creating .uld file...
+C:/CirrusDSP/bin/lnkuld
+ -ja
+ D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.img
+ D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.uld
+     [exec] 
+     [exec] Reading file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.img ...
+     [exec] 	Processed 802 line(s).
+     [exec] 
+     [exec] Writing output to file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/posta
+     [exec] vka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.uld ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.uldb ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba3/postavka/lowpass_float_to_fixed/model_2_3/output/standalone/lowpass_float_to_fixed_model_2_3.uldc ...
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
