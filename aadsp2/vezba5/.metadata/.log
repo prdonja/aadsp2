@@ -1,0 +1,76 @@
+!SESSION 2018-11-23 13:07:36.956 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sr
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data @noDefault
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-23 13:11:23.712
+!MESSAGE Could not write file: D:\ra207_2015\aadsp2\vezba5\multitapEcho_model3\.cproject.
+** Error occured because of file status <hidden>.
+** This status is disabled now, to allow writing.
+
+!ENTRY org.eclipse.jface 2 0 2018-11-23 13:51:04.607
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-11-23 13:51:04.607
+!MESSAGE A conflict occurred for CTRL+F10:
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction),
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showViewMenu,Show View Menu,
+		Show the view menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowViewMenuHandler@1d1d4b8,
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.showRulerContextMenu,Show Ruler Context Menu,
+		Show the context menu for the ruler,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$ShowRulerContextMenuAction@e49bbd)),
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY com.cirrus.cdm 4 0 2018-11-23 14:01:44.006
+!MESSAGE No devices found
+!STACK 0
+com.cirrus.cdm.comm.ProxyServerException: No devices found
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.sendCommand(CpsDeviceCommunicator.java:180)
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.commandChannelConnect(CpsDeviceCommunicator.java:143)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CPSDevice.connectToCPS(CPSDevice.java:88)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:74)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:83)
+	at com.cirrus.cdm.device.internal.CPSDeviceCache.getDebugDevice(CPSDeviceCache.java:66)
+	at clide.debug.core.model.PDADebugTarget.getCpsDevice(PDADebugTarget.java:198)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView.Update(ProfilingTreeView.java:151)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView.access$4(ProfilingTreeView.java:146)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView$RefreshTableCPS.run(ProfilingTreeView.java:270)
+	at java.lang.Thread.run(Thread.java:662)
+
+!ENTRY com.cirrus.cdm 4 0 2018-11-23 14:01:45.753
+!MESSAGE No devices found
+!STACK 0
+com.cirrus.cdm.comm.ProxyServerException: No devices found
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.sendCommand(CpsDeviceCommunicator.java:180)
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.commandChannelConnect(CpsDeviceCommunicator.java:143)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CPSDevice.connectToCPS(CPSDevice.java:88)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:74)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:83)
+	at com.cirrus.cdm.device.internal.CPSDeviceCache.getDebugDevice(CPSDeviceCache.java:66)
+	at clide.debug.core.model.PDADebugTarget.getCpsDevice(PDADebugTarget.java:198)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView.Update(ProfilingTreeView.java:151)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView.access$4(ProfilingTreeView.java:146)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView$RefreshTableCPS.run(ProfilingTreeView.java:270)
+	at java.lang.Thread.run(Thread.java:662)

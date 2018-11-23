@@ -1,0 +1,54 @@
+1     	 0000					.public _cccLesson01Introduction
+2     							.code_ovly
+2      >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+3     						
+4     						
+5     						
+6     	 0000				_cccLesson01Introduction:			/* LN: 13 | CYCLE: 0 | RULES: () */ 
+7     	 0000	 BB540007		xmem[i7] = i7			# LN: 13 | 
+8     	 0001	 020F7FFF		i7 += 1			# LN: 13 | 
+9     	 0002				cline_13_0:			/* LN: 90 | CYCLE: 0 | RULES: () */ 
+10    	 0002	 80080003		jmp (__epilogue_0)			# LN: 90 | 
+11    	 0003				__epilogue_0:			/* LN: 90 | CYCLE: 0 | RULES: () */ 
+12    	 0003	 02177FFF		i7 -= 1			# LN: 90 | 
+13    	 0004	 81880000		ret			# LN: 90 | 
+14    						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_MUI_VERSION_                                                                   					 Define                 "020000"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+__epilogue_0                                                                    			         Relocatable         lesson01Introduction_GEN_0000:0003H
+_cccLesson01Introduction                                                        			  Public Relocatable       lesson01Introduction_GEN_0000:0000H
+cline_13_0                                                                      			  Unused Relocatable        lesson01Introduction_GEN_0000:0002H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0005H	 lesson01Introduction_GEN_0000           			 CODE_OVLY                               

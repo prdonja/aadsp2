@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons" name="CCC2Lessons">
+	<target description="Linking files..." name="clink">
+		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
+			<arg value="-oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/CCC2Lessons.img"/>
+			<arg value="-fC:/CirrusDSP/crystal32/memory_maps/v00.mem.xml"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/ccc2Lessons.O"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson01Introduction.O"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.O"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.O"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.O"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson05Optimizations.O"/>
+			<arg value="--output_type=RAM"/>
+			<arg value="--overlay_type=standalone"/>
+			<arg value="-lC:/CirrusDSP/lib/"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib/crystal32/"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
+			<arg value="-ja"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/CCC2Lessons.img"/>
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/CCC2Lessons.uld"/>
+		</exec>
+	</target>
+</project>

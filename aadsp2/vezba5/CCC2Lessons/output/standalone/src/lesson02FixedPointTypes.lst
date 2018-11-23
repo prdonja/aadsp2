@@ -1,0 +1,270 @@
+1     	 0000					.public _globalX
+2     	 0000					.public _cccLesson02FixedPointTypes
+3     	 0000					.public _cccLessonsBitwiseConversionBetweenTypes
+4     	 0000					.public _cccLessonsFixedConstant
+5     	 0000					.public _cccLessonsMul
+6     	 0000					.public _cccLessonsRoundingAndShifting
+7     	 0000					.extern __laccum_sat_accum
+8     							.xdata_ovly
+8      >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+9     	 0000				__extractedConst_0_1
+10    	 0000					.dw  (0x2d916873)
+	 0000	 2D916873	 
+11    							.xdata_ovly
+11     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+12    	 0000				__extractedConst_1_1
+13    	 0000					.dw  (0x66b851ec)
+	 0000	 66B851EC	 
+14    							.xdata_ovly
+14     >> start of macro: .xdata_ovly
+1+    									seg_single , "X_OVLY", X
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_X_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "X_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_X_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .xdata_ovly
+15    	 0000				_globalX
+16    	 0000					.bss (0x1)
+17    							.code_ovly
+17     >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+18    						
+19    						
+20    						
+21    	 0000				_cccLesson02FixedPointTypes:			/* LN: 57 | CYCLE: 0 | RULES: () */ 
+22    	 0000	 BB540007		xmem[i7] = i7			# LN: 57 | 
+23    	 0001	 020F7FFF		i7 += 1			# LN: 57 | 
+24    	 0002	 87750004		i7 = i7 + (0x4)			# LN: 57 | 
+25    	 0003				cline_57_0:			/* LN: 59 | CYCLE: 0 | RULES: () */ 
+26    	 0003	 90750002		i0 = i7 - (0x2)			# LN: 59 | 
+27    	 0004	 885A8000		ufixed16(a0) = (0x8000)			# LN: 59 | 
+28    	 0005	 A0540010		xmem[i0] = a0g; i0 += 1			# LN: 59, 59 | 
+29    	 0006	 98540000		xmem[i0] = a0h			# LN: 59 | 
+30    	 0007				cline_59_0:			/* LN: 60 | CYCLE: 0 | RULES: () */ 
+31    	 0007	 90750003		i0 = i7 - (0x3)			# LN: 60 | 
+32    	 0008	 887A4000		a0 = (0x4000)			# LN: 60 | 
+33    	 0009	 98540000		xmem[i0] = a0h			# LN: 60 | 
+34    	 000A	 90750004		i0 = i7 - (0x4)			# LN: 60 | 
+35    	 000B	 98540000		xmem[i0] = a0h			# LN: 60 | 
+36    	 000C				cline_60_0:			/* LN: 100 | CYCLE: 0 | RULES: () */ 
+37    	 000C	 90750003		i0 = i7 - (0x3)			# LN: 100 | 
+38    	 000D	 88140000		a0 = xmem[i0]			# LN: 100 | 
+39    	 000E	 90750004		i0 = i7 - (0x4)			# LN: 100 | 
+40    	 000F	 89140000		a1 = xmem[i0]			# LN: 100 | 
+41    	 0010	 8088003A		call (_cccLessonsMul)			# LN: 100 | 
+42    	 0011	 90750002		i0 = i7 - (0x2)			# LN: 100 | 
+43    	 0012	 A0540010		xmem[i0] = a0g; i0 += 1			# LN: 100, 100 | 
+44    	 0013	 98540000		xmem[i0] = a0h			# LN: 100 | 
+45    	 0014				cline_100_0:			/* LN: 101 | CYCLE: 0 | RULES: () */ 
+46    	 0014	 8088002D		call (_cccLessonsFixedConstant)			# LN: 101 | 
+47    	 0015				cline_101_0:			/* LN: 102 | CYCLE: 0 | RULES: () */ 
+48    	 0015	 8088001F		call (_cccLessonsBitwiseConversionBetweenTypes)			# LN: 102 | 
+49    	 0016				cline_102_0:			/* LN: 103 | CYCLE: 0 | RULES: () */ 
+50    	 0016	 8088004B		call (_cccLessonsRoundingAndShifting)			# LN: 103 | 
+51    	 0017				cline_103_0:			/* LN: 105 | CYCLE: 0 | RULES: () */ 
+52    	 0017	 90750002		i0 = i7 - (0x2)			# LN: 105 | 
+53    	 0018	 A0140010		a0g = xmem[i0]; i0 += 1			# LN: 105, 105 | 
+54    	 0019	 98140000		a0h = xmem[i0]			# LN: 105 | 
+55    	 001A	 904A0000		uhalfword(a0l) = (0x0)			# LN: 105 | 
+56    	 001B	 8008001C		jmp (__epilogue_112)			# LN: 105 | 
+57    	 001C				cline_105_0:			/* LN: 106 | CYCLE: 0 | RULES: () */ 
+58    	 001C				__epilogue_112:			/* LN: 106 | CYCLE: 0 | RULES: () */ 
+59    	 001C	 97750004		i7 = i7 - (0x4)			# LN: 106 | 
+60    	 001D	 02177FFF		i7 -= 1			# LN: 106 | 
+61    	 001E	 81880000		ret			# LN: 106 | 
+62    						
+63    						
+64    						
+65    	 001F				_cccLessonsBitwiseConversionBetweenTypes:			/* LN: 36 | CYCLE: 0 | RULES: () */ 
+66    	 001F	 BB540007		xmem[i7] = i7			# LN: 36 | 
+67    	 0020	 020F7FFF		i7 += 1			# LN: 36 | 
+68    	 0021	 87750002		i7 = i7 + (0x2)			# LN: 36 | 
+69    	 0022				cline_36_0:			/* LN: 39 | CYCLE: 0 | RULES: () */ 
+70    	 0022	 88040000		a0 = xmem[__extractedConst_0_1 + 0]			# LN: 39 | 
+71    	 0023	 90750001		i0 = i7 - (0x1)			# LN: 39 | 
+72    	 0024	 98540000		xmem[i0] = a0h			# LN: 39 | 
+73    	 0025				cline_39_0:			/* LN: 40 | CYCLE: 0 | RULES: () */ 
+74    	 0025	 90750001		i0 = i7 - (0x1)			# LN: 40 | 
+75    	 0026	 88140000		a0 = xmem[i0]			# LN: 40 | 
+76    	 0027	 90750002		i0 = i7 - (0x2)			# LN: 40 | 
+77    	 0028	 98540000		xmem[i0] = a0h			# LN: 40 | 
+78    	 0029				cline_40_0:			/* LN: 41 | CYCLE: 0 | RULES: () */ 
+79    	 0029	 8008002A		jmp (__epilogue_108)			# LN: 41 | 
+80    	 002A				__epilogue_108:			/* LN: 41 | CYCLE: 0 | RULES: () */ 
+81    	 002A	 97750002		i7 = i7 - (0x2)			# LN: 41 | 
+82    	 002B	 02177FFF		i7 -= 1			# LN: 41 | 
+83    	 002C	 81880000		ret			# LN: 41 | 
+84    						
+85    						
+86    						
+87    	 002D				_cccLessonsFixedConstant:			/* LN: 21 | CYCLE: 0 | RULES: () */ 
+88    	 002D	 BB540007		xmem[i7] = i7			# LN: 21 | 
+89    	 002E	 020F7FFF		i7 += 1			# LN: 21 | 
+90    	 002F	 87750001		i7 = i7 + (0x1)			# LN: 21 | 
+91    	 0030				cline_21_0:			/* LN: 31 | CYCLE: 0 | RULES: () */ 
+92    	 0030	 88040000		a0 = xmem[__extractedConst_1_1 + 0]			# LN: 31 | 
+93    	 0031	 90750001		i0 = i7 - (0x1)			# LN: 31 | 
+94    	 0032	 98540000		xmem[i0] = a0h			# LN: 31 | 
+95    	 0033				cline_31_0:			/* LN: 33 | CYCLE: 0 | RULES: () */ 
+96    	 0033	 90750001		i0 = i7 - (0x1)			# LN: 33 | 
+97    	 0034	 88140000		a0 = xmem[i0]			# LN: 33 | 
+98    	 0035	 98440000		xmem[_globalX + 0] = a0h			# LN: 33 | 
+99    	 0036				cline_33_0:			/* LN: 34 | CYCLE: 0 | RULES: () */ 
+100   	 0036	 80080037		jmp (__epilogue_106)			# LN: 34 | 
+101   	 0037				__epilogue_106:			/* LN: 34 | CYCLE: 0 | RULES: () */ 
+102   	 0037	 97750001		i7 = i7 - (0x1)			# LN: 34 | 
+103   	 0038	 02177FFF		i7 -= 1			# LN: 34 | 
+104   	 0039	 81880000		ret			# LN: 34 | 
+105   						
+106   						
+107   						
+108   	 003A				_cccLessonsMul:			/* LN: 16 | CYCLE: 0 | RULES: () */ 
+109   	 003A	 BB540007		xmem[i7] = i7			# LN: 16 | 
+110   	 003B	 020F7FFF		i7 += 1			# LN: 16 | 
+111   	 003C	 87750002		i7 = i7 + (0x2)			# LN: 16 | 
+112   	 003D	 90750001		i0 = i7 - (0x1)			# LN: 16 | 
+113   	 003E	 98540000		xmem[i0] = a0h			# LN: 16 | 
+114   	 003F	 90750002		i0 = i7 - (0x2)			# LN: 16 | 
+115   	 0040	 99540000		xmem[i0] = a1h			# LN: 16 | 
+116   	 0041				cline_16_0:			/* LN: 18 | CYCLE: 0 | RULES: () */ 
+117   	 0041	 90750001		i0 = i7 - (0x1)			# LN: 18 | 
+118   	 0042	 80140000		x0 = xmem[i0]			# LN: 18 | 
+119   	 0043	 90750002		i0 = i7 - (0x2)			# LN: 18 | 
+120   	 0044	 81140000		x1 = xmem[i0]			# LN: 18 | 
+121   	 0045	 00002080		a0 = x0 * x1			# LN: 18 | 
+122   	 0046	 80880000		call (__laccum_sat_accum)			# LN: 18 | 
+123   	 0047	 80080048		jmp (__epilogue_104)			# LN: 18 | 
+124   	 0048				cline_18_0:			/* LN: 19 | CYCLE: 0 | RULES: () */ 
+125   	 0048				__epilogue_104:			/* LN: 19 | CYCLE: 0 | RULES: () */ 
+126   	 0048	 97750002		i7 = i7 - (0x2)			# LN: 19 | 
+127   	 0049	 02177FFF		i7 -= 1			# LN: 19 | 
+128   	 004A	 81880000		ret			# LN: 19 | 
+129   						
+130   						
+131   						
+132   	 004B				_cccLessonsRoundingAndShifting:			/* LN: 43 | CYCLE: 0 | RULES: () */ 
+133   	 004B	 BB540007		xmem[i7] = i7			# LN: 43 | 
+134   	 004C	 020F7FFF		i7 += 1			# LN: 43 | 
+135   	 004D				cline_43_0:			/* LN: 46 | CYCLE: 0 | RULES: () */ 
+136   	 004D	 83AA0000		mr_sr = (0x0)			# LN: 46 | 
+137   	 004E				cline_46_0:			/* LN: 48 | CYCLE: 0 | RULES: () */ 
+138   	 004E	 83AA0008		mr_sr = (0x8)			# LN: 48 | 
+139   	 004F				cline_48_0:			/* LN: 50 | CYCLE: 0 | RULES: () */ 
+140   	 004F	 83AA000B		mr_sr = (0xb)			# LN: 50 | 
+141   	 0050				cline_50_0:			/* LN: 52 | CYCLE: 0 | RULES: () */ 
+142   	 0050	 82AA0004		mr_r = (0x4)			# LN: 52 | 
+143   	 0051				cline_52_0:			/* LN: 54 | CYCLE: 0 | RULES: () */ 
+144   	 0051	 81AA0001		mr_s = (0x1)			# LN: 54 | 
+145   	 0052				cline_54_0:			/* LN: 55 | CYCLE: 0 | RULES: () */ 
+146   	 0052	 80080053		jmp (__epilogue_110)			# LN: 55 | 
+147   	 0053				__epilogue_110:			/* LN: 55 | CYCLE: 0 | RULES: () */ 
+148   	 0053	 02177FFF		i7 -= 1			# LN: 55 | 
+149   	 0054	 81880000		ret			# LN: 55 | 
+150   						(null)
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_MUI_VERSION_                                                                   					 Define                 "020000"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+__epilogue_104                                                                  			         Relocatable         lesson02FixedPointTypes_GEN_0003:0048H
+__epilogue_106                                                                  			         Relocatable         lesson02FixedPointTypes_GEN_0003:0037H
+__epilogue_108                                                                  			         Relocatable         lesson02FixedPointTypes_GEN_0003:002AH
+__epilogue_110                                                                  			         Relocatable         lesson02FixedPointTypes_GEN_0003:0053H
+__epilogue_112                                                                  			         Relocatable         lesson02FixedPointTypes_GEN_0003:001CH
+__extractedConst_0_1                                                            			         Relocatable         lesson02FixedPointTypes_GEN_0000:0000H
+__extractedConst_1_1                                                            			         Relocatable         lesson02FixedPointTypes_GEN_0001:0000H
+__laccum_sat_accum                                                              					 External   
+_cccLesson02FixedPointTypes                                                     			  Public Relocatable       lesson02FixedPointTypes_GEN_0003:0000H
+_cccLessonsBitwiseConversionBetweenTypes                                        			  Public Relocatable       lesson02FixedPointTypes_GEN_0003:001FH
+_cccLessonsFixedConstant                                                        			  Public Relocatable       lesson02FixedPointTypes_GEN_0003:002DH
+_cccLessonsMul                                                                  			  Public Relocatable       lesson02FixedPointTypes_GEN_0003:003AH
+_cccLessonsRoundingAndShifting                                                  			  Public Relocatable       lesson02FixedPointTypes_GEN_0003:004BH
+_globalX                                                                        			  Public Relocatable       lesson02FixedPointTypes_GEN_0002:0000H
+cline_100_0                                                                     			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0014H
+cline_101_0                                                                     			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0015H
+cline_102_0                                                                     			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0016H
+cline_103_0                                                                     			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0017H
+cline_105_0                                                                     			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:001CH
+cline_16_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0041H
+cline_18_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0048H
+cline_21_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0030H
+cline_31_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0033H
+cline_33_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0036H
+cline_36_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0022H
+cline_39_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0025H
+cline_40_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0029H
+cline_43_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:004DH
+cline_46_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:004EH
+cline_48_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:004FH
+cline_50_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0050H
+cline_52_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0051H
+cline_54_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0052H
+cline_57_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0003H
+cline_59_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:0007H
+cline_60_0                                                                      			  Unused Relocatable        lesson02FixedPointTypes_GEN_0003:000CH
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+0001H	 lesson02FixedPointTypes_GEN_0000        			 X_OVLY                                  
+0001H	 lesson02FixedPointTypes_GEN_0001        			 X_OVLY                                  
+0001H	 lesson02FixedPointTypes_GEN_0002        			 X_OVLY                                  
+0055H	 lesson02FixedPointTypes_GEN_0003        			 CODE_OVLY                               
