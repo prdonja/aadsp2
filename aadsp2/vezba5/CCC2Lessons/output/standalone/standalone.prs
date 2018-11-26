@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<settings built="true" last_build_time="1488535474761">
+<settings built="false" last_build_time="1488535474761">
 	<dependencies>
-		<source_file last_build_time="1488535470969" path="src/lesson06BasicFileIO.c">
+		<source_file last_build_time="0" path="src/lesson01Introduction.c">
+			<dependency>../inc/lesson01Introduction.h</dependency>
+		</source_file>
+		<source_file last_build_time="0" path="src/lesson06BasicFileIO.c">
 			<dependency>../inc/lesson06BasicFileIO.h</dependency>
 			<dependency>C:/CirrusDSP/include/stdio.h</dependency>
 		</source_file>
-		<source_file last_build_time="1488535472751" path="src/lesson01Introduction.c">
-			<dependency>../inc/lesson01Introduction.h</dependency>
-		</source_file>
-		<source_file last_build_time="1488535473239" path="src/ccc2Lessons.c">
+		<source_file last_build_time="0" path="src/ccc2Lessons.c">
 			<dependency>../inc/lesson01Introduction.h</dependency>
 			<dependency>../inc/lesson02FixedPointTypes.h</dependency>
 			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
@@ -18,18 +18,18 @@
 			<dependency>../inc/lesson06BasicFileIO.h</dependency>
 			<dependency>C:/CirrusDSP/include/stdio.h</dependency>
 		</source_file>
-		<source_file last_build_time="1488535471880" path="src/lesson03VariablesAndMemory.c">
+		<source_file last_build_time="0" path="src/lesson03VariablesAndMemory.c">
 			<dependency>../inc/lesson03VariablesAndMemory.h</dependency>
 			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
 			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
 			<dependency>C:/CirrusDSP/include/circbuff.h</dependency>
 		</source_file>
-		<source_file last_build_time="1488535471431" path="src/lesson05Optimizations.c">
+		<source_file last_build_time="0" path="src/lesson05Optimizations.c">
 			<dependency>../inc/lesson05Optimizations.h</dependency>
 			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
 			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>
 		</source_file>
-		<source_file last_build_time="1488535472318" path="src/lesson02FixedPointTypes.c">
+		<source_file last_build_time="0" path="src/lesson02FixedPointTypes.c">
 			<dependency>../inc/lesson02FixedPointTypes.h</dependency>
 			<dependency>C:/CirrusDSP/include/stdfix.h</dependency>
 			<dependency>C:/CirrusDSP/include/scaling_coeff.h</dependency>

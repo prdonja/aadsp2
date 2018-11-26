@@ -1,0 +1,18 @@
+typedef struct
+{
+	__memX DSPfract* pEchoBuff;
+	DSPint bufferLength;
+	__memX DSPfract* writePointer;
+	__memX DSPfract* readPointer[N_TAP];
+	DSPint delay[N_TAP];
+	DSPfract input_gain;
+	DSPfract tap_gain[N_TAP];
+	DSPint n_tap;
+} EchoState;
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Multitap delay state and initialization constants
+/////////////////////////////////////////////////////////////////////////////////
+extern EchoState echoState;
+extern void multitap_echo(__memY DSPfract *pInbuf, __memY DSPfract *pOutbuf);

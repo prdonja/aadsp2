@@ -1,0 +1,87 @@
+1     	 0000					.public _multitap_echo
+2     	 0000					.extern _echoState
+3     							
+4     							.code_ovly
+4      >> start of macro: .code_ovly
+1+    									seg_single , "CODE_OVLY", CODE
+1+     >> start of macro: seg_single
+1+    						  .if ( "" != "" ) & defined( ___SegStart_CODE_ )
+2+    						    segment
+3+    						  .else
+4+    						    segment "CODE_OVLY"
+5+    							.if "" != ""
+6+    						___SegStart_CODE_
+7+    							.endif
+8+    						  .endif
+9+    							#RememberSegmentType
+10+    >> end of macro: seg_single
+2+     >> end of macro: .code_ovly
+5     						
+6     	 0004				N_TAP .equ (4)
+7     	 0000				_multitap_echo:
+8     	 0000	 B2540017		xmem[i7] = i2; i7 += 1
+9     	 0001	 B3540017		xmem[i7] = i3; i7 += 1
+10    	 0002	 B8040000		i4 = xmem[_echoState + 2]
+11    	 0003	 BC4AB001		nm4 = (0xb001) 
+12    	 0004	 B74AB001		nm3 = (0xb001)
+13    	 0005	 81000014		do (0x10), label_end_93
+14    	 0006				label_begin_93:
+15    	 0006	 80940000		x0 = ymem[i0] 
+16    	 0007	 A5050000		i5 = (0) + (_echoState + 12)
+17    	 0008	 81040000		x1 = xmem[_echoState + 11]
+18    	 0009	 A2050000		i2 = (0) + (_echoState + 3)
+19    	 000A	 28482081		a0 = ymem[i0]; i0 += 1; a1 = x0 * x1
+20    	 000B	 98540004		xmem[i4] = a0h
+21    	 000C	 88040000		a0 = xmem[_echoState + 16]
+22    	 000D	 021C7FFF		i4 += n
+23    	 000E	 80400013		do (N_TAP), label_end_92
+24    	 000F				label_begin_92:
+25    	 000F	 B3140002		i3 = xmem[i2]
+26    	 0010	 80140015		x0 = xmem[i5]; i5 += 1
+27    	 0011	 81140003		x1 = xmem[i3]
+28    	 0012	 021B2089		i3 += n; a1 += x0 * x1	 
+29    	 0013				label_end_92:
+30    	 0013	 B3540012		xmem[i2] = i3; i2 += 1
+31    	 0014				for_end_3:
+32    	 0014				label_end_93:
+33    	 0014	 89D40011		ymem[i1] = a1; i1 += 1
+34    	 0015				for_end_2:
+35    	 0015	 BC4A0000		nm4 = (0x0)
+36    	 0016	 B74A0000		nm3 = (0x0)
+37    	 0017	 B8440000		xmem[_echoState + 2] = i4
+38    	 0018	 02177FFF		i7 -= 1
+39    	 0019	 B3140027		i3 = xmem[i7]; i7 -= 1
+40    	 001A	 B2140007		i2 = xmem[i7]
+41    	 001B	 81880000		ret
+				 SYMBOL TABLE 
+
+    Name                                                                                    Type                  Value 
+
+N_TAP                                                                           					 Number				          4 (4H)
+_COMMON_INC_PATH_                                                               					 Define                 "C:/CirrusDSP/crystal32/common/inc/"
+_DSP_                                                                           					 Define                 "a"
+_LOCAL_INC_PATH_                                                                					 Define                 "inc/"
+_LOCAL_SRC_PATH_                                                                					 Define                 "src/"
+_MUI_VERSION_                                                                   					 Define                 "020000"
+_OVLY_                                                                          					 Define                 "standalone"
+_OVLY_REVISION_                                                                 					 Define                 "020000"
+_ROUTER_INC_PATH_                                                               					 Define                 "rom_inc/"
+_SLOT_                                                                          					 Define                 "0"
+_TARGET_FAMILY_                                                                 					 Define                 "crystal32"
+_TOOLS_VERSION_                                                                 					 Define                 "0x0701"
+_VERSION_                                                                       					 Define                 "00"
+__CASM_VER__                                                                    			  Unused Variable		        0 (701H)
+_echoState                                                                      					 External   
+_multitap_echo                                                                  			  Public Relocatable       multitapEcho_GEN_0000:0000H
+for_end_2                                                                       			  Unused Relocatable        multitapEcho_GEN_0000:0015H
+for_end_3                                                                       			  Unused Relocatable        multitapEcho_GEN_0000:0014H
+label_begin_92                                                                  			  Unused Relocatable        multitapEcho_GEN_0000:000FH
+label_begin_93                                                                  			  Unused Relocatable        multitapEcho_GEN_0000:0006H
+label_end_92                                                                    			         Relocatable         multitapEcho_GEN_0000:0013H
+label_end_93                                                                    			         Relocatable         multitapEcho_GEN_0000:0014H
+
+	       SEGMENTS:
+
+Size			  Name										 Class
+0000H	 __INIT                                  			 CODE                                    
+001CH	 multitapEcho_GEN_0000                   			 CODE_OVLY                               

@@ -1,0 +1,60 @@
+============= BUILDING STARTED ============
+  Project: CCC2Lessons
+===========================================
+Compiling .c files...
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\ccc2Lessons.O
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\ccc2Lessons.s
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson01Introduction.O
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson01Introduction.s
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson02FixedPointTypes.O
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson02FixedPointTypes.s
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson03VariablesAndMemory.O
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson03VariablesAndMemory.s
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson05Optimizations.O
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson05Optimizations.s
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson06BasicFileIO.O
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\src\lesson06BasicFileIO.s
+D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/ccc2Lessons.c
+C:/CirrusDSP/bin/ccc2 D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/ccc2Lessons.c
+ -S
+ -ruf
+ -fcse
+ -fprc
+ -fcompact
+ -funsafe-loop-optimizations
+ -g
+ -edi
+ -emit-hints
+ -ira
+ -fconst-pool=X
+ -fno0init
+ -femit-asm-struct
+ -cdl
+ -D_TOOLS_VERSION_=0x0701
+ -D_SLOT_=0
+ -D_OVLY_=standalone
+ -D_OVLY_REVISION_=020000
+ -D_VERSION_=00
+ -D_DSP_=a
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -D_TARGET_FAMILY_=crystal32
+ -D_MUI_VERSION_=020000
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/
+ -oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.s
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+     [exec] "C:/CirrusDSP/include/stdio.h", line 8: warning #1108: #warning directive: Functionality of stdio.h header file is not fully supported
+     [exec]   #warning Functionality of stdio.h header file is not fully supported
+     [exec]    ^
+     [exec] 
+     [exec] WARNING: '-unsafe-loop-optimization' is ignored when '-g' option is used!
+     [exec] "D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/ccc2Lessons.c", line 51: error #1305: Undeclared function call
+     [exec] 
+
+BUILD FAILED
+D:\ra207_2015\aadsp2\vezba5\CCC2Lessons\output\standalone\standalone.build.xml:16: exec returned: 1
+
+Total time: 1 second

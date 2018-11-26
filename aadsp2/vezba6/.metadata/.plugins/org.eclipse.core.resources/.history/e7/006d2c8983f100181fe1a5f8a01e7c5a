@@ -1,0 +1,41 @@
+	.public _multitap_echo
+	.extern _echoState
+	
+	.code_ovly
+
+	N_TAP equ.(4)
+_multitap_echo:
+	xmem[i7] = i2; i7 += 1
+	xmem[i7] = i3; i7 += 1
+	i4 = xmem[_echoState + 2]
+	nm4 = (0xb001) 
+	nm3 = (0xb001)
+	do (0x10), label_end_93
+label_begin_93:
+	x0 = ymem[i0] 
+	i5 = (0) + (_echoState + 12)
+	x1 = xmem[_echoState + 11]
+	i2 = (0) + (_echoState + 3)
+	a0 = ymem[i0]; i0 += 1; a1 = x0 * x1
+	xmem[i4] = a0h
+	a0 = xmem[_echoState + 16]
+	i4 += n
+	do (N_TAP), label_end_92
+label_begin_92:
+	i3 = xmem[i2]
+	x0 = xmem[i5]; i5 += 1
+	x1 = xmem[i3]
+	i3 += n; a1 += x0 * x1	 
+label_end_92:
+	xmem[i2] = i3; i2 += 1
+for_end_3:
+label_end_93:
+	ymem[i1] = a1; i1 += 1
+for_end_2:
+	nm4 = (0x0)
+	nm3 = (0x0)
+	xmem[_echoState + 2] = i4
+	i7 -= 1
+	i3 = xmem[i7]; i7 -= 1
+	i2 = xmem[i7]
+	ret

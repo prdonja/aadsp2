@@ -1,0 +1,1 @@
+void multitap_echo(__memY DSPfract *pInbuf, __memY DSPfract *pOutbuf);

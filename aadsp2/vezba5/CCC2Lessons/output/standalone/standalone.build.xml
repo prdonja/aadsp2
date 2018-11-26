@@ -1,15 +1,441 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<project basedir="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons" name="CCC2Lessons">
+<project basedir="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons" name="CCC2Lessons">
+	<target description="Compiling .c files..." name="ccc">
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.O"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.s"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.O"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.s"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.O"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.s"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.O"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.s"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.O"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.s"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.O"/>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.s"/>
+		<exec executable="C:/CirrusDSP/bin/ccc2" failonerror="true" resultProperty="cccResult0">
+			<env key="PATH" path="C:/CirrusDSP/bin/:${env.PATH}"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/ccc2Lessons.c"/>
+			<arg value="-S"/>
+			<arg value="-ruf"/>
+			<arg value="-fcse"/>
+			<arg value="-fprc"/>
+			<arg value="-fcompact"/>
+			<arg value="-funsafe-loop-optimizations"/>
+			<arg value="-g"/>
+			<arg value="-edi"/>
+			<arg value="-emit-hints"/>
+			<arg value="-ira"/>
+			<arg value="-fconst-pool=X"/>
+			<arg value="-fno0init"/>
+			<arg value="-femit-asm-struct"/>
+			<arg value="-cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.s"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<exec executable="C:/CirrusDSP/bin/ccc2" failonerror="true" resultProperty="cccResult1">
+			<env key="PATH" path="C:/CirrusDSP/bin/:${env.PATH}"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/lesson01Introduction.c"/>
+			<arg value="-S"/>
+			<arg value="-ruf"/>
+			<arg value="-fcse"/>
+			<arg value="-fprc"/>
+			<arg value="-fcompact"/>
+			<arg value="-funsafe-loop-optimizations"/>
+			<arg value="-g"/>
+			<arg value="-edi"/>
+			<arg value="-emit-hints"/>
+			<arg value="-ira"/>
+			<arg value="-fconst-pool=X"/>
+			<arg value="-fno0init"/>
+			<arg value="-femit-asm-struct"/>
+			<arg value="-cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.s"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<exec executable="C:/CirrusDSP/bin/ccc2" failonerror="true" resultProperty="cccResult2">
+			<env key="PATH" path="C:/CirrusDSP/bin/:${env.PATH}"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/lesson02FixedPointTypes.c"/>
+			<arg value="-S"/>
+			<arg value="-ruf"/>
+			<arg value="-fcse"/>
+			<arg value="-fprc"/>
+			<arg value="-fcompact"/>
+			<arg value="-funsafe-loop-optimizations"/>
+			<arg value="-g"/>
+			<arg value="-edi"/>
+			<arg value="-emit-hints"/>
+			<arg value="-ira"/>
+			<arg value="-fconst-pool=X"/>
+			<arg value="-fno0init"/>
+			<arg value="-femit-asm-struct"/>
+			<arg value="-cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.s"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<exec executable="C:/CirrusDSP/bin/ccc2" failonerror="true" resultProperty="cccResult3">
+			<env key="PATH" path="C:/CirrusDSP/bin/:${env.PATH}"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/lesson03VariablesAndMemory.c"/>
+			<arg value="-S"/>
+			<arg value="-ruf"/>
+			<arg value="-fcse"/>
+			<arg value="-fprc"/>
+			<arg value="-fcompact"/>
+			<arg value="-funsafe-loop-optimizations"/>
+			<arg value="-g"/>
+			<arg value="-edi"/>
+			<arg value="-emit-hints"/>
+			<arg value="-ira"/>
+			<arg value="-fconst-pool=X"/>
+			<arg value="-fno0init"/>
+			<arg value="-femit-asm-struct"/>
+			<arg value="-cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.s"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<exec executable="C:/CirrusDSP/bin/ccc2" failonerror="true" resultProperty="cccResult4">
+			<env key="PATH" path="C:/CirrusDSP/bin/:${env.PATH}"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/lesson05Optimizations.c"/>
+			<arg value="-S"/>
+			<arg value="-ruf"/>
+			<arg value="-fcse"/>
+			<arg value="-fprc"/>
+			<arg value="-fcompact"/>
+			<arg value="-funsafe-loop-optimizations"/>
+			<arg value="-g"/>
+			<arg value="-edi"/>
+			<arg value="-emit-hints"/>
+			<arg value="-ira"/>
+			<arg value="-fconst-pool=X"/>
+			<arg value="-fno0init"/>
+			<arg value="-femit-asm-struct"/>
+			<arg value="-cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.s"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<exec executable="C:/CirrusDSP/bin/ccc2" failonerror="true" resultProperty="cccResult5">
+			<env key="PATH" path="C:/CirrusDSP/bin/:${env.PATH}"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/src/lesson06BasicFileIO.c"/>
+			<arg value="-S"/>
+			<arg value="-ruf"/>
+			<arg value="-fcse"/>
+			<arg value="-fprc"/>
+			<arg value="-fcompact"/>
+			<arg value="-funsafe-loop-optimizations"/>
+			<arg value="-g"/>
+			<arg value="-edi"/>
+			<arg value="-emit-hints"/>
+			<arg value="-ira"/>
+			<arg value="-fconst-pool=X"/>
+			<arg value="-fno0init"/>
+			<arg value="-femit-asm-struct"/>
+			<arg value="-cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.s"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<condition property="compileError">
+			<or>
+				<not>
+					<equals arg1="${cccResult0}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${cccResult1}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${cccResult2}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${cccResult3}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${cccResult4}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${cccResult5}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="compileError" name="checkCompileErrors">
+		<fail message="Please check compiler errors."/>
+	</target>
+	<target description="Assembling .a and .s files..." name="casm">
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult0">
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.s"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult1">
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.s"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult2">
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.s"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult3">
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.s"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult4">
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.s"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult5">
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.s"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_SLOT_=0"/>
+			<arg value="-D_OVLY_=standalone"/>
+			<arg value="-D_OVLY_REVISION_=020000"/>
+			<arg value="-D_VERSION_=00"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=crystal32"/>
+			<arg value="-D_MUI_VERSION_=020000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba5/CCC2Lessons/inc/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<condition property="assemblyError">
+			<or>
+				<not>
+					<equals arg1="${casmResult0}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult1}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult2}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult3}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult4}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult5}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="assemblyError" name="checkAssemblyErrors">
+		<fail message="Please check assembler errors."/>
+	</target>
 	<target description="Linking files..." name="clink">
 		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
-			<arg value="-oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/CCC2Lessons.img"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/CCC2Lessons.img"/>
 			<arg value="-fC:/CirrusDSP/crystal32/memory_maps/v00.mem.xml"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/ccc2Lessons.O"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson01Introduction.O"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.O"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.O"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.O"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/src/lesson05Optimizations.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/ccc2Lessons.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson01Introduction.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson02FixedPointTypes.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson03VariablesAndMemory.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson06BasicFileIO.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/src/lesson05Optimizations.O"/>
 			<arg value="--output_type=RAM"/>
 			<arg value="--overlay_type=standalone"/>
 			<arg value="-lC:/CirrusDSP/lib/"/>
@@ -20,8 +446,8 @@
 	<target depends="clink" description="Creating .uld file..." name="lnkuld">
 		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
 			<arg value="-ja"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/CCC2Lessons.img"/>
-			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba5/postavka/CCC2Lessons/output/standalone/CCC2Lessons.uld"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/CCC2Lessons.img"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba5/CCC2Lessons/output/standalone/CCC2Lessons.uld"/>
 		</exec>
 	</target>
 </project>

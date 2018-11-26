@@ -1,0 +1,38 @@
+	.extern _multitap_echo
+
+_multitap_echo:			/* LN: 114 | CYCLE: 0 | RULES: () */ 
+	xmem[i7] = i2; i7 += 1			# LN: 114, 114 | 
+	xmem[i7] = i3; i7 += 1			# LN: 114, 114 | 
+	i4 = xmem[_echoState + 2]			# LN: 117 | 
+	do (0x10), label_end_93			# LN: 119 | 
+label_begin_93:			/* LN: 119 | CYCLE: 0 | RULES: () */ 
+	x0 = ymem[i0]			# LN: 121 | 
+	x1 = xmem[_echoState + 11]			# LN: 121 | 
+	i5 = (0) + (_echoState + 12)			# LN: 122 | 
+	i2 = (0) + (_echoState + 3)			# LN: 123 | 
+	a0 = ymem[i0]; i0 += 1; a1 = x0 * x1			# LN: 125, 125, 121 | 
+	xmem[i4] = a0h			# LN: 125 | 
+	nm4 = (0xb001)			# LN: -1 | 
+	a0 = xmem[_echoState + 16]			# LN: 128 | 
+	i4 += n			# LN: 126 | 
+	AnyReg(i3, a0h)			# LN: 128 | 
+	nm4 = (0x0)			# LN: -1 | 
+	do (i3), label_end_92			# LN: 128 | 
+label_begin_92:			/* LN: 128 | CYCLE: 0 | RULES: () */ 
+	i3 = xmem[i2]			# LN: 130 | 
+	x0 = xmem[i5]; i5 += 1			# LN: 131, 131 | 
+	nm3 = (0xb001)			# LN: -1 | 
+	x1 = xmem[i3]			# LN: 131 | 
+	i3 += n; a1 += x0 * x1			# LN: 132, 131 | 
+	nm3 = (0x0)			# LN: -1 | 
+label_end_92:			# LN: 128 | CYCLE: 6 | RULES: ()
+	xmem[i2] = i3; i2 += 1			# LN: 132, 133 | 
+for_end_3:			/* LN: 128 | CYCLE: 0 | RULES: () */ 
+label_end_93:			# LN: 119 | CYCLE: 0 | RULES: ()
+	ymem[i1] = a1; i1 += 1			# LN: 136, 136 | 
+for_end_2:			/* LN: 119 | CYCLE: 0 | RULES: () */ 
+	xmem[_echoState + 2] = i4			# LN: 139 | 
+	i7 -= 1			# LN: 140 | 
+	i3 = xmem[i7]; i7 -= 1			# LN: 140, 140 | 
+	i2 = xmem[i7]			# LN: 140 | 
+	ret			# LN: 140 | 

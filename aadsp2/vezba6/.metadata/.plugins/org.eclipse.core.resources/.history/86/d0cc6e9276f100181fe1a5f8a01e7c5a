@@ -1,0 +1,39 @@
+.public _multitap_echo
+.code_ovly
+_multitap_echo:			/* LN: 113 | CYCLE: 0 | RULES: () */ 
+	xmem[i7] = i2; i7 += 1			# LN: 113, 113 | 
+	xmem[i7] = i3; i7 += 1			# LN: 113, 113 | 
+	i4 = xmem[_echoState + 2]			# LN: 116 | 
+	do (0x10), label_end_93			# LN: 118 | 
+label_begin_93:			/* LN: 118 | CYCLE: 0 | RULES: () */ 
+	x0 = ymem[i0]			# LN: 120 | 
+	x1 = xmem[_echoState + 11]			# LN: 120 | 
+	i5 = (0) + (_echoState + 12)			# LN: 121 | 
+	i2 = (0) + (_echoState + 3)			# LN: 122 | 
+	a0 = ymem[i0]; i0 += 1; a1 = x0 * x1			# LN: 124, 124, 120 | 
+	xmem[i4] = a0h			# LN: 124 | 
+	nm4 = (0xb001)			# LN: -1 | 
+	a0 = xmem[_echoState + 16]			# LN: 127 | 
+	i4 += n			# LN: 125 | 
+	AnyReg(i3, a0h)			# LN: 127 | 
+	nm4 = (0x0)			# LN: -1 | 
+	do (i3), label_end_92			# LN: 127 | 
+label_begin_92:			/* LN: 127 | CYCLE: 0 | RULES: () */ 
+	i3 = xmem[i2]			# LN: 129 | 
+	x0 = xmem[i5]; i5 += 1			# LN: 130, 130 | 
+	nm3 = (0xb001)			# LN: -1 | 
+	x1 = xmem[i3]			# LN: 130 | 
+	i3 += n; a1 += x0 * x1			# LN: 131, 130 | 
+	nm3 = (0x0)			# LN: -1 | 
+label_end_92:			# LN: 127 | CYCLE: 6 | RULES: ()
+	xmem[i2] = i3; i2 += 1			# LN: 131, 132 | 
+for_end_3:			/* LN: 127 | CYCLE: 0 | RULES: () */ 
+label_end_93:			# LN: 118 | CYCLE: 0 | RULES: ()
+	ymem[i1] = a1; i1 += 1			# LN: 135, 135 | 
+for_end_2:			/* LN: 118 | CYCLE: 0 | RULES: () */ 
+	xmem[_echoState + 2] = i4			# LN: 138 | 
+	i7 -= 1			# LN: 139 | 
+	i3 = xmem[i7]; i7 -= 1			# LN: 139, 139 | 
+	i2 = xmem[i7]			# LN: 139 | 
+	ret			# LN: 139 | 
+

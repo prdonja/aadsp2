@@ -1,0 +1,133 @@
+!SESSION 2018-11-26 12:59:21.817 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sr
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data @noDefault
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-26 13:06:23.060
+!MESSAGE Could not write file: D:\ra207_2015\aadsp2\vezba6\multitapEcho_model3\.cproject.
+** Error occured because of file status <hidden>.
+** This status is disabled now, to allow writing.
+
+!ENTRY org.eclipse.jface 2 0 2018-11-26 14:37:19.142
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-11-26 14:37:19.142
+!MESSAGE A conflict occurred for CTRL+F10:
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction),
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showViewMenu,Show View Menu,
+		Show the view menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowViewMenuHandler@1944f0c,
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.showRulerContextMenu,Show Ruler Context Menu,
+		Show the context menu for the ruler,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractTextEditor$ShowRulerContextMenuAction@1d1a0b7)),
+		,,true),null),
+	CLIDE.DefaultKeyScheme,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY com.cirrus.cdm 4 0 2018-11-26 14:37:31.356
+!MESSAGE No devices found
+!STACK 0
+com.cirrus.cdm.comm.ProxyServerException: No devices found
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.sendCommand(CpsDeviceCommunicator.java:180)
+	at com.cirrus.cdm.comm.internal.CpsDeviceCommunicator.commandChannelConnect(CpsDeviceCommunicator.java:143)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CpsDeviceCommunicatorWithGuard.commandChannelConnect(CpsDeviceCommunicatorWithGuard.java:39)
+	at com.cirrus.cdm.device.CPSDevice.connectToCPS(CPSDevice.java:88)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:74)
+	at com.cirrus.cdm.device.CPSDevice.<init>(CPSDevice.java:83)
+	at com.cirrus.cdm.device.internal.CPSDeviceCache.getDebugDevice(CPSDeviceCache.java:66)
+	at clide.debug.core.model.PDADebugTarget.getCpsDevice(PDADebugTarget.java:198)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView.Update(ProfilingTreeView.java:151)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView.access$4(ProfilingTreeView.java:146)
+	at dsp.profiling.fulltree.visualitems.ProfilingTreeView$RefreshTableCPS.run(ProfilingTreeView.java:270)
+	at java.lang.Thread.run(Thread.java:662)
+
+!ENTRY org.eclipse.core.jobs 4 2 2018-11-26 15:05:27.958
+!MESSAGE An internal error occurred during: "PDA Event Dispatch. ".
+!STACK 0
+java.lang.NullPointerException
+	at clide.debug.core.model.PDADebugTarget.removeEventListener(PDADebugTarget.java:123)
+	at clide.debug.core.model.PDADebugTarget.terminated(PDADebugTarget.java:458)
+	at clide.debug.core.model.TCPProcess.terminated(TCPProcess.java:97)
+	at clide.debug.core.model.TCPProcess$EventDispatchJob.run(TCPProcess.java:221)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 0 2018-11-26 15:05:28.036
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.debug.core.DebugPlugin.stop() of bundle org.eclipse.debug.core.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:791)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1161)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:691)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:598)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+Caused by: java.lang.NullPointerException
+	at clide.debug.core.model.TCPProcess.terminated(TCPProcess.java:101)
+	at clide.debug.core.model.PDADebugTarget.terminate(PDADebugTarget.java:253)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:2335)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:630)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	... 18 more
+Root exception:
+java.lang.NullPointerException
+	at clide.debug.core.model.TCPProcess.terminated(TCPProcess.java:101)
+	at clide.debug.core.model.PDADebugTarget.terminate(PDADebugTarget.java:253)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:2335)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:630)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:565)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1161)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:595)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:691)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:598)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:390)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-11-26 15:05:28.567
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.cirrus.cdm.comm.internal.CpsEventDispatchJob

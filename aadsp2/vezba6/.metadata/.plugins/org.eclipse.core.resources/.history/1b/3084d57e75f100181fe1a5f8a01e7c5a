@@ -1,0 +1,9 @@
+.public _multitap_echo
+.code_ovly
+_foo:
+x0 = a0h
+y0 = a1h
+#asm begin
+a0 = x0 * (unsigned)y0
+#asm end
+Ret
