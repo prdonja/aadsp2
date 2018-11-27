@@ -1,0 +1,43 @@
+============= BUILDING STARTED ============
+  Project: Overlay_Example
+  Creating configuration for: V01:cfg0:DSP_A/a1
+===========================================
+Linking files...
+C:/CirrusDSP/bin/clink
+ -oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img
+ -fC:/CirrusDSP/CS48L2X/memory_maps/V01_a_cfg0.mem.xml
+ --output_type=RAM
+ --overlay_type=a1
+ -lC:/CirrusDSP/lib
+ -lC:/CirrusDSP/lib/dsplib
+ -lC:/CirrusDSP/lib/dsplib/CS48L2X/dspa
+ -lC:/CirrusDSP/CS48L2X/common/lib/dsp_a
+ -lC:/CirrusDSP/CS48L2X/common/lib/dsp_a/v01
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/gen/src/Overlay_Example_odt.O
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/multitapEcho_framework/output/multitapEcho_1_0_0.olib
+     [exec] 
+     [exec] List of linked library's modules:
+     [exec] C:\CirrusDSP\lib\dsplib\CS48L2X\dspa\os_asm.o
+     [exec] C:\CirrusDSP\CS48L2X\common\lib\dsp_a\rom.o
+Creating .uld file...
+C:/CirrusDSP/bin/lnkuld
+ -ja
+ D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img
+ D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.uld
+     [exec] 
+     [exec] Reading file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img ...
+     [exec] 	Processed 15 line(s).
+     [exec] 
+     [exec] Writing output to file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/post
+     [exec] avka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.uld ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.uldb ...
+     [exec] 
+     [exec] Done!
+     [exec] 
+     [exec] Writing output to file: D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak2/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.uldc ...
+
+BUILD SUCCESSFUL
+Total time: 1 second

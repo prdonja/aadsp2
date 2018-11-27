@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1543321379727">
+	<dependencies>
+		<source_file last_build_time="1543321378760" path="src/PCM_Passthrough_asm_os_interface.a">
+			<dependency>C:/CirrusDSP/crystal32/common/inc/macros.h</dependency>
+			<dependency>../gen/inc/PCM_Passthrough_asm_module.h</dependency>
+		</source_file>
+		<source_file last_build_time="1543321379275" path="src/PCM_Passthrough_asm_main.a">
+			<dependency>C:/CirrusDSP/include/dsplib/os_asm.h</dependency>
+			<dependency>../gen/inc/PCM_Passthrough_asm_mcv.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/meter_asm.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/response_asm.h</dependency>
+		</source_file>
+	</dependencies>
+</settings>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="C:/Users/dbokan/Desktop/aadsp2/Dan3/Zadatak1-NEW/Overlay_Example" name="Overlay_Example">
+	<target description="Linking files..." name="clink">
+		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
+			<arg value="-oC:/Users/dbokan/Desktop/aadsp2/Dan3/Zadatak1-NEW/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img"/>
+			<arg value="-fC:/CirrusDSP/CS48L2X/memory_maps/V01_a_cfg0.mem.xml"/>
+			<arg value="C:/Users/dbokan/Desktop/aadsp2/Dan3/Zadatak1-NEW/Overlay_Example/output/a1_V01_a_cfg0/gen/src/Overlay_Example_odt.O"/>
+			<arg value="C:/Users/dbokan/Desktop/aadsp2/Dan3/Zadatak1-NEW/PCM_Passthrough_asm/output/PCM_Passthrough_asm_1_0_0.olib"/>
+			<arg value="--output_type=RAM"/>
+			<arg value="--overlay_type=a1"/>
+			<arg value="-lC:/CirrusDSP/lib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib/CS48L2X/dspa"/>
+			<arg value="-lC:/CirrusDSP/CS48L2X/common/lib/dsp_a"/>
+			<arg value="-lC:/CirrusDSP/CS48L2X/common/lib/dsp_a/v01"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
+			<arg value="-ja"/>
+			<arg value="C:/Users/dbokan/Desktop/aadsp2/Dan3/Zadatak1-NEW/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img"/>
+			<arg value="C:/Users/dbokan/Desktop/aadsp2/Dan3/Zadatak1-NEW/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.uld"/>
+		</exec>
+	</target>
+</project>

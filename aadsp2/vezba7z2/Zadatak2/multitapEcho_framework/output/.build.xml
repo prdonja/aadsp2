@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework" name="multitapEcho">
+	<target description="Assembling .a and .s files..." name="casm">
+		<delete file="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_os_interface.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult0">
+			<arg value="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_os_interface.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_os_interface.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_os_interface.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_main.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult1">
+			<arg value="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_main.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_main.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_main.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult2">
+			<arg value="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/mtechoDataVars.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult3">
+			<arg value="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/mtechoDataVars.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc"/>
+			<arg value="-ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/mtechoDataVars.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/mtechoDataVars.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<condition property="assemblyError">
+			<or>
+				<not>
+					<equals arg1="${casmResult0}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult1}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult2}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult3}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="assemblyError" name="checkAssemblyErrors">
+		<fail message="Please check assembler errors."/>
+	</target>
+</project>

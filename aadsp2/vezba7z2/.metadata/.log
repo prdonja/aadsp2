@@ -1,0 +1,17 @@
+!SESSION 2018-11-27 14:09:18.263 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sr
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data @noDefault
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-11-27 14:22:44.566
+!MESSAGE Could not write file: D:\ra207_2015\aadsp2\vezba7z2\Zadatak2\multitapEcho_framework\.cproject.
+** Error occured because of file status <hidden>.
+** This status is disabled now, to allow writing.
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-11-27 15:11:14.353
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: dsp.application.project.service.internal.ActiveConcurrencyListenerUpdateJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2018-11-27 15:11:14.353
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.cirrus.cdm.comm.internal.CpsEventDispatchJob

@@ -1,0 +1,92 @@
+============= BUILDING STARTED ============
+  Project: multitapEcho
+  Creating standalone configuration
+===========================================
+Assembling .a and .s files...
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba7z2\Zadatak2\multitapEcho_framework\output\src\multitapEcho_os_interface.O
+D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_os_interface.a
+C:/CirrusDSP/bin/casm D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_os_interface.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc
+ -lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_os_interface.lst
+ -oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_os_interface.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba7z2\Zadatak2\multitapEcho_framework\output\src\multitapEcho_main.O
+D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_main.a
+C:/CirrusDSP/bin/casm D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_main.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc
+ -lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_main.lst
+ -oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho_main.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba7z2\Zadatak2\multitapEcho_framework\output\src\multitapEcho.O
+D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho.a
+C:/CirrusDSP/bin/casm D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc
+ -lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho.lst
+ -oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/multitapEcho.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+   [delete] Deleting: D:\ra207_2015\aadsp2\vezba7z2\Zadatak2\multitapEcho_framework\output\src\mtechoDataVars.O
+D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/mtechoDataVars.a
+C:/CirrusDSP/bin/casm D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/mtechoDataVars.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc/
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc
+ -ID:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/gen/inc
+ -lD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/mtechoDataVars.lst
+ -oD:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/src/mtechoDataVars.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+
+BUILD SUCCESSFUL
+Total time: 2 seconds

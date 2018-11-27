@@ -1,0 +1,4 @@
+Error #513: Expression (___X_VY_BRICK_SIZE) resulting 0x1015 is out of range (0-0x3ff)!
+            In module : D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/output/multitapEcho_1_0_0.olib|src\multitapEcho
+            In section: multitapEcho_GEN_0000
+            At offset : 0x2a

@@ -1,0 +1,192 @@
+<symbolMap>
+   <symbol name="X_VX_S_BR_AlignCommon">
+      <value>18</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_AlignToByte">
+      <value>10</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_AlignToDWord">
+      <value>12</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_AlignToWord">
+      <value>11</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_BitCnt_Main_State">
+      <value>16</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_BitCnt_States">
+      <value>15</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_Extract">
+      <value>0</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_Flush">
+      <value>20</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_Init">
+      <value>7</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_LoadAuxState">
+      <value>6</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_LoadMainState">
+      <value>4</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_Peek">
+      <value>1</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_ReadDipstick">
+      <value>14</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_ReadInputFIFOWrPtr">
+      <value>19</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_RestoreMainState">
+      <value>3</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_SaveAlignment">
+      <value>9</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_SaveAuxState">
+      <value>5</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_SaveMainState">
+      <value>2</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_SkipBits">
+      <value>8</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_SwitchInputFIFO">
+      <value>17</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+   <symbol name="X_VX_S_BR_WaitOnDipstick">
+      <value>13</value>
+      <segmentName>LIB_BR_Public_VARS</segmentName>
+      <memoryZone>X</memoryZone>
+      <memoryClass>X_OVLY</memoryClass>
+      <address>4294967295</address>
+      <type>2</type>
+      <module>bitripper</module>
+   </symbol>
+</symbolMap>
+

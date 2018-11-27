@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm" name="PCM_Passthrough_asm">
+	<target description="Assembling .a and .s files..." name="casm">
+		<delete file="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_os_interface.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult0">
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/src/PCM_Passthrough_asm_os_interface.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc/"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc/"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc"/>
+			<arg value="-lD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_os_interface.lst"/>
+			<arg value="-oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_os_interface.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<delete file="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_main.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult1">
+			<arg value="D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/src/PCM_Passthrough_asm_main.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-IC:/CirrusDSP/include/dsplib/"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc/"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc/"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc"/>
+			<arg value="-ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc"/>
+			<arg value="-lD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_main.lst"/>
+			<arg value="-oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_main.O"/>
+			<arg value="-iC:/CirrusDSP/crystal32/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<condition property="assemblyError">
+			<or>
+				<not>
+					<equals arg1="${casmResult0}" arg2="0"/>
+				</not>
+				<not>
+					<equals arg1="${casmResult1}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="assemblyError" name="checkAssemblyErrors">
+		<fail message="Please check assembler errors."/>
+	</target>
+</project>

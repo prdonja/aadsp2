@@ -1,0 +1,156 @@
+################################################################################
+##*/**
+##** @file multitapEcho.a
+##**
+##** Module:
+##** Description:
+##** $Source: $
+##** $Revision: $
+##** $Date: $
+##** $Author: $
+##**
+##**/
+################################################################################
+		.include "dsplib/os_asm.h" # include the definition of ROM functions and OS global variables
+
+_multitapEcho_a_
+
+#	User header files:
+#-------------------------------------------------------------------------------
+		.include ("multitapEcho.h")
+ 
+ .code_ovly
+
+################################################################################
+##*/**
+##** @Author
+##** @Date		07.03.2017
+##**
+##** Function:
+##** X_S_multitapEchoInit
+##**
+##** @param		-
+##**
+##** @return	-
+##**
+##** Trashes:	-
+##** Comment:	Initialize processing
+##**
+##** E-mail:
+##**/
+################################################################################
+X_S_multitapEchoInit
+
+	#TODO: add multitapEcho init function body	
+	xmem[i7] = i2; i7 += 1			# LN: 66, 66 | 
+	xmem[i7] = i3; i7 += 1			# LN: 66, 66 | 
+	xmem[i7] = i6			# LN: 66 | 
+	i0 = (0) + (_echo_buffer + 0)			# LN: 69 | 
+	i1 = (0) + (_echoState + 7)			# LN: 71 | 
+	i4 = (0) + (_initial_delay + 0)			# LN: 72 | 
+	i5 = (0) + (_echoState + 12)			# LN: 73 | 
+	i2 = (0) + (_initial_gain + 0)			# LN: 74 | 
+	i3 = (0x1000)			# LN: 78 | 
+	i6 = (0) + (_echoState + 3)			# LN: 75 | 
+	do (i3), label_end_94			# LN: 78 | 
+label_begin_94:			/* LN: 78 | CYCLE: 0 | RULES: () */ 
+	a0 = 0			# LN: 80 | 
+label_end_94:			# LN: 78 | CYCLE: 1 | RULES: ()
+	xmem[i0] = a0h; i0 += 1			# LN: 80, 80 | 
+for_end_0:			/* LN: 78 | CYCLE: 0 | RULES: () */ 
+	i0 = (0) + (_echo_buffer + 0)			# LN: 83 | 
+	xmem[_echoState + 0] = i0			# LN: 83 | 
+	uhalfword(a0) = (0x1000)			# LN: 84 | 
+	xmem[_echoState + 1] = a0h			# LN: 84 | 
+	i0 = xmem[_echoState + 0]			# LN: 85 | 
+	a0 = (0x4000)			# LN: 86 | 
+	i0 = i0 + (0x1000)			# LN: 85 | 
+	i0 -= 1			# LN: 85 | 
+	xmem[_echoState + 2] = i0			# LN: 85 | 
+	xmem[_echoState + 11] = a0h			# LN: 86 | 
+	uhalfword(a0) = (0x4)			# LN: 87 | 
+	xmem[_echoState + 16] = a0h			# LN: 87 | 
+	do (0x4), label_end_95			# LN: 89 | 
+label_begin_95:			/* LN: 89 | CYCLE: 0 | RULES: () */ 
+	a0 = xmem[i4]			# LN: 91 | 
+	uhalfword(a1) = (_echo_buffer + 4095)			# LN: 91 | 
+	a0 = a1 - a0			# LN: 91 | 
+	AnyReg(i0, a0h)			# LN: 91 | 
+	xmem[i6] = i0; i6 += 1			# LN: 91, 91 | 
+	a0 = xmem[i4]; i4 += 1			# LN: 92, 92 | 
+	xmem[i1] = a0h; i1 += 1			# LN: 92, 92 | 
+	a0 = xmem[i2]; i2 += 1			# LN: 93, 93 | 
+label_end_95:			# LN: 89 | CYCLE: 8 | RULES: ()
+	xmem[i5] = a0h; i5 += 1			# LN: 93, 93 | 
+for_end_1:			/* LN: 89 | CYCLE: 0 | RULES: () */ 
+	i6 = xmem[i7]; i7 -= 1			# LN: 95, 95 | 
+	i3 = xmem[i7]; i7 -= 1			# LN: 95, 95 | 
+	i2 = xmem[i7]			# LN: 95 | 
+
+#%X_S_multitapEchoInit
+#-------------------------------------------------------------------------------
+  ret
+
+
+################################################################################
+##*/**
+##** @Author
+##** @Date		07.03.2017
+##**
+##** Function:
+##** X_S_multitapEcho
+##**
+##** @param		-
+##**            
+##** @return    -
+##**            -
+##**
+##** Trashes:	-
+##** Comment:	multitapEcho
+##**
+##** E-mail:
+##**/
+################################################################################
+X_S_multitapEcho
+
+#TODO: add multitapEcho function body
+	xmem[i7] = i2; i7 += 1			# LN: 113, 113 | 
+	xmem[i7] = i3; i7 += 1			# LN: 113, 113 | 
+	i4 = xmem[_echoState + 2]			# LN: 116 | 
+	do (___X_VY_BRICK_SIZE), label_end_93			# LN: 118 | 
+label_begin_93:			/* LN: 118 | CYCLE: 0 | RULES: () */ 
+	x0 = ymem[i0]			# LN: 120 | 
+	x1 = xmem[_echoState + 11]			# LN: 120 | 
+	i5 = (0) + (_echoState + 12)			# LN: 121 | 
+	i2 = (0) + (_echoState + 3)			# LN: 122 | 
+	a0 = ymem[i0]; i0 += 1; a1 = x0 * x1			# LN: 124, 124, 120 | 
+	xmem[i4] = a0h			# LN: 124 | 
+	nm4 = (0xb001)			# LN: -1 | 
+	a0 = xmem[_echoState + 16]			# LN: 127 | 
+	i4 += n			# LN: 125 | 
+	AnyReg(i3, a0h)			# LN: 127 | 
+	nm4 = (0x0)			# LN: -1 | 
+	do (i3), label_end_92			# LN: 127 | 
+label_begin_92:			/* LN: 127 | CYCLE: 0 | RULES: () */ 
+	i3 = xmem[i2]			# LN: 129 | 
+	x0 = xmem[i5]; i5 += 1			# LN: 130, 130 | 
+	nm3 = (0xb001)			# LN: -1 | 
+	x1 = xmem[i3]			# LN: 130 | 
+	i3 += n; a1 += x0 * x1			# LN: 131, 130 | 
+	nm3 = (0x0)			# LN: -1 | 
+label_end_92:			# LN: 127 | CYCLE: 6 | RULES: ()
+	xmem[i2] = i3; i2 += 1			# LN: 131, 132 | 
+for_end_3:			/* LN: 127 | CYCLE: 0 | RULES: () */ 
+label_end_93:			# LN: 118 | CYCLE: 0 | RULES: ()
+	ymem[i1] = a1; i1 += 1			# LN: 135, 135 | 
+for_end_2:			/* LN: 118 | CYCLE: 0 | RULES: () */ 
+	xmem[_echoState + 2] = i4			# LN: 138 | 
+	i7 -= 1			# LN: 139 | 
+	i3 = xmem[i7]; i7 -= 1			# LN: 139, 139 | 
+	i2 = xmem[i7]			# LN: 139 | 
+
+
+#%X_S_multitapEcho
+#-------------------------------------------------------------------------------
+  ret
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project basedir="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example" name="Overlay_Example">
+	<target description="Assembling .a and .s files..." name="casm">
+		<delete file="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/gen/src/Overlay_Example_odt.O"/>
+		<exec executable="C:/CirrusDSP/bin/casm" failonerror="true" resultProperty="casmResult0">
+			<arg value="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/gen/src/Overlay_Example_odt.a"/>
+			<arg value="--debug"/>
+			<arg value="-c"/>
+			<arg value="-s"/>
+			<arg value="-e"/>
+			<arg value="--cdl"/>
+			<arg value="-D_TOOLS_VERSION_=0x0701"/>
+			<arg value="-D_OVLY_REVISION_=010000"/>
+			<arg value="-D_ROM_VERSION_=0"/>
+			<arg value="-D_VERSION_=01"/>
+			<arg value="-D_CHIP_REQUIRED_=48L20"/>
+			<arg value="-D_DSP_=a"/>
+			<arg value="-DDSPa"/>
+			<arg value="-D_MEM_MODEL_=cfg0"/>
+			<arg value="-D_RAM_BUILD_"/>
+			<arg value="-D_SLOT_=1"/>
+			<arg value="-D_COMMON_INC_PATH_=C:/CirrusDSP/CS48L2X/common/inc/"/>
+			<arg value="-D_TARGET_FAMILY_=CS48L2X"/>
+			<arg value="-D_MUI_VERSION_=010000"/>
+			<arg value="-IC:/CirrusDSP/include/"/>
+			<arg value="-lD:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/gen/src/Overlay_Example_odt.lst"/>
+			<arg value="-oD:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/gen/src/Overlay_Example_odt.O"/>
+			<arg value="-iC:/CirrusDSP/CS48L2X/common/inc/base.h"/>
+			<arg value="-D_LOCAL_SRC_PATH_=src/"/>
+			<arg value="-D_LOCAL_INC_PATH_=inc/"/>
+			<arg value="-D_ROUTER_INC_PATH_=rom_inc/"/>
+		</exec>
+		<condition property="assemblyError">
+			<or>
+				<not>
+					<equals arg1="${casmResult0}" arg2="0"/>
+				</not>
+			</or>
+		</condition>
+	</target>
+	<target if="assemblyError" name="checkAssemblyErrors">
+		<fail message="Please check assembler errors."/>
+	</target>
+	<target description="Linking files..." name="clink">
+		<exec executable="C:/CirrusDSP/bin/clink" failonerror="true">
+			<arg value="-oD:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img"/>
+			<arg value="-fC:/CirrusDSP/CS48L2X/memory_maps/V01_a_cfg0.mem.xml"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/gen/src/Overlay_Example_odt.O"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/PCM_Passthrough_asm/output/PCM_Passthrough_asm_1_0_0.olib"/>
+			<arg value="--output_type=RAM"/>
+			<arg value="--overlay_type=a1"/>
+			<arg value="-lC:/CirrusDSP/lib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib"/>
+			<arg value="-lC:/CirrusDSP/lib/dsplib/CS48L2X/dspa"/>
+			<arg value="-lC:/CirrusDSP/CS48L2X/common/lib/dsp_a"/>
+			<arg value="-lC:/CirrusDSP/CS48L2X/common/lib/dsp_a/v01"/>
+		</exec>
+	</target>
+	<target depends="clink" description="Creating .uld file..." name="lnkuld">
+		<exec executable="C:/CirrusDSP/bin/lnkuld" failonerror="true">
+			<arg value="-ja"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.img"/>
+			<arg value="D:/ra207_2015/aadsp2/vezba7z1/Zadatak1/Overlay_Example/output/a1_V01_a_cfg0/Overlay_Example__48L20_01_cfg0_a1_1_0_0.uld"/>
+		</exec>
+	</target>
+</project>

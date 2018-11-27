@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="15" version="2.0">
+<workbenchAdvisor/>
+<window height="1040" maximized="true" width="1103" x="0" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="clide.ui.toolbar.RebuildRelaunchDebug" itemType="typeToolBarContribution" x="175" y="22"/>
+<coolItem id="clide.ui.toolbar.ConnectDisconnectDebugger" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="clide.ui.toolbar.LoadSaveSnapshot" itemType="typeToolBarContribution" x="107" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="91" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="dsp.uld.ui.editors.MultiPageEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="xmlwizard.editor.xmlProjectEditor" itemType="typeToolBarContribution" x="148" y="22"/>
+<coolItem id="clide.debug.ui.ceditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="pda.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1543324170899" focus="true" label="Workspace - Development">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="pda.editor" name="multitapEcho.a" partName="/multitapEcho/src/multitapEcho.a" path="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho.a" title="/multitapEcho/src/multitapEcho.a" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho.a&#x0A;multitapEcho/src/multitapEcho.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/src/multitapEcho.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3605" selectionTopPixel="1647"/>
+</editor>
+<editor id="pda.editor" name="mtechoDataVars.a" partName="/multitapEcho/src/mtechoDataVars.a" path="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/mtechoDataVars.a" title="/multitapEcho/src/mtechoDataVars.a" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/mtechoDataVars.a&#x0A;multitapEcho/src/mtechoDataVars.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/src/mtechoDataVars.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="507" selectionTopPixel="132"/>
+</editor>
+<editor id="pda.editor" name="multitapEcho_main.a" partName="/multitapEcho/src/multitapEcho_main.a" path="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_main.a" title="/multitapEcho/src/multitapEcho_main.a" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_main.a&#x0A;multitapEcho/src/multitapEcho_main.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/src/multitapEcho_main.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2048" selectionTopPixel="506"/>
+</editor>
+<editor id="pda.editor" name="multitapEcho_os_interface.a" partName="/multitapEcho/src/multitapEcho_os_interface.a" path="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_os_interface.a" title="/multitapEcho/src/multitapEcho_os_interface.a" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/src/multitapEcho_os_interface.a&#x0A;multitapEcho/src/multitapEcho_os_interface.a" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/src/multitapEcho_os_interface.a"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="clide.debug.ui.ceditor" name="mtechoGlobalConsts.h" partName="/multitapEcho/inc/mtechoGlobalConsts.h" path="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/mtechoGlobalConsts.h" title="/multitapEcho/inc/mtechoGlobalConsts.h" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/mtechoGlobalConsts.h&#x0A;multitapEcho/inc/mtechoGlobalConsts.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/inc/mtechoGlobalConsts.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="701" selectionTopPixel="0"/>
+</editor>
+<editor id="clide.debug.ui.ceditor" name="mtechoDataVars.h" partName="/multitapEcho/inc/mtechoDataVars.h" path="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/mtechoDataVars.h" title="/multitapEcho/inc/mtechoDataVars.h" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/inc/mtechoDataVars.h&#x0A;multitapEcho/inc/mtechoDataVars.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/inc/mtechoDataVars.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1557" selectionTopPixel="330"/>
+</editor>
+<editor id="dsp.application.editor.DSPAppEditor" name=".appproj" partName="/CDB49X_DC48L20_app/.appproj" title="/CDB49X_DC48L20_app/.appproj" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/CDB49X_DC48L20_app/.appproj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CDB49X_DC48L20_app/.appproj"/>
+</editor>
+<editor id="dsp.application.editor.DSPAppEditor" name=".appproj" partName="/simulator_app/.appproj" title="/simulator_app/.appproj" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/simulator_app/.appproj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/simulator_app/.appproj"/>
+</editor>
+<editor id="xmlwizard.editor.xmlProjectEditor" name=".modproj" partName="/multitapEcho/.modproj" title="/multitapEcho/.modproj" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/multitapEcho_framework/.modproj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/multitapEcho/.modproj"/>
+</editor>
+<editor activePart="true" focus="true" id="dsp.uld.ui.editors.MultiPageEditor" name=".uldproj" partName="/Overlay_Simulator/.uldproj" title="/Overlay_Simulator/.uldproj" tooltip="D:/ra207_2015/aadsp2/vezba7z2/Zadatak2/Overlay_Simulator/.uldproj" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Overlay_Simulator/.uldproj"/>
+</editor>
+</editors>
+<views>
+<view id="clide.debug.ui.registersView" partName="DSP Core Registers">
+<viewState/>
+</view>
+<view id="clide.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables"/>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="clide.ui.visualization.views.VisualizationView" partName="Visualization View"/>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="clide.debug.ui.memoryView" partName="Memory View"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (1 item)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" partName="Properties View">
+<viewState/>
+</view>
+<view id="clide.ui.visualization.views.OscilloscopeView" partName="Oscilloscope View"/>
+</views>
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="CLIDE.perspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="clide.ui.perspectives.Perspective" id="CLIDE.perspective" label="Development"/>
+<alwaysOnActionSet id="clide.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<show_view_action id="clide.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="clide.debug.ui.registersView"/>
+<show_view_action id="clide.debug.ui.memoryView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<new_wizard_action id="CLIDE.newFileWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.pde.runtime.LogView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="dsp.composer.xmlwizard.ui.CLIDEPropertiesView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.22" ratioLeft="220" ratioRight="780" relationship="2" relative="left"/>
+<info folder="true" part="console" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.77698696" ratioLeft="1310" ratioRight="376" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" appearance="2" expanded="2">
+<page content="dsp.composer.xmlwizard.ui.CLIDEPropertiesView" label="Properties View"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="clide.ui.perspectives.DebugPerspective" id="CLIDE.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="clide.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="clide.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="clide.debug.ui.registersView"/>
+<show_view_action id="clide.debug.ui.memoryView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<new_wizard_action id="CLIDE.newFileWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="clide.debug.ui.registersView"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="clide.debug.ui.memoryView"/>
+<view id="clide.ui.visualization.views.VisualizationView"/>
+<view id="clide.ui.visualization.views.OscilloscopeView"/>
+<view id="clide.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="clide.debug.ui.registersView" appearance="2" expanded="2">
+<page content="clide.debug.ui.registersView" label="DSP Core Registers"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="clide.wiewFolder.debug" ratio="0.22" ratioLeft="220" ratioRight="780" relationship="2" relative="left">
+<folder activePageID="clide.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="clide.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="clide.wiewFolder.console" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="clide.wiewFolder.debug">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="clide.debug.ui.memoryView" label="Memory View"/>
+<page content="clide.ui.visualization.views.VisualizationView" label="Visualization View"/>
+<page content="clide.ui.visualization.views.OscilloscopeView" label="Oscilloscope View"/>
+<page content="clide.ui.visualization.views.ResponseGraphView" label="Response"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25979382" ratioLeft="126" ratioRight="359" relationship="4" relative="clide.wiewFolder.debug"/>
+<info folder="true" part="clide.wiewFolder.watch" ratio="0.45" ratioLeft="351" ratioRight="429" relationship="2" relative="clide.wiewFolder.debug">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/multitapEcho/src/mtechoDataVars.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/multitapEcho/src/multitapEcho_main.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/multitapEcho/src/multitapEcho.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" path="/multitapEcho/src/multitapEcho_os_interface.a"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/multitapEcho/inc/mtechoGlobalConsts.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" path="/multitapEcho/inc/mtechoDataVars.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.application.editor.DSPAppEditor" path="/simulator_app/.appproj"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.application.editor.DSPAppEditor" path="/CDB49X_DC48L20_app/.appproj"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="xmlwizard.editor.xmlProjectEditor" path="/multitapEcho/.modproj"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.MultiPageEditor" path="/Overlay_Simulator/.uldproj"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/simulator_app/SimulatorConfigurationTemp.sbr"/>
+</editors>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="747" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="1010" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho.a" index="2">
+<position info="not_deleted" x="259" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="1010" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="747" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="1010" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho.a" index="2">
+<position info="not_deleted" x="259" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho.a" index="2">
+<position info="not_deleted" x="457" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_os_interface.a" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="507" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/inc/mtechoGlobalConsts.h" index="4">
+<position info="not_deleted" x="601" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/inc/mtechoDataVars.h" index="5">
+<position info="not_deleted" x="1557" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="507" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho.a" index="2">
+<position info="not_deleted" x="4092" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="8446" y="13"/>
+</item>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="507" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="8446" y="13"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho.a" index="2">
+<position info="not_deleted" x="3605" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/mtechoDataVars.a" index="0">
+<position info="not_deleted" x="507" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="2297" y="0"/>
+</item>
+<item historyLabel="/simulator_app/.appproj" index="6"/>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="2048" y="0"/>
+</item>
+<item historyLabel="/simulator_app/.appproj" index="6"/>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="2048" y="0"/>
+</item>
+<item historyLabel="/CDB49X_DC48L20_app/.appproj" index="7"/>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="2048" y="0"/>
+</item>
+<item historyLabel="/CDB49X_DC48L20_app/.appproj" index="7"/>
+<item historyLabel="/multitapEcho/.modproj" index="8"/>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="2048" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/inc/mtechoGlobalConsts.h" index="4">
+<position info="not_deleted" x="601" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/src/multitapEcho_main.a" index="1">
+<position info="not_deleted" x="2048" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/inc/mtechoGlobalConsts.h" index="4">
+<position info="not_deleted" x="701" y="0"/>
+</item>
+<item historyLabel="/multitapEcho/.modproj" index="8"/>
+<item historyLabel="/simulator_app/.appproj" index="6"/>
+<item historyLabel="/multitapEcho/.modproj" index="8"/>
+<item historyLabel="/simulator_app/.appproj" index="6"/>
+<item historyLabel="/multitapEcho/.modproj" index="8"/>
+<item historyLabel="/Overlay_Simulator/.uldproj" index="9"/>
+<item historyLabel="SimulatorConfigurationTemp.sbr" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="/Overlay_Simulator/.uldproj" index="9"/>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="SimulatorConfigurationTemp.sbr" tooltip="simulator_app/SimulatorConfigurationTemp.sbr">
+<persistable path="/simulator_app/SimulatorConfigurationTemp.sbr"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.uld.ui.editors.MultiPageEditor" name=".uldproj" tooltip="Overlay_Simulator/.uldproj">
+<persistable path="/Overlay_Simulator/.uldproj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="xmlwizard.editor.xmlProjectEditor" name=".modproj" tooltip="multitapEcho/.modproj">
+<persistable path="/multitapEcho/.modproj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.application.editor.DSPAppEditor" name=".appproj" tooltip="simulator_app/.appproj">
+<persistable path="/simulator_app/.appproj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="dsp.application.editor.DSPAppEditor" name=".appproj" tooltip="CDB49X_DC48L20_app/.appproj">
+<persistable path="/CDB49X_DC48L20_app/.appproj"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" name="mtechoDataVars.h" tooltip="multitapEcho/inc/mtechoDataVars.h">
+<persistable path="/multitapEcho/inc/mtechoDataVars.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="clide.debug.ui.ceditor" name="mtechoGlobalConsts.h" tooltip="multitapEcho/inc/mtechoGlobalConsts.h">
+<persistable path="/multitapEcho/inc/mtechoGlobalConsts.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="multitapEcho_os_interface.a" tooltip="multitapEcho/src/multitapEcho_os_interface.a">
+<persistable path="/multitapEcho/src/multitapEcho_os_interface.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="multitapEcho_main.a" tooltip="multitapEcho/src/multitapEcho_main.a">
+<persistable path="/multitapEcho/src/multitapEcho_main.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="mtechoDataVars.a" tooltip="multitapEcho/src/mtechoDataVars.a">
+<persistable path="/multitapEcho/src/mtechoDataVars.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="pda.editor" name="multitapEcho.a" tooltip="multitapEcho/src/multitapEcho.a">
+<persistable path="/multitapEcho/src/multitapEcho.a"/>
+</file>
+</mruList>
+</workbench>

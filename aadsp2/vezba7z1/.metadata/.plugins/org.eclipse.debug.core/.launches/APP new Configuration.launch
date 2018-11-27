@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="pda.launchType">
+<stringAttribute key="ATTR_APPLICATION_PROJECT" value="CDB49X_DC48L20_app"/>
+<stringAttribute key="ATTR_CONCURRENCY_NAME" value="analog"/>
+<stringAttribute key="ATTR_OVERLAY_NAMES" value="a0,a1,a2,"/>
+<stringAttribute key="ATTR_SELECTED_DEBUG_INFO_TYPE" value="DSP_APP_DEBUG_INFO_TYPE"/>
+<stringAttribute key="ATTR_SELECTED_TARGET_TYPE" value="TARGET_TYPE_BOARD"/>
+</launchConfiguration>

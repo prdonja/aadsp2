@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings built="true" last_build_time="1543326382374">
+	<dependencies>
+		<source_file last_build_time="1543326380455" path="src/multitapEcho_os_interface.a">
+			<dependency>C:/CirrusDSP/crystal32/common/inc/macros.h</dependency>
+			<dependency>../gen/inc/multitapEcho_module.h</dependency>
+		</source_file>
+		<source_file last_build_time="1543326381438" path="src/multitapEcho.a">
+			<dependency>C:/CirrusDSP/include/dsplib/os_asm.h</dependency>
+			<dependency>../inc/multitapEcho.h</dependency>
+			<dependency>../inc/mtechoGlobalConsts.h</dependency>
+			<dependency>../inc/mtechoDataVars.h</dependency>
+		</source_file>
+		<source_file last_build_time="1543326381922" path="src/mtechoDataVars.a">
+			<dependency>../inc/mtechoDataVars.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/os_asm.h</dependency>
+			<dependency>../inc/mtechoGlobalConsts.h</dependency>
+		</source_file>
+		<source_file last_build_time="1543326380954" path="src/multitapEcho_main.a">
+			<dependency>C:/CirrusDSP/include/dsplib/os_asm.h</dependency>
+			<dependency>../gen/inc/multitapEcho_mcv.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/meter_asm.h</dependency>
+			<dependency>C:/CirrusDSP/include/dsplib/response_asm.h</dependency>
+			<dependency>../inc/multitapEcho.h</dependency>
+			<dependency>../inc/mtechoDataVars.h</dependency>
+		</source_file>
+	</dependencies>
+</settings>

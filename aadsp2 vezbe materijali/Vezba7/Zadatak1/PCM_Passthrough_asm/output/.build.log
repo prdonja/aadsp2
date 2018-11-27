@@ -1,0 +1,48 @@
+============= BUILDING STARTED ============
+  Project: PCM_Passthrough_asm
+  Creating standalone configuration
+===========================================
+Assembling .a and .s files...
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/src/PCM_Passthrough_asm_os_interface.a
+C:/CirrusDSP/bin/casm D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/src/PCM_Passthrough_asm_os_interface.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc/
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc/
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc
+ -lD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_os_interface.lst
+ -oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_os_interface.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/src/PCM_Passthrough_asm_main.a
+C:/CirrusDSP/bin/casm D:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/src/PCM_Passthrough_asm_main.a
+ --debug
+ -c
+ -s
+ -e
+ --cdl
+ -D_COMMON_INC_PATH_=C:/CirrusDSP/crystal32/common/inc/
+ -IC:/CirrusDSP/include/
+ -IC:/CirrusDSP/include/dsplib/
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc/
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc/
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/inc
+ -ID:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/gen/inc
+ -lD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_main.lst
+ -oD:/nastava/aadsp2/2016-2017/Vezbe/Vezba7/postavka/Zadatak1/PCM_Passthrough_asm/output/src/PCM_Passthrough_asm_main.O
+ -iC:/CirrusDSP/crystal32/common/inc/base.h
+ -D_LOCAL_SRC_PATH_=src/
+ -D_LOCAL_INC_PATH_=inc/
+ -D_ROUTER_INC_PATH_=rom_inc/
+
+BUILD SUCCESSFUL
+Total time: 1 second
